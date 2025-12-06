@@ -1,0 +1,90 @@
+ul
+{
+  list-style-type: none;
+  margin: 17px;
+  padding: 15px 30px;
+  background-color: #1a304e;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+li a 
+{
+font-size: 25px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: garamond, serif;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 30px;
+  transition: background-color .5s;
+}
+
+li a:hover 
+{
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  color:rgb(26, 48, 78)
+}
+
+html 
+{
+    background-image: url('https://i.pinimg.com/1200x/35/21/24/352124e000d767a27d441e65a7fe7a35.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position-y: -55px;
+    margin: 0;
+    padding: 0;
+}
+
+body::before 
+{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.37);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.casefiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    font-family: "Copperplate", "Copperplate Gothic Light";
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    margin: 45px;
+    margin-top: 120px;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: relative;
+    z-index: 1;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+}
+
+.casefile1, .casefile2, .casefile3
+{
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    color:#1a304e
+}
+
+.content h1 {
+    font-family: "Copperplate", "Copperplate Gothic Light";
+    color: #ffffff;                         
+}
