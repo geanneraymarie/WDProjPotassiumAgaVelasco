@@ -1,7 +1,96 @@
-.box1 {
-    background-color: rgba(98, 230, 137, 0.4);
-}
-.box2
+ul
 {
-    background-color: rgba(238, 238, 85, 0.4);
+  list-style-type: none;
+  margin: 17px;
+  padding: 15px 30px;
+  background-color: #1a304e;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+li a 
+{
+font-size: 25px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: garamond, serif;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 30px;
+  transition: background-color .5s;
+}
+
+li a:hover 
+{
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  color:rgb(26, 48, 78)
+}
+
+html 
+{
+    background-image: url('https://i.pinimg.com/736x/37/31/be/3731be3de012495d280134f624be4aa7.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position-y: -375px;
+    margin: 0;
+    padding: 0;
+}
+
+body::before 
+{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.57);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.minigames
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(99, 208, 71);
+    font-size: 20px;
+    margin-top: 120px;
+    margin-left: 60px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(243, 255, 139, .75);
+}
+
+.funfacts
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(243, 255, 139);
+    font-size: 20px;
+    margin-top: 120px;
+    margin-left: 60px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(99, 208, 71, .75);
+}
+
+.rontoto 
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    z-index: 999;
 }

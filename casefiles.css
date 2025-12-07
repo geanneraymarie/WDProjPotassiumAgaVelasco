@@ -35,10 +35,10 @@ li a:hover
 
 html 
 {
-    background-image: url('https://i.pinimg.com/1200x/35/21/24/352124e000d767a27d441e65a7fe7a35.jpg');
+    background-image: url('https://i.pinimg.com/1200x/8d/96/6d/8d966d8a3f5054b1421449e93859225c.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position-y: -55px;
+    background-position-y: -280px;
     margin: 0;
     padding: 0;
 }
@@ -48,7 +48,7 @@ body::before
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.37);
+    background: rgba(255, 255, 255, 0.57);
     pointer-events: none;
     z-index: -1;
 }

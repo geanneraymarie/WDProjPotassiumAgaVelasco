@@ -48,7 +48,7 @@ html::before
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.57);
     pointer-events: none;
     z-index: -1;
 }
@@ -109,4 +109,13 @@ html::before
     font-family:'Courier New', Courier, monospace;
     color: #ffffff;
     text-align: center;                         
+}
+
+.platypus
+{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    z-index: 999;
 }

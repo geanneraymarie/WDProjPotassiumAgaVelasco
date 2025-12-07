@@ -35,10 +35,10 @@ li a:hover
 
 html 
 {
-    background-image: url('https://static.wikia.nocookie.net/kamono-hashiguchi-no-kindan-suiri/images/f/f5/Ch1_Maison_du_Kamonohashi.png/revision/latest/scale-to-width-down/1000?cb=20210706224551');
+    background-image: url('https://i.pinimg.com/736x/54/81/04/54810434339d93d765eb60d5b6e3eb9c.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position-y: -55px;
+    background-position-y: -200px;
     margin: 0;
     padding: 0;
 }
@@ -59,17 +59,17 @@ body::before
     color: rgb(255, 255, 255);
     font-size: 18px;
     margin: 45px;
-    margin-top: 120px;
-    background-color: rgba(26, 48, 78, .75);
+    margin-top: 150px;
+    background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     z-index: 1;
-    padding: 20px 20px 20px 20px;
+    padding: 45px;
     border-radius: 15px;
 }
 
 
 .content h1 {
-    font-family: "Copperplate", "Copperplate Gothic Light";
+    font-family: 'Courier New', Courier, monospace;
     color: #ffffff;                         
 }
 
