@@ -55,7 +55,7 @@ body::before
 
 .content {
     text-align: left;
-    font-family: "Copperplate", "Copperplate Gothic Light";
+    font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
     font-size: 18px;
     margin: 45px;
@@ -69,7 +69,7 @@ body::before
 
 
 .content h1 {
-    font-family: "Copperplate", "Copperplate Gothic Light";
+    font-family: 'Courier New', Courier, monospace;
     color: #ffffff;                         
 }
 
