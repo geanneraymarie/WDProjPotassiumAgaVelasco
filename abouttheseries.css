@@ -94,6 +94,27 @@ html::before
     text-align: right;
 }
 
+.char1{
+    align-items:left;
+    width:20%;
+    left:20px;
+}
+.char2{
+    width:20%;
+}
+.char3{
+    width:20%;
+    right:20px;
+}
+.char4{
+    width:20%;
+    left:95px;
+}
+.char5{
+    width:20%;
+    
+}
+
 .characters {
     font-family: 'Courier New', Courier, monospace;
     font-size: 12.5px;
@@ -127,4 +148,18 @@ h2 {
     color: #ffffff;
     text-align: justify;
     margin: 20px;
+}
+
+.char1, .char2, .char3, .char4, .char5 {
+    margin: 20px;
+    padding: 15px;
+    background-color: rgb(163, 183, 248);
+    border-radius: 10px;
+    font-size:30px;
+}
+
+.charfr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
