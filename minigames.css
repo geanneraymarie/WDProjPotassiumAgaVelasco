@@ -94,3 +94,18 @@ body::before
     width: 100px;
     z-index: 999;
 }
+
+#button1 {
+  background-color:rgb(154, 244, 174);
+  border-radius:20px;
+}
+
+#button2 {
+  background-color:rgb(154, 244, 174);
+  border-radius:20px;
+}
+
+#button3 {
+  background-color:rgb(154, 244, 174);
+  border-radius:20px;
+}
