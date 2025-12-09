@@ -1,35 +1,36 @@
 ul
 {
   list-style-type: none;
-  margin: 17px;
-  padding: 15px 30px;
+  margin: 1rem;
+  padding: 1rem 2rem;
   background-color: #1a304e;
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 1.25rem;
   position: fixed;
-  top: 20px;
-  left: 20px;
-  border-radius: 50px;
+  top: 1.25rem;
+  left: 1.25rem;
+  border-radius: 3rem;
   width: fit-content;
+  z-index: 1000;
 }
 
 li a 
 {
-font-size: 25px;
+font-size: 1.6rem;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 30px;
+  padding: .3rem .6rem;
+  border-radius: 2rem;
   transition: background-color .5s;
 }
 
 li a:hover 
 {
   background-color: rgb(255, 255, 255);
-  border-radius: 30px;
+  border-radius: 2rem;
   color:rgb(26, 48, 78)
 }
 
@@ -38,7 +39,7 @@ html
     background-image: url('https://i.pinimg.com/736x/21/ea/04/21ea04c97a6072fd04db4318f99c57b4.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position-y: -375px;
+    background-position-y: -23.438rem;
     margin: 0;
     padding: 0;
 }
@@ -52,43 +53,51 @@ html
 
 .maggie, .geanne {
     overflow: auto;
-    gap: 20px;
-    padding: 20px;
+    gap: 1.25rem;
+    padding: 1.25rem;
     background-color: rgb(255, 255, 255);
-    border-radius: 15px;
+    border-radius: .938rem;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(26, 48, 78);
-    font-size: 20px;
-    margin-top: 120px;
-    margin-left: 60px;
+    font-size: 1.25rem;
+    margin-top: 7.5rem;
+    margin-left: 3.75rem;
 }
 
 .funfacts-img {
     float: left;
-    width: 160px;
-    margin-right: 15px;
-    margin-bottom: 40px;
-    border-radius: 10px;
+    width: 10rem;
+    margin-right: .938rem;
+    margin-bottom: 2.5rem;
+    border-radius: .625rem;
 }
 
 .name {
     display: inline-block;
     vertical-align: top;
     margin: 0;
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-left: 1.875rem;
+    margin-right: .625rem;
 }
 
 .info {
     clear: left;
-    margin-top: 10px;
+    margin-top: .625rem;
 }
 
 .platypus
 {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 200px;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 12.5rem;
     z-index: 999;
+}
+
+h4
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(26, 48, 78);
+  font-size: 0.875rem;
+  text-align: center;
 }

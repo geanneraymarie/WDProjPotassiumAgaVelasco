@@ -1,36 +1,37 @@
 ul
 {
   list-style-type: none;
-  margin: 17px;
-  padding: 15px 30px;
-  background-color: #1a304e;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 1.25rem;
   position: fixed;
-  top: 20px;
-  left: 20px;
-  border-radius: 50px;
+  top: 1.25rem;
+  left: 1.25rem;
+  border-radius: 3rem;
   width: fit-content;
+  z-index: 1000;
 }
 
 li a 
 {
-font-size: 25px;
+font-size: 1.6rem;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(26, 48, 78);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 30px;
+  padding: .3rem .6rem;
+  border-radius: 2rem;
   transition: background-color .5s;
 }
 
 li a:hover 
 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px;
-  color:rgb(26, 48, 78)
+  background-color: rgb(26, 48, 78);
+  border-radius: 2rem;
+  color:rgb(255, 255, 255)
 }
 
 html 
@@ -48,7 +49,7 @@ body::before
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.57);
+    background: rgba(0, 0, 0, 0.25);
     pointer-events: none;
     z-index: -1;
 }
@@ -65,26 +66,91 @@ body::before
     text-align: center;
     font-family: "Copperplate", "Copperplate Gothic Light";
     color: rgb(255, 255, 255);
-    font-size: 18px;
-    margin: 45px;
-    margin-top: 120px;
+    font-size: 1.125rem;
+    margin: 2.81rem;
+    margin-top: 7.5rem;
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     z-index: 1;
-    padding: 20px 20px 20px 20px;
-    border-radius: 15px;
+    padding: 1.25rem;
+    border-radius: .94rem;
 }
 
-.casefile1, .casefile2, .casefile3
+.casefiles
 {
-    margin: 20px;
-    padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 1.25rem;
+}
+
+.casefile1
+{
+    margin: 1.25rem;
+    padding: .94rem;
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    color:#1a304e
+    border-radius: .63rem;
+    color:#1a304e;
+    width: 17.5rem;
+    height: 20rem;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.casefile2
+{
+    margin: 1.25rem;
+    padding: .94rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: .63rem;
+    color:#1a304e;
+    width: 17.5rem;
+    height: 20rem;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.casefile3
+{
+    margin: 1.25rem;
+    padding: .94rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: .63rem;
+    color:#1a304e;
+    width: 17.5rem;
+    height: 20rem;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.level0
+{
+  margin: 1.25rem auto;
+    padding: .94rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: .63rem;
+    color:#1a304e;
+    width: 40rem;
+    height: 7.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content h1 {
     font-family: "Copperplate", "Copperplate Gothic Light";
     color: #ffffff;                         
+}
+
+h4
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  font-size: 0.875rem;
+  text-align: center;
 }

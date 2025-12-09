@@ -1,36 +1,37 @@
 ul
 {
   list-style-type: none;
-  margin: 17px;
-  padding: 15px 30px;
-  background-color: #1a304e;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 1.25rem;
   position: fixed;
-  top: 20px;
-  left: 20px;
-  border-radius: 50px;
+  top: 1.25rem;
+  left: 1.25rem;
+  border-radius: 3rem;
   width: fit-content;
+  z-index: 1000;
 }
 
 li a 
 {
-font-size: 25px;
+font-size: 1.6rem;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(26, 48, 78);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 30px;
+  padding: .3rem .6rem;
+  border-radius: 2rem;
   transition: background-color .5s;
 }
 
 li a:hover 
 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px;
-  color:rgb(26, 48, 78)
+  background-color: rgb(26, 48, 78);
+  border-radius: 2rem;
+  color:rgb(255, 255, 255)
 }
 
 html 
@@ -38,7 +39,7 @@ html
     background-image: url(https://i.pinimg.com/1200x/57/e6/5d/57e65df012fcc791ef1dfb5a2214b77b.jpg);
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position-y: -430px;
+    background-position-y: -26.875rem;
     margin: 0;
     padding: 0;
 }
@@ -48,38 +49,38 @@ html::before
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.57);
+    background: rgba(0, 0, 0, 0.25);
     pointer-events: none;
     z-index: -1;
 }
 
 .content {
-    margin: 40px;
-    margin-top: 150px;
+    margin: 2.5rem;
+    margin-top: 9.375rem;
     position: relative;
     z-index: 1;
-    padding: 20px 20px 20px 20px;
-    border-radius: 15px;
+    padding: 1.25rem;
+    border-radius: .938rem;
     flex-direction: row;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .casefile-image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: .625rem;
+    margin-bottom: .625rem;
 }
 
 .abouttheseries, .abouttheauthor, .characters
 {
-    font-size: 12.5px;
-    margin-bottom: 0px;
+    font-size: .781rem;
+    margin-bottom: 0;
     color:#ffffff;
-    padding: 10px;
-    border-radius: 10px;
-    width: 800px;
+    padding: .625rem;
+    border-radius: .625rem;
+    width: 50rem;
 }
 
 .abouttheseries
@@ -117,11 +118,11 @@ html::before
 
 .characters {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 12.5px;
+    font-size: .781rem;
     text-align: center; 
-    margin-left: 60px;
-    padding: 20px;
-    border-radius: 15px;
+    margin-left: 3.75rem;
+    padding: 1.25rem;
+    border-radius: .938rem;
     background-color: rgba(47, 58, 99, 0.75);
     width: 89%;
     display: block;
@@ -137,25 +138,26 @@ html::before
 .platypus
 {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 200px;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 12.5rem;
     z-index: 999;
 }
+
 
 h2 {
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
     text-align: justify;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 .char1, .char2, .char3, .char4, .char5 {
-    margin: 20px;
-    padding: 15px;
+    margin: 1.25rem;
+    padding: .938rem;
     background-color: rgb(0, 0, 0);
-    border-radius: 10px;
-    font-size:15px;
+    border-radius: .625rem;
+    font-size:.938rem;
     color:#ffffff
 }
 
@@ -166,8 +168,16 @@ h2 {
 }
 
 .char-img {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
-    border-radius: 10px;
-    margin-top: 10px;
+    border-radius: .625rem;
+    margin-top: .625rem;
+}
+
+h4
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  font-size: 0.875rem;
+  text-align: center;
 }

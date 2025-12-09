@@ -1,36 +1,37 @@
 ul
 {
   list-style-type: none;
-  margin: 17px;
-  padding: 15px 30px;
-  background-color: #1a304e;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
   display: flex;
   justify-content: flex-start;
-  gap: 20px;
+  gap: 1.25rem;
   position: fixed;
-  top: 20px;
-  left: 20px;
-  border-radius: 50px;
+  top: 1.25rem;
+  left: 1.25rem;
+  border-radius: 3rem;
   width: fit-content;
+  z-index: 1000;
 }
 
 li a 
 {
-font-size: 25px;
+font-size: 1.6rem;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(99, 208, 71);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 30px;
+  padding: .3rem .6rem;
+  border-radius: 2rem;
   transition: background-color .5s;
 }
 
 li a:hover 
 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 30px;
-  color:rgb(26, 48, 78)
+  background-color: rgb(99, 208, 71);
+  border-radius: 2rem;
+  color:rgb(243, 255, 139)
 }
 
 html 
@@ -38,7 +39,7 @@ html
     background-image: url('https://i.pinimg.com/736x/37/31/be/3731be3de012495d280134f624be4aa7.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
-    background-position-y: -375px;
+    background-position-y: -23.44rem;
     margin: 0;
     padding: 0;
 }
@@ -48,7 +49,7 @@ body::before
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(255, 255, 255, 0.57);
+    background: rgba(0, 0, 0, 0.125);
     pointer-events: none;
     z-index: -1;
 }
@@ -58,54 +59,64 @@ body::before
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap:2rem;
 }
 
 .minigames
 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(99, 208, 71);
-    font-size: 20px;
-    margin-top: 120px;
-    margin-left: 60px;
-    padding: 20px;
-    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    margin-top: 7.5rem;
+    margin-left: 3.75rem;
+    padding: 1.25rem;
+    border-radius: .94rem;
     background-color: rgba(243, 255, 139, .75);
+    width: 35rem;
+    text-shadow: .5rem .5rem 1rem rgb(99, 208, 71);
 }
 
 .funfacts
 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(243, 255, 139);
-    font-size: 20px;
-    margin-top: 120px;
-    margin-left: 60px;
-    padding: 20px;
-    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    margin-top: 7.5rem;
+    margin-right: 3.75rem;
+    padding: 1.25rem;
+    border-radius: .94rem;
     background-color: rgba(99, 208, 71, .75);
+    width: 45rem;
+    text-shadow: .5rem .5rem 1rem rgb(243, 255, 139);
 }
 
 .rontoto 
 {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 100px;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 6.25rem;
     z-index: 999;
 }
 
-#button1 {
-  background-color:rgb(154, 244, 174);
-  border-radius:20px;
+#button1, #button2, #button3{
+  background-color:rgb(99, 208, 71);
+  border-radius:5rem;
+  border-color: rgb(255, 255, 255);
+  border-width: .25rem;
+  width: 12.5rem;
+  height: 3.125rem;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
 }
 
-#button2 {
-  background-color:rgb(154, 244, 174);
-  border-radius:20px;
-}
-
-#button3 {
-  background-color:rgb(154, 244, 174);
-  border-radius:20px;
+h4
+{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  font-size: 0.875rem;
+  text-align: center;
 }
