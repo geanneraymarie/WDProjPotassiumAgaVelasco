@@ -27,7 +27,7 @@ font-size: 1.6rem;
   transition: background-color .5s;
 }
 
-li a:hover 
+li a:hover
 {
   background-color: rgb(26, 48, 78);
   border-radius: 2rem;
@@ -37,9 +37,10 @@ li a:hover
 html 
 {
     background-image: url(https://i.pinimg.com/1200x/57/e6/5d/57e65df012fcc791ef1dfb5a2214b77b.jpg);
-    background-size: cover; 
+    background-size: 100% auto; 
     background-repeat: no-repeat; 
     background-position-y: -26.875rem;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
@@ -61,9 +62,11 @@ html::before
     z-index: 1;
     padding: 1.25rem;
     border-radius: .938rem;
+    display: flex;
     flex-direction: row;
     display: flex;
     gap: 1.25rem;
+    max-height: 100rem;
 }
 
 .casefile-image {
@@ -83,6 +86,7 @@ html::before
     width: 50rem;
 }
 
+
 .abouttheseries
 {
     background-color: rgba(13, 62, 128, .75);
@@ -95,38 +99,32 @@ html::before
     text-align: right;
 }
 
-.char1{
+.char1, .char2, .char3, .char4, .char5, .char6, .char7 {
     align-items:left;
     width:20%;
-    left:20px;
-}
-.char2{
-    width:20%;
-}
-.char3{
-    width:20%;
-    right:20px;
-}
-.char4{
-    width:20%;
-    left:95px;
-}
-.char5{
-    width:20%;
-    
+    left:1.25rem;
+    flex: 0 0 auto;
 }
 
 .characters {
+    gap: 1.25rem;
+    align-items: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: .781rem;
     text-align: center; 
-    margin-left: 3.75rem;
+    margin-left: 0;
+    margin: auto;
     padding: 1.25rem;
     border-radius: .938rem;
     background-color: rgba(47, 58, 99, 0.75);
-    width: 89%;
-    display: block;
+    width: 200rem;
+    flex-direction: row;
+    display: flex;
+    overflow-x: auto;
+    display: inline-flex;
+    gap: 1.25rem;
 }
+
 
 
 .content h1 {
@@ -152,19 +150,22 @@ h2 {
     margin: 1.25rem;
 }
 
-.char1, .char2, .char3, .char4, .char5 {
-    margin: 1.25rem;
+.char1, .char2, .char3, .char4, .char5, .char6, .char7 {
+    margin-right: 1.25rem;
     padding: .938rem;
     background-color: rgb(0, 0, 0);
     border-radius: .625rem;
     font-size:.938rem;
-    color:#ffffff
+    color:#ffffff;
+    max-height: 15rem;
 }
 
 .charfr {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: auto;
+    margin-left: 8rem;
 }
 
 .char-img {
@@ -180,4 +181,48 @@ h4
   color: rgb(255, 255, 255);
   font-size: 0.875rem;
   text-align: center;
+}
+
+details, summary
+{
+     cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+details summary:hover 
+{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+details[open] .toggle-content 
+{
+    margin-top: 0.9rem;
+}
+
+.toggle-content h2 
+{
+    color: #ffffff;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.abouttheseries, .abouttheauthor {
+    max-height: 15rem;
+    overflow-y: auto;
+}
+
+details summary::-webkit-details-marker 
+{
+    display: none;
+
+}
+
+details summary::marker {
+    content: "";
 }

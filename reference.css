@@ -55,7 +55,7 @@ body::before
 }
 
 .content {
-    text-align: left;
+    text-align: center;
     font-family: "Copperplate", "Copperplate Gothic Light";
     color: rgb(255, 255, 255);
     font-size: 1.125rem;

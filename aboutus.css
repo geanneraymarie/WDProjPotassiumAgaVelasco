@@ -49,6 +49,8 @@ html
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 5rem;
 }
 
 .maggie, .geanne {
@@ -60,8 +62,8 @@ html
     font-family: 'Courier New', Courier, monospace;
     color: rgb(26, 48, 78);
     font-size: 1.25rem;
-    margin-top: 7.5rem;
-    margin-left: 3.75rem;
+    margin-top: 10rem;
+    margin-left: 1rem;
     box-shadow: 0 0 1.25rem rgba(29, 53, 78, 0.9);
 }
 
@@ -99,4 +101,12 @@ h4
   color: rgb(26, 48, 78);
   font-size: 0.875rem;
   text-align: center;
+}
+
+.funfacts-img
+{
+    width: 12rem;
+    height: auto;
+    border-radius: .625rem;
+    margin-top: .625rem;
 }
