@@ -62,14 +62,13 @@ html
     font-size: 1.25rem;
     margin-top: 7.5rem;
     margin-left: 3.75rem;
+    box-shadow: 0 0 1.25rem rgba(29, 53, 78, 0.9);
 }
 
-.funfacts-img {
-    float: left;
-    width: 10rem;
-    margin-right: .938rem;
-    margin-bottom: 2.5rem;
-    border-radius: .625rem;
+.maggie:hover, .geanne:hover {
+    background-color: #1a304e;
+    color:rgb(255, 255, 255);
+    box-shadow: 0 0 1.25rem rgba(255, 255, 255, 0.9);
 }
 
 .name {

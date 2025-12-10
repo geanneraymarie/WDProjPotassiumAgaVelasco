@@ -68,7 +68,7 @@ body::before
     color: rgb(255, 255, 255);
     font-size: 1.125rem;
     margin: 2.81rem;
-    margin-top: 7.5rem;
+    margin-top: 9rem;
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     z-index: 1;
@@ -153,4 +153,13 @@ h4
   color: rgb(255, 255, 255);
   font-size: 0.875rem;
   text-align: center;
+}
+
+.platypus
+{
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 12.5rem;
+    z-index: 999;
 }
