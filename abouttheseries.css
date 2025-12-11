@@ -1,12 +1,12 @@
 ul
 {
   list-style-type: none;
-  margin: 1rem;
+  margin: 1.5rem;
   padding: 1rem 2rem;
   background-color: #ffffff;
   display: flex;
   justify-content: flex-start;
-  gap: 1.25rem;
+  gap: 5rem;
   position: fixed;
   top: 1.25rem;
   left: 1.25rem;
@@ -57,7 +57,7 @@ html::before
 
 .content {
     margin: 2.5rem;
-    margin-top: 9.375rem;
+    margin-top: 6.75rem;
     position: relative;
     z-index: 1;
     padding: 1.25rem;
@@ -99,12 +99,6 @@ html::before
     text-align: right;
 }
 
-.char1, .char2, .char3, .char4, .char5, .char6, .char7 {
-    align-items:left;
-    width:20%;
-    left:1.25rem;
-    flex: 0 0 auto;
-}
 
 .characters {
     gap: 1.25rem;
@@ -113,6 +107,7 @@ html::before
     font-size: .781rem;
     text-align: center; 
     margin-left: 0;
+    margin-right: 0;
     margin: auto;
     padding: 1.25rem;
     border-radius: .938rem;
@@ -158,6 +153,10 @@ h2 {
     font-size:.938rem;
     color:#ffffff;
     max-height: 15rem;
+    align-items:left;
+    width:20%;
+    left:1.25rem;
+    flex: 0 0 auto;
 }
 
 .charfr {
@@ -171,6 +170,13 @@ h2 {
 .char-img {
     width: 9.375rem;
     height: auto;
+    border-radius: .625rem;
+    margin-top: .625rem;
+}
+
+#char4img {
+    width: 9.5rem;
+    height: 9.5rem;
     border-radius: .625rem;
     margin-top: .625rem;
 }
