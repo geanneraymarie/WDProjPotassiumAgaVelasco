@@ -99,35 +99,6 @@ html::before
     text-align: right;
 }
 
-
-.charfr {
-    gap: 1.25rem;
-    align-items: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: .781rem;
-    text-align: center; 
-    margin-left: 0;
-    margin-right: 0;
-    margin: auto;
-    padding: 1.25rem;
-    border-radius: .938rem;
-    background-color: rgba(47, 58, 99, 0.75);
-    width: 200rem;
-    flex-direction: row;
-    display: flex;
-    overflow-x: auto;
-    display: inline-flex;
-    gap: 1.25rem;
-}
-
-
-
-.charfr h1 {
-    font-family:'Courier New', Courier, monospace;
-    color: #ffffff;
-    text-align: center;                         
-}
-
 .platypus
 {
     position: absolute;
@@ -157,14 +128,6 @@ h2 {
     width:20%;
     left:1.25rem;
     flex: 0 0 auto;
-}
-
-.charfr {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: auto;
-    margin-left: 8rem;
 }
 
 .char-img {
@@ -251,14 +214,37 @@ details summary::marker {
     animation: fadeIn 1s ease forwards;
 }
 
+.charfr {
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background-color: rgba(47, 58, 99, 0.75);
+    border-radius: .938rem;
+    overflow-x: auto;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: calc(100% - 8rem);
+    box-sizing: border-box;
+}
+
+.charfr details {
+    flex: 0 0 auto;
+    width: 12rem;
+    background-color: rgba(0,0,0);
+    color: #ffffff;
+    border-radius: .625rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+
 @keyframes fadeIn 
 {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
-}
-
-.charfr h1 {
-    text-align: center;
 }
 
 .copyright {
