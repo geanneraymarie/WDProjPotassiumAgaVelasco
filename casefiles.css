@@ -176,3 +176,7 @@ h4
     width: 12.5rem;
     z-index: 999;
 }
+
+.copyright {
+  text-align: center;
+}
