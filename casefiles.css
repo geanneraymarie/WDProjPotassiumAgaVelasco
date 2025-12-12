@@ -22,7 +22,7 @@ font-size: 1.6rem;
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: .3rem .6rem;
+  padding: .6rem .6rem;
   border-radius: 2rem;
   transition: background-color .5s;
 }
