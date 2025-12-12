@@ -6,7 +6,7 @@ ul
   background-color: #ffffff;
   display: flex;
   justify-content: flex-start;
-  gap: 5rem;
+  gap: 4rem;
   position: fixed;
   top: 1.25rem;
   left: 1.25rem;
@@ -22,7 +22,7 @@ font-size: 1.6rem;
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: .6rem .6rem;
+  padding: .6rem .9rem;
   border-radius: 2rem;
   transition: background-color .5s;
 }
@@ -170,11 +170,12 @@ h4
 
 .platypus
 {
-    position: absolute;
+    position: fixed;
     top: 1.25rem;
     right: 1.25rem;
     width: 12.5rem;
-    z-index: 999;
+    z-index: 9999;
+    pointer-events: none;
 }
 
 .copyright {

@@ -6,7 +6,7 @@ ul
   background-color: rgb(27, 30, 26);
   display: flex;
   justify-content: flex-start;
-  gap: 5rem;
+  gap: 4rem;
   position: fixed;
   top: 1.25rem;
   left: 1.25rem;
@@ -22,7 +22,7 @@ font-size: 1.6rem;
   color: rgb(99, 208, 71);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: .6rem .6rem;
+  padding: .6rem .9rem;
   border-radius: 2rem;
   transition: background-color .5s;
 }
@@ -72,6 +72,7 @@ body::before
     margin-left: 3.75rem;
     padding: 1.25rem;
     border-radius: .94rem;
+    font-weight: bold;
     background-color: rgba(243, 255, 139, .75);
     width: 35rem;
     text-shadow: .5rem .5rem 1rem rgb(99, 208, 71);
@@ -85,7 +86,7 @@ body::before
     font-size: 1.25rem;
     margin-top: 7.5rem;
     margin-right: 3.75rem;
-    padding: 1.25rem;
+    padding: 1.5rem;
     border-radius: .94rem;
     background-color: rgba(99, 208, 71, .75);
     width: 45rem;
@@ -95,8 +96,8 @@ body::before
 .rontoto 
 {
     position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
+    top: 8.5rem;
+    right: 5.5rem;
     width: 9.25rem;
     z-index: 999;
 }
@@ -144,4 +145,16 @@ h4
 
 .copyright {
   text-align: center;
+}
+
+.container > * 
+{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn 
+{
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
