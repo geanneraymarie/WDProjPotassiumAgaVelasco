@@ -38,8 +38,8 @@ li a:hover
 .rontoto 
 {
     position: absolute;
-    top: 8.5rem;
-    right: 5.5rem;
+    top: 11.5rem;
+    right: 7rem;
     width: 9.25rem;
     z-index: 999;
 }
@@ -83,7 +83,7 @@ body::before
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap:2rem;
 }
 
@@ -91,9 +91,9 @@ body::before
 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 255, 255);
+    color: rgb(27, 30, 26);
     font-size: 1.25rem;
-    margin-top: 7.5rem;
+    margin-top: 8.65rem;
     margin-left: 3.75rem;
     padding: 1.25rem;
     border-radius: .94rem;
@@ -103,13 +103,19 @@ body::before
     text-shadow: .5rem .5rem 1rem rgb(99, 208, 71);
 }
 
+.funfacts h2
+{
+  text-align: left;
+  margin-left: 2rem;
+}
+
 .funfacts
 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
     font-size: 1.25rem;
-    margin-top: 7.5rem;
+    margin-top: 8.6rem;
     margin-right: 3.75rem;
     padding: 1.5rem;
     border-radius: .94rem;
@@ -128,6 +134,17 @@ body::before
   font-family:'Courier New', Courier, monospace;
   font-size: 1rem;
   color: rgb(255, 255, 255);
+  margin-bottom: 2.5rem;
+}
+
+#button1
+{
+  margin-top: 2.5rem;
+}
+
+#button3
+{
+  margin-bottom: 2.595rem;
 }
 
 #button1:hover{
@@ -149,6 +166,11 @@ body::before
   background-color: rgb(255, 255, 255);
   border-color: rgb(99, 208, 71);
   cursor: pointer;
+}
+
+h3
+{
+  font-size: 1.25rem;
 }
 
 h4

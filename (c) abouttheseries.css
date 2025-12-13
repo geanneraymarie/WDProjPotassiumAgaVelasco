@@ -102,14 +102,17 @@ html::before
 .abouttheseries
 {
     background-color: rgba(13, 62, 128, .75);
-    text-align: left;
+    text-align: left;    
+    flex: 11;
 }
 
 .abouttheauthor
 {
     background-color: rgba(88, 148, 229, .75);
     text-align: right;
+    flex: 7;
 }
+
 
 h2 {
     font-family: 'Courier New', Courier, monospace;
@@ -125,21 +128,35 @@ h2 {
     animation: fadeIn 1s ease forwards;
 }
 
+.charfr h1 {
+    text-align: center;
+    font-size: 2rem;
+    grid-column: 1 / -1;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000000;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding: 1rem 0;
+}
+
 .charfr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: .5rem;
     padding: 1.25rem;
     background-color: rgba(47, 58, 99, 0.75);
     border-radius: .938rem;
     overflow-x: auto;
     width: 100%;
     margin: 0 auto;
-    justify-content: flex-start;
+    justify-content: center;
     box-sizing: border-box;
     width: calc(100% - 8rem);
-    height: 22.5rem;
+    height: 27.5rem;
     box-sizing: border-box;
+
 }
 
 .charfr details {
@@ -158,6 +175,12 @@ h2 {
     text-align: left;
 }
 
+.char1:hover
+{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255)
+}
+
 .char1 > p
 {
     margin-left: 17.5rem;
@@ -168,6 +191,7 @@ h2 {
 .char1 > summary p
 {
     transform: translateY(-5rem);
+    font-size: 1.5rem;
 }
 
 .char2 > p
@@ -180,6 +204,7 @@ h2 {
 .char2 > summary p
 {
     transform: translateY(-5rem);
+    font-size: 1.5rem;
 }
 
 .char3 > p
@@ -192,6 +217,7 @@ h2 {
 .char3 > summary p
 {
     transform: translateY(-5rem);
+    font-size: 1.5rem;
 }
 
 .char4 > p
@@ -204,6 +230,7 @@ h2 {
 .char4 > summary p
 {
     transform: translateY(-5rem);
+    font-size: 1.5rem;
 }
 
 .char5 > p
@@ -216,6 +243,7 @@ h2 {
 .char5 > summary p
 {
     transform: translateY(-5rem);
+    font-size: 1.5rem;
 }
 
 .char6 > p
@@ -228,6 +256,7 @@ h2 {
 .char6 > summary p
 {
     transform: translateY(-5rem);
+    font-size: 1.5rem;
 }
 
 .char7 > p
@@ -240,16 +269,17 @@ h2 {
 .char7 > summary p
 {
     transform: translateY(-5rem);
+    font-size: 1.5rem;
 }
 
 
 
 .char1, .char2, .char3, .char4, .char5, .char6, .char7 {
     margin-right: 1rem;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     border-radius: .625rem;
     font-size:.938rem;
-    color:#ffffff;
+    color:#000000;
     max-height: 17.5rem;
     align-items:left;
     width:35rem;
@@ -275,7 +305,7 @@ details, summary
 {
      cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.25rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #ffffff;
     margin: 1rem;

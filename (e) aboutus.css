@@ -83,6 +83,7 @@ html
     margin-top: 10rem;
     margin-left: 1rem;
     box-shadow: 0 0 1.25rem rgba(255, 255, 255, 0.9);
+    width: 30rem;
 }
 
 .maggie:hover, .geanne:hover {
@@ -129,4 +130,5 @@ h4
 
 .copyright {
   text-align: center;
+  color:rgb(255, 255, 255)
 }
