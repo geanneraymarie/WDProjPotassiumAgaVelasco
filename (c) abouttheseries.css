@@ -1,3 +1,4 @@
+/*navigation bar*/
 ul
 {
   list-style-type: none;
@@ -34,6 +35,24 @@ li a:hover
   color:rgb(255, 255, 255)
 }
 
+.platypus
+{
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 12.5rem;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/*animation*/
+@keyframes fadeIn 
+{
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*background adjustments*/
 html 
 {
     background-image: url(https://i.pinimg.com/1200x/57/e6/5d/57e65df012fcc791ef1dfb5a2214b77b.jpg);
@@ -55,6 +74,7 @@ html::before
     z-index: -1;
 }
 
+/*content*/
 .content {
     margin: 2.5rem;
     margin-top: 6.75rem;
@@ -69,13 +89,6 @@ html::before
     max-height: 100rem;
 }
 
-.casefile-image {
-    width: 100%;
-    height: auto;
-    border-radius: .625rem;
-    margin-bottom: .625rem;
-}
-
 .abouttheseries, .abouttheauthor, .characters
 {
     font-size: .781rem;
@@ -85,7 +98,6 @@ html::before
     border-radius: .625rem;
     width: 50rem;
 }
-
 
 .abouttheseries
 {
@@ -99,17 +111,6 @@ html::before
     text-align: right;
 }
 
-.platypus
-{
-    position: fixed;
-    top: 1.25rem;
-    right: 1.25rem;
-    width: 12.5rem;
-    z-index: 9999;
-    pointer-events: none;
-}
-
-
 h2 {
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
@@ -117,18 +118,142 @@ h2 {
     margin: 1.25rem;
 }
 
+/*character pages*/
+.charfr > * 
+{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.charfr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1.25rem;
+    background-color: rgba(47, 58, 99, 0.75);
+    border-radius: .938rem;
+    overflow-x: auto;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: calc(100% - 8rem);
+    height: 22.5rem;
+    box-sizing: border-box;
+}
+
+.charfr details {
+    flex: 0 0 auto;
+    width: 38rem;
+    background-color: rgba(0,0,0);
+    color: #ffffff;
+    border-radius: .625rem;
+    text-align: left;
+}
+
+.charfr details summary {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.char1 > p
+{
+    margin-left: 17.5rem;
+    padding: 0;
+    transform: translateY(-12rem);
+}
+
+.char1 > summary p
+{
+    transform: translateY(-5rem);
+}
+
+.char2 > p
+{
+    margin-left: 17.5rem;
+    padding: 0;
+    transform: translateY(-12rem);
+}
+
+.char2 > summary p
+{
+    transform: translateY(-5rem);
+}
+
+.char3 > p
+{
+    margin-left: 17.5rem;
+    padding: 0;
+    transform: translateY(-12rem);
+}
+
+.char3 > summary p
+{
+    transform: translateY(-5rem);
+}
+
+.char4 > p
+{
+    margin-left: 18.5rem;
+    padding: 0;
+    transform: translateY(-12rem);
+}
+
+.char4 > summary p
+{
+    transform: translateY(-5rem);
+}
+
+.char5 > p
+{
+    margin-left: 17.5rem;
+    padding: 0;
+    transform: translateY(-12rem);
+}
+
+.char5 > summary p
+{
+    transform: translateY(-5rem);
+}
+
+.char6 > p
+{
+    margin-left: 17.5rem;
+    padding: 0;
+    transform: translateY(-12rem);
+}
+
+.char6 > summary p
+{
+    transform: translateY(-5rem);
+}
+
+.char7 > p
+{
+    margin-left: 17.5rem;
+    padding: 0;
+    transform: translateY(-12rem);
+}
+
+.char7 > summary p
+{
+    transform: translateY(-5rem);
+}
+
+
+
 .char1, .char2, .char3, .char4, .char5, .char6, .char7 {
-    margin-right: 1.25rem;
-    padding: .938rem;
+    margin-right: 1rem;
     background-color: rgb(0, 0, 0);
     border-radius: .625rem;
     font-size:.938rem;
     color:#ffffff;
-    max-height: 35rem;
+    max-height: 17.5rem;
     align-items:left;
-    width:40%;
+    width:35rem;
     left:1.25rem;
-    flex: 0 0 auto;
 }
 
 .char-img {
@@ -136,6 +261,7 @@ h2 {
     height: auto;
     border-radius: .625rem;
     margin-top: .625rem;
+    margin-left: 1rem;
 }
 
 #char4img {
@@ -145,14 +271,6 @@ h2 {
     margin-top: .625rem;
 }
 
-h4
-{
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(255, 255, 255);
-  font-size: 0.875rem;
-  text-align: center;
-}
-
 details, summary
 {
      cursor: pointer;
@@ -160,7 +278,7 @@ details, summary
     font-size: 1.25rem;
     font-weight: bold;
     color: #ffffff;
-    margin: 1rem 0;
+    margin: 1rem;
     text-align: center;
 }
 
@@ -184,6 +302,7 @@ details[open] .toggle-content
 
 .abouttheseries, .abouttheauthor {
     max-height: 15rem;
+    max-width: 75rem;
     overflow-y: auto;
 }
 
@@ -203,50 +322,13 @@ details summary::marker {
     animation: fadeIn 1s ease forwards;
 }
 
-@keyframes fadeIn 
+/*copyright*/
+h4
 {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.charfr > * 
-{
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-}
-
-.charfr {
-    display: flex;
-    flex-direction: row;
-    gap: 1.25rem;
-    padding: 1.25rem;
-    background-color: rgba(47, 58, 99, 0.75);
-    border-radius: .938rem;
-    overflow-x: auto;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    width: calc(100% - 8rem);
-    height: 50rem;
-    box-sizing: border-box;
-}
-
-.charfr details {
-    flex: 0 0 auto;
-    width: 25%;
-    background-color: rgba(0,0,0);
-    color: #ffffff;
-    border-radius: .625rem;
-    padding: .5rem;
-    text-align: center;
-}
-
-
-@keyframes fadeIn 
-{
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  font-size: 0.875rem;
+  text-align: center;
 }
 
 .copyright {

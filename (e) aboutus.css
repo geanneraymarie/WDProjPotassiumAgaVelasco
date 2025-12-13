@@ -1,3 +1,4 @@
+/*navigation bar*/
 ul
 {
   list-style-type: none;
@@ -34,15 +35,33 @@ li a:hover
   color:rgb(255, 255, 255)
 }
 
+.platypus
+{
+    position: absolute;
+    top: 1.25rem;
+    right: 1.25rem;
+    max-width: 12.5%;
+    z-index: 999;
+}
+
+/*animation*/
+@keyframes fadeIn 
+{
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*background adjustments*/
 html 
 {
-    background-image: url('https://static.wikia.nocookie.net/kamono-hashiguchi-no-kindan-suiri/images/3/3d/Ep9_M._Family_headquarters.png/revision/latest/scale-to-width-down/1000?cb=20231128170849');
+    background-image: url('https://i.pinimg.com/736x/7e/cd/27/7ecd27da10dae6c43b543778c22573d0.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     margin: 0;
     padding: 0;
 }
 
+/*content*/
 .container
 {
     display: flex;
@@ -56,19 +75,19 @@ html
     overflow: auto;
     gap: 1.25rem;
     padding: 1.25rem;
-    background-color: rgb(100, 147, 208);
+    background-color: rgb(78, 97, 129);
     border-radius: .938rem;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(26, 48, 78);
+    color: rgb(255, 255, 255);
     font-size: 1.25rem;
     margin-top: 10rem;
     margin-left: 1rem;
-    box-shadow: 0 0 1.25rem rgba(29, 53, 78, 0.9);
+    box-shadow: 0 0 1.25rem rgba(255, 255, 255, 0.9);
 }
 
 .maggie:hover, .geanne:hover {
-    background-color: #1a304e;
-    color:rgb(100, 147, 208);
+    background-color: #ffffff;
+    color:rgb(78, 97, 129);
     box-shadow: 0 0 1.25rem rgba(255, 255, 255, 0.9);
 }
 
@@ -83,15 +102,6 @@ html
 .info {
     clear: left;
     margin-top: .625rem;
-}
-
-.platypus
-{
-    position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    max-width: 12.5%;
-    z-index: 999;
 }
 
 h4
@@ -111,18 +121,12 @@ h4
     margin-top: .625rem;
 }
 
-.copyright {
-  text-align: center;
-}
-
 .container > * 
 {
     opacity: 0;
     animation: fadeIn 1s ease forwards;
 }
 
-@keyframes fadeIn 
-{
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+.copyright {
+  text-align: center;
 }

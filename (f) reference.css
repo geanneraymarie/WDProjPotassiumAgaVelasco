@@ -1,3 +1,4 @@
+/*navigation bar*/
 ul
 {
   list-style-type: none;
@@ -34,6 +35,17 @@ li a:hover
   color:rgb(26, 48, 78)
 }
 
+.platypus
+{
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 12.5rem;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/*background adjustments*/
 html 
 {
     background-image: url('https://i.pinimg.com/736x/54/81/04/54810434339d93d765eb60d5b6e3eb9c.jpg');
@@ -54,6 +66,7 @@ body::before
     z-index: -1;
 }
 
+/*content*/
 .content {
     text-align: center;
     font-family: "Copperplate", "Copperplate Gothic Light";
@@ -72,16 +85,6 @@ body::before
 .content h1 {
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;                         
-}
-
-.platypus
-{
-    position: fixed;
-    top: 1.25rem;
-    right: 1.25rem;
-    width: 12.5rem;
-    z-index: 9999;
-    pointer-events: none;
 }
 
 h4

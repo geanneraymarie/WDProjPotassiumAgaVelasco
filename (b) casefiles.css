@@ -1,3 +1,4 @@
+/*navigation bar*/
 ul
 {
   list-style-type: none;
@@ -31,9 +32,33 @@ li a:hover
 {
   background-color: rgb(26, 48, 78);
   border-radius: 2rem;
-  color:rgb(255, 255, 255)
+  color:rgb(255, 255, 255);
 }
 
+.platypus
+{
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 12.5rem;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/*animation*/
+.content > * 
+{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn 
+{
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/*background adjustments*/
 html 
 {
     background-image: url('https://i.pinimg.com/1200x/8d/96/6d/8d966d8a3f5054b1421449e93859225c.jpg');
@@ -54,6 +79,7 @@ body::before
     z-index: -1;
 }
 
+/*content*/
 .casefiles {
     display: flex;
     flex-direction: row;
@@ -75,19 +101,6 @@ body::before
     padding: 1.25rem;
     border-radius: .94rem;
 }
-
-.content > * 
-{
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn 
-{
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 
 .casefiles
 {
@@ -166,16 +179,6 @@ h4
   color: rgb(255, 255, 255);
   font-size: 0.875rem;
   text-align: center;
-}
-
-.platypus
-{
-    position: fixed;
-    top: 1.25rem;
-    right: 1.25rem;
-    width: 12.5rem;
-    z-index: 9999;
-    pointer-events: none;
 }
 
 .copyright {

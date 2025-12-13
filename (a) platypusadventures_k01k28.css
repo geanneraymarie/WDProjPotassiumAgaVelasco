@@ -1,3 +1,4 @@
+/*navigation bar*/
 ul
 {
   list-style-type: none;
@@ -34,9 +35,34 @@ li a:hover
   color:rgb(255, 255, 255)
 }
 
+.platypus
+{
+    position: fixed;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 12.5rem;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+/*animation*/
+.text {
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: 
+    typing 5s steps(79, end) forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/*background adjustments*/
 html 
 {
-    background-image: url('https://static.wikia.nocookie.net/kamono-hashiguchi-no-kindan-suiri/images/f/f5/Ch1_Maison_du_Kamonohashi.png/revision/latest/scale-to-width-down/1000?cb=20210706224551');
+    background-image: url('https://i.pinimg.com/736x/1d/69/a1/1d69a1f0935db53a3c10dd9f0491aa94.jpg');
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position-y: -3.5px;
@@ -54,6 +80,7 @@ body::before
     z-index: -1;
 }
 
+/*content*/
 .content {
     text-align: left;
     width: 85.75rem;
@@ -69,32 +96,9 @@ body::before
     border-radius: 1rem;
 }
 
-.text {
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: 
-    typing 5s steps(79, end) forwards;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
 .content h1 {
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;                         
-}
-
-.platypus
-{
-    position: fixed;
-    top: 1.25rem;
-    right: 1.25rem;
-    width: 12.5rem;
-    z-index: 9999;
-    pointer-events: none;
 }
 
 h4
