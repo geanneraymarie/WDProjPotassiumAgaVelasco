@@ -109,7 +109,7 @@ body::before
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.25rem;
-  margin: 1rem;
+  margin: 1.25rem;
 }
 
 .level1
