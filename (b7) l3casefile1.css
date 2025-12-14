@@ -86,7 +86,7 @@ body::before
     text-align: center;
     font-family: "Copperplate", "Copperplate Gothic Light";
     color: rgb(255, 255, 255);
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     margin: 2rem;
     margin-top: 2rem;
     background-color: rgba(0, 0, 0, 0.75);
@@ -99,12 +99,12 @@ body::before
 .level0
 {
     margin: auto;
-    padding: .94rem;
-    background-color: rgb(78, 97, 129);
+    padding: 3rem;
+    background-color: rgb(57, 84, 120);
     border-radius: .63rem;
-    color:#ffffff;
-    width: 40rem;
-    height: 10rem;
+    color:rgb(255, 255, 255);
+    width: 80rem;
+    height: 80rem;
     display: flex;
     justify-content: center;
     align-items: center;
