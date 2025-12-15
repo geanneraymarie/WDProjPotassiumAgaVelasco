@@ -13,10 +13,6 @@
         
     </head>
     <body>
-     <audio id="play" autoplay muted loop >
-        <source src="audiothing/mystery-music-loop-226835.mp3" type="audio/mpeg">
-    </audio>
-    <button id="play" onclick="playMusic()">📢 Play Music</button>
     <script src="extras.js"></script>
     <img src="https://drive.google.com/thumbnail?id=1Dmqg-EJBHPm1fhI8YHtUOUZD6uWrKnu5" class="platypus">
     <div class="navbar">
@@ -31,26 +27,29 @@
     </div>
             <div class="content">
             <h1> THE CASE OF THE METROPOLITAN SERIAL DROWNINGS </h1>
+            <script src="casefiles.js"></script>
             <div class="level1">
                 <a href=""></a>
-                <p>"There's only one person that can solve this case," Toto's senior, Kiku, told him.
-                <br/>And that's how Toto found himself at the door of Maison du Kamonohashi. He made his way up to the unit Kiku directed him to.
-                <br/>Kiku had directed him to a private detective who was... rather unconventional. The detective was apparently also the manager of the building, which made him think perhaps he wasn't very successful in solving cases.
-                <br/>Still, Kiku-san had endorsed him. Ron Kamonohashi.
-                <br/>And then again... they were desperate.
-                <br/>As he reached the unit, before he could even ring the doorbell, a voice resounded:
-                <br/>Ron : "Don't get your hopes up. Do it yourself!"
-                <br/>"Huh?!" Toto stepped back in surprise.
-                <br/>"Go back and pray at the shrine again!"
-                <br/>"How did you know that?!" He cleared his throat. "...even if you don't have business with me, I do have business with you! Kiku-san sent me—"
-                <br/>The door creaked open, revealing a messy, unkempt man.
-                <br/>...this was the detective Kiku-san recommended?
-                </p>
+                <button onclick="refreshPage()"> Click to refresh page</button>
+                <button id="firstOne" onclick="l1c1()">Click on this button to view the story!</button>
+                <div id="button1" style="display:none">
+                    <p>"There's only one person that can solve this case," Toto's senior, Kiku, told him.
+                    <br/>And that's how Toto found himself at the door of Maison du Kamonohashi. He made his way up to the unit Kiku directed him to.
+                    <br/>Kiku had directed him to a private detective who was... rather unconventional. The detective was apparently also the manager of the building, which made him think perhaps he wasn't very successful in solving cases.
+                    <br/>Still, Kiku-san had endorsed him. Ron Kamonohashi.
+                    <br/>And then again... they were desperate.
+                    <br/>As he reached the unit, before he could even ring the doorbell, a voice resounded:
+                    <br/>Ron : "Don't get your hopes up. Do it yourself!"
+                    <br/>"Huh?!" Toto stepped back in surprise.
+                    <br/>"Go back and pray at the shrine again!"
+                    <br/>"How did you know that?!" He cleared his throat. "...even if you don't have business with me, I do have business with you! Kiku-san sent me—"
+                    <br/>The door creaked open, revealing a messy, unkempt man.
+                    <br/>...this was the detective Kiku-san recommended?
+                    </p>
 
-                 <script src="casefiles.js"></script>
-                <button id="button1" onclick="l1c1()">THIS?! He looked so different from the image Kiku-san had provided! 
-                He used to look so dapper! Cool! This can't be him! He looked like someone wearing seaweed for hair! His eyes were worse than a dead fish's!</button>
-
+                    <button onclick="l1c1()">THIS?! He looked so different from the image Kiku-san had provided! 
+                        He used to look so dapper! Cool! This can't be him! He looked like someone wearing seaweed for hair! His eyes were worse than a dead fish's!</button>
+                </div>
                 <div id="button2" style="display:none">
                     <p>"Does saying your thoughts out loud satisfy you? Well, anyways, do you want to come in?" Ron asked.
                     <br/>Still, Toto glanced back and forth between Ron and the picture before snapping back to his senses. 
@@ -128,6 +127,15 @@
                 <div id="lastOne" style="display:none">
                     <p>"Wheelchair? What are you talking about? We'll run to the scene... Totomaru Isshiki. The name's too long, though. I'll call you Toto. You can call me Ron."
                     <br/>And so began a lifetime bond between two unlikely friends.
+                    </p>
+                </div>
+
+                <button id="case1Answer" onclick="l1c1()">Click to move on to the case</button>
+                <div id="l1case1" style="display:none">
+                    <p>In the past 9 months, the First Investigative Division of the Metropolitan Police Department has struggled to catch the serial killer who’s been drowning their victims – however, the victims are always found in areas far from water, leaving the question of how they did it.
+                    <br/>The thing the victims all have in common is that they were heading to events wherein they would be expected to look their best – and yet, they all died looking unkempt, aside from all being men. Their valuables were all stolen as well, but no signs of resistance could be spotted on their clothing or body since none had external wounds. They also weren’t drunk. The locations where they were found dead were all over the place, and we could pinpoint possible locations within the area. However, in that area, there is nowhere that has enough water to drown them. 
+                    <br/>Despite the police failing to locate the culprit after months… Ron has already figured it out in minutes.
+                    <br/><br/>Who among the following is the culprit?
                     </p>
                 </div>
             </div>
