@@ -1,4 +1,10 @@
 function l1c1(){
+    //introduces first button for start of story
+    document.getElementById("firstOne").onclick=function(){
+        document.getElementById("button1").style.display="block";
+        this.style.display = "none";
+    }
+    //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
     document.getElementById("button1").onclick=function(){
         document.getElementById("button2").style.display="block";
     }
@@ -36,6 +42,11 @@ function l1c1(){
         document.getElementById("lastOne").style.display="block";
     }
     
+    //this part is for the button that shows the answer portion of the case
+    document.getElementById("case1Answer").onclick=function(){
+        document.getElementById("l1case1").style.display="block";
+        this.style.display = "none";
+    }
 
 }
 function l1c2(){
@@ -52,4 +63,9 @@ function l2c2(){
 }
 function l3(){
 
+}
+
+//reloading the page to clear the website
+function refreshPage(){
+    location.reload();
 }
