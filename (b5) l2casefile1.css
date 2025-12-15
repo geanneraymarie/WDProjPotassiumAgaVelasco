@@ -96,7 +96,7 @@ body::before
     border-radius: .94rem;
 }
 
-.level2
+.level1
 {
     margin: auto;
     padding: 3rem;
@@ -104,8 +104,7 @@ body::before
     border-radius: .63rem;
     color:rgb(255, 255, 255);
     width: 80rem;
-    height: 80rem;
-    display: flex;
+    max-height: fit-content;
     justify-content: center;
     align-items: center;
     border: 0.125rem dashed #ffffff;
