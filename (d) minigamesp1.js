@@ -1,7 +1,8 @@
 function problem1() {
     let outputHEH;
-        
+    //selects a random number to choose a random problem
     const cases1 = Math.floor((Math.random()*4) + 1);
+    //the problems themselvess in window prompts :))
     switch(cases1) {
         case 1:
             let problem11 = prompt("I am a 4-digit number. My thousands digit is twice the ones digit and hundereds digit. The tens digit is thrice the thousands but 6 times the ones and hundereds. What number am I?", "0000");
@@ -65,6 +66,6 @@ function problem1() {
         break;
 
     }
-
+    //outputs the result (if correct or wrong)
     document.getElementById("output1").innerHTML = outputHEH;
 }
