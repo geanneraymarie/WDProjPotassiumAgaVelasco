@@ -1,6 +1,8 @@
 function problem2() {
      let anotherOutput;
+     //selects a random number to choose a random problem
      const cases2 = Math.floor((Math.random()*4) + 1);
+     //the problems themselvess in window prompts :))
      switch(cases2) {
           case 1:
                let problem21 = prompt("Solve: log2(4) + sqrt(256) + (1 x 1 - 1 + 1 + 2 x 7 - 4)      If your answer is less than 4 digits, don't include the 0s in front.","Type answer here");
@@ -61,6 +63,7 @@ function problem2() {
                break;
 
      }
+     //outputs the result (if correct or wrong)
      document.getElementById("output2").innerHTML = anotherOutput;
 }
 
