@@ -1,7 +1,8 @@
 function problem3() {
           let lastOutput;
-        
+          //chooses random number to choose a random case 
           const cases3 = Math.floor((Math.random()*4) + 1);
+          //the problems in window prompts!!
           switch(cases3) {
           case 1:
                let problem31 = prompt("You have 3 red gloves, 6 white gloves, and 4 black gloves. Suddenly, the lights went out, and you couldn't see anything. How many gloves should you take to make sure you have at least one pair of matching gloves?", "Type your answer here");
@@ -61,5 +62,6 @@ function problem3() {
                break;
                
      }
+     //outputs the result (if correct or wrong)
      document.getElementById("output3").innerHTML = lastOutput;
 }
