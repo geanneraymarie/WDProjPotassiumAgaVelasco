@@ -423,6 +423,21 @@ function l3c1(){
     document.getElementById("button31").onclick=function(){
         document.getElementById("button32").style.display="block";
     }
+    document.getElementById("button32").onclick=function(){
+        document.getElementById("button33").style.display="block";
+    }
+    document.getElementById("button33").onclick=function(){
+        document.getElementById("button34").style.display="block";
+    }
+    document.getElementById("button41").onclick=function(){
+        document.getElementById("button35").style.display="block";
+    }
+    document.getElementById("button35").onclick=function(){
+        document.getElementById("button36").style.display="block";
+    }
+    document.getElementById("button36").onclick=function(){
+        document.getElementById("button37").style.display="block";
+    }
 
 }
 
