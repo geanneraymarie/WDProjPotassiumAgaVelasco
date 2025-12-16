@@ -137,98 +137,101 @@
                     <br/><br/>Who among the following is the culprit?
                     </p>
 
-                    <button onclick="l1c1check(this, false)">Masseur</button>
-                    <button onclick="l1c1check(this, true)">Barber</button>
-                    <button onclick="l1c1check(this, false)">Driver</button>
+                    <button onclick="lccheck(this, false)">Masseur</button>
+                    <button onclick="lccheck(this, true)">Barber</button>
+                    <button onclick="lccheck(this, false)">Driver</button>
                     <p id="result"></p>
-                </div>
-                <div id="button13" style="display:none">
-                    <p>“That’s enough, serial killer barber-kun.” Ron called out, as he unlocked the barbershop. 
 
-                    <br/>He had made Toto go to the barber to prove his claim. He made Toto look like the exact type of victim the barber enjoyed – rich. He lockpicked the barbershop just in time to save Toto from becoming another victim. 
 
-                    <br/>“You were about to be killed, it’s a murder method only a barber could use. He made oxygen deficient air by adding hot water to dry ice.”
-                    </p>
+                    <button id="continue" onclick="afterl1c1()"> continuation </button>
+                    <div id="button13" style="display:none">
+                        <p>“That’s enough, serial killer barber-kun.” Ron called out, as he unlocked the barbershop. 
 
-                    <button class="interaction" onclick="l1c1()">“So if I’d inhaled the oxygen-deficient air, I would’ve drowned in the sink…?” He knew what would happen and instructed me sufficiently so that I’d stay alive! “How did you know it was this shop?”</button>
-                </div>
-                
-                <div id="button14" style="display:none">
-                    <p>“He chose first time customers to avoid tracing the crime back to him, so we can restrict it to walk in shops in the area. It was also the only shop you couldn’t see into from the outside which also has easy access to dry ice since there was a nearby resource for it. Barbers talk with their customers, so he could easily find out if the victim had mentioned the barbershop visit to anyone. He chose the ones whose disappearance wouldn’t be traced back to him. He totally took the bait, the evidence is all in Toto’s phone. He’d been recording.” 
+                        <br/>He had made Toto go to the barber to prove his claim. He made Toto look like the exact type of victim the barber enjoyed – rich. He lockpicked the barbershop just in time to save Toto from becoming another victim. 
 
-                    <br/>“Damn it! The cops!” The barber made a run for it, rushing to the rooftop of the building. He tried to escape through the staircase descending down the other side of the building from the rooftop, but Ron had already locked it in anticipation.
-                    </p>
+                        <br/>“You were about to be killed, it’s a murder method only a barber could use. He made oxygen deficient air by adding hot water to dry ice.”
+                        </p>
 
-                    <button class="interaction" onclick="l1c1()">“Why did you kill six people?!” The barber grinned, “For the money obviously! It was a piece of cake! Some rich bastards tricked me before and I ended up with a huge debt from some stocks!”</button>
-                </div>
+                        <button class="interaction" onclick="afterl1c1()">“So if I’d inhaled the oxygen-deficient air, I would’ve drowned in the sink…?” He knew what would happen and instructed me sufficiently so that I’d stay alive! “How did you know it was this shop?”</button>
+                    </div>
+                    
+                    <div id="button14" style="display:none">
+                        <p>“He chose first time customers to avoid tracing the crime back to him, so we can restrict it to walk in shops in the area. It was also the only shop you couldn’t see into from the outside which also has easy access to dry ice since there was a nearby resource for it. Barbers talk with their customers, so he could easily find out if the victim had mentioned the barbershop visit to anyone. He chose the ones whose disappearance wouldn’t be traced back to him. He totally took the bait, the evidence is all in Toto’s phone. He’d been recording.” 
 
-                <div id="button15" style="display:none">
-                    <p>So it was all because of a grudge…?
+                        <br/>“Damn it! The cops!” The barber made a run for it, rushing to the rooftop of the building. He tried to escape through the staircase descending down the other side of the building from the rooftop, but Ron had already locked it in anticipation.
+                        </p>
 
-                    <br/>“Jump.”
+                        <button class="interaction" onclick="afterl1c1()">“Why did you kill six people?!” The barber grinned, “For the money obviously! It was a piece of cake! Some rich bastards tricked me before and I ended up with a huge debt from some stocks!”</button>
+                    </div>
 
-                    <br/>Ron instructed, pointing to the edge of the building. At first the barber showed signs of confusion, but…
+                    <div id="button15" style="display:none">
+                        <p>So it was all because of a grudge…?
 
-                    <br/>“Those who make light of others’ lives have no right to exist in this world.”
+                        <br/>“Jump.”
 
-                    <br/>Ron’s blue eyes sparked in the sunlight, but his stare felt off – as if he was unconscious.
+                        <br/>Ron instructed, pointing to the edge of the building. At first the barber showed signs of confusion, but…
 
-                    <br/>“Jump.” And so the man followed.
+                        <br/>“Those who make light of others’ lives have no right to exist in this world.”
 
-                    <br/>“I’ll jump from here…” The barber got off the rooftop, but Toto followed in time, catching him.
+                        <br/>Ron’s blue eyes sparked in the sunlight, but his stare felt off – as if he was unconscious.
 
-                    <br/>As he held on tightly to the barber, Ron finally snapped back to his senses.
+                        <br/>“Jump.” And so the man followed.
 
-                    <br/>“Toto! Where’s the culprit?!”
-                    </p>
+                        <br/>“I’ll jump from here…” The barber got off the rooftop, but Toto followed in time, catching him.
 
-                    <button class="interaction" onclick="l1c1()">“He jumped after you pressured him!”</button>
-                </div>
+                        <br/>As he held on tightly to the barber, Ron finally snapped back to his senses.
 
-                <div id="button16" style="display:none">
-                     <p>“I guess I’m really not… cut out to be a detective…” Ron was starting to sweat hard, trembling in horror, until Toto snapped him back to reality once again.
+                        <br/>“Toto! Where’s the culprit?!”
+                        </p>
 
-                    <br/>“Quit mumbling and give me a hand!”
+                        <button class="interaction" onclick="afterl1c1()">“He jumped after you pressured him!”</button>
+                    </div>
 
-                    <br/>“The culprit is… alive? Did you save him?!”
-                    </p>
+                    <div id="button16" style="display:none">
+                        <p>“I guess I’m really not… cut out to be a detective…” Ron was starting to sweat hard, trembling in horror, until Toto snapped him back to reality once again.
 
-                    <button class="interaction" onclick="l1c1()"> “Can’t you tell!?”</button>
-                </div>
+                        <br/>“Quit mumbling and give me a hand!”
 
-                <div id="button17" style="display:none">
-                    <p>“How can an officer this stupid help me? He’d risk his own life to save a serial killer without a moment’s hesitation… no! It’s the opposite! It’s because he’s a pure idiot that his body would react faster than his mind!”</p>
-                    <button class="interaction" onclick="l1c1()">“Quit dissing me and help already, Ron!”</button>
-                </div>
+                        <br/>“The culprit is… alive? Did you save him?!”
+                        </p>
 
-                <div id="button18" style="display:none">
-                    <p>Ron finally stepped in, free from all anxiety he’d felt earlier. He had his usual grin back on his face as he caught Toto and the serial killer from falling.
+                        <button class="interaction" onclick="afterl1c1()"> “Can’t you tell!?”</button>
+                    </div>
 
-                    <br/>“I’ve changed my opinion of you! I can feel unlimited possibilities, Toto! I have a great idea!”
+                    <div id="button17" style="display:none">
+                        <p>“How can an officer this stupid help me? He’d risk his own life to save a serial killer without a moment’s hesitation… no! It’s the opposite! It’s because he’s a pure idiot that his body would react faster than his mind!”</p>
+                        <button class="interaction" onclick="afterl1c1()">“Quit dissing me and help already, Ron!”</button>
+                    </div>
 
-                    <br/>- 	-	-	-	-	-	-	-	-	-	-	-
-                    </p>
-                    <button class="interaction" onclick="l1c1()"> “You didn’t tell me your flaw was that you try to kill the culprits you find!”</button>
-                </div>
+                    <div id="button18" style="display:none">
+                        <p>Ron finally stepped in, free from all anxiety he’d felt earlier. He had his usual grin back on his face as he caught Toto and the serial killer from falling.
 
-                <div id="button19" style="display:none">
-                    <p>“I never have any self awareness or memory of it.” He stated. “I’m told I pressure the culprit to death, and when I come to, they’re dead already. My case resolution rate was 100% but my arrest rate was 0%.”
-</p>
-                    <button class="interaction" onclick="l1c1()">“Suddenly I understand why you got banned. That was the right call!”</button>
-                </div>
+                        <br/>“I’ve changed my opinion of you! I can feel unlimited possibilities, Toto! I have a great idea!”
 
-                <div id="button20" style="display:none">
-                    <p>“But you were able to stop my actions. This must be why Kiku sent you. I didn’t need a talented partner, I needed an idiot. Bring me all the cases that come your way. I’ll take responsibility for your brain.”</p>
-                    <button class="interaction" onclick="l1c1()">“huh…?”</button>
-                </div>
+                        <br/>- 	-	-	-	-	-	-	-	-	-	-	-
+                        </p>
+                        <button class="interaction" onclick="afterl1c1()"> “You didn’t tell me your flaw was that you try to kill the culprits you find!”</button>
+                    </div>
 
-                <div id="button21" style="display:none">
-                    <p>“Do you get it, Toto? Starting today, you’ll be a famous detective!”
+                    <div id="button19" style="display:none">
+                        <p>“I never have any self awareness or memory of it.” He stated. “I’m told I pressure the culprit to death, and when I come to, they’re dead already. My case resolution rate was 100% but my arrest rate was 0%.”
+    </p>
+                        <button class="interaction" onclick="afterl1c1()">“Suddenly I understand why you got banned. That was the right call!”</button>
+                    </div>
 
-                    <br/>Ron would come to be a detective, although they had to be careful about it. He would solve the cases for Toto,  and Toto would take the credit – not that Ron minded, all he wanted was to solve mysteries once more.
+                    <div id="button20" style="display:none">
+                        <p>“But you were able to stop my actions. This must be why Kiku sent you. I didn’t need a talented partner, I needed an idiot. Bring me all the cases that come your way. I’ll take responsibility for your brain.”</p>
+                        <button class="interaction" onclick="afterl1c1()">“huh…?”</button>
+                    </div>
 
-                    <br/>And so began a lifetime bond between two unlikely friends. 
-                    </p>
+                    <div id="button21" style="display:none">
+                        <p>“Do you get it, Toto? Starting today, you’ll be a famous detective!”
+
+                        <br/>Ron would come to be a detective, although they had to be careful about it. He would solve the cases for Toto,  and Toto would take the credit – not that Ron minded, all he wanted was to solve mysteries once more.
+
+                        <br/>And so began a lifetime bond between two unlikely friends. 
+                        </p>
+                    </div>
                 </div>
             </div>
         <h4 class="copyright">
