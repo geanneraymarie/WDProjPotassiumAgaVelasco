@@ -31,7 +31,8 @@
             
             <div class="level3">
                 <a href=""></a>
-                <button id="firstOne" onclick="l3c1()">Click on this button to view the story!</button>
+                <button onclick="refreshPage()"> refresh </button>
+                <button id="firstOne" onclick="l3c1()"> start </button>
                 <div id="button1" style="display:none">
                     <p>“I received a letter from 17 years ago.” Ron continued, “Take a look. This was in my mailbox.” The postmark was indeed from 17 years ago, and the writing was faded. The letter was addressed to the manager of Maison du Kamonohashi.
 </p>
@@ -41,7 +42,7 @@
                 <div id="button2" style="display:none">
                     <p>“It’s an invitation to dinner at an auberge. They sent along the menu as a greeting.”
 
-<br/><br/>The menu was filled with super fancy food, and the base is French Cuisine. </p>
+                    <br/><br/>The menu was filled with super fancy food, and the base is French Cuisine. </p>
 
                     <button onclick="l3c1()"> “I suppose strange things like this do happen… who was the manager 17 years ago?”</button>
                 </div>
@@ -351,41 +352,174 @@
 
                     <br/><br/>Ron cut her off, “Are you sure about that?”
                     </p>
-
-                    <button onclick="l3c1()">DIALOGUE</button>
+                    <button onclick="l3c1()">case solving</button>
                 </div>
 
                 <div id="button24" style="display:none">
-                    <p>NON-DIALOGUE</p>
+                    <p>Think back to the previous events and details. So far, what do the two victims have in common?
 
-                    <button onclick="l3c1()">DIALOGUE</button>
+                    <br/><br/>Open ended question.
+                    </p>
+
+                    <button onclick="l3c1()">Answer</button>
                 </div>
 
                 <div id="button25" style="display:none">
-                    <p>NON-DIALOGUE</p>
+                    <p><b>Answer: Their deaths were modeled after the dinner course they all shared.</b></p>
 
-                    <button onclick="l3c1()">DIALOGUE</button>
+                    <button onclick="l3c1()">continuation</button>
                 </div>
 
                 <div id="button26" style="display:none">
-                    <p>NON-DIALOGUE</p>
+                    <p>Toto continued, “Actually, there was a pattern between the 2 murders. Both of them were modeled after the courses on the menu we had last night.”
+                    <br/><br/>Sakai quickly responded, “I don’t know anything about this! I just made the food like I was told! I’m just an employee!”
 
-                    <button onclick="l3c1()">DIALOGUE</button>
-                </div>
-               
-                 <div id="lastOne" style="display:none">
-                    <p>PUT LAST NON-DIALOGUE HERE AHWHHAHAH</p>
+                    <br/><br/>“Perhaps Sakai didn’t know, but Sasaoka did. He said the meal was the exact same one he ate in London 17 years ago with a man who had a crescent birthmark on his cheek who was going to hire him for a job. All of you know him too, right?” Toto and Ron continued.
+
+                    <br/><br/>“All of you know him too, right? There’s no point in playing dumb, aside from Mia, all of you were pretty spooked by the food.” Ron commented. “It was no coincidence that brought all of us here. The food and all of us were specially chosen. There are three more dishes left, forget about the man with the crescent birthmark, if you don’t want to die, start talking. We won’t solve this unless we figure out the connection.” Ron warned.
+
+                    <br/><br/>Tiger started, “I also took a job from that man after meeting him online 17 years ago. He treated me to the same meal. For the job, he wanted me to bring a certain research outside from an academic conference. He said there’d be a pregnant woman nearby, so I just had to casually lead him there. He paid me with an emerald, I sold it for cash though, so i don’t have it anymore.”
+                    </p>
+
+                    <button onclick="l3c1()">“This connects to the job that Sasaoka took!”</button>
                 </div>
 
-                <button id="case1Answer" onclick="l3c1()">Click to move on to the case</button>
-                <div id="l3case1" style="display:none">
-                    <p>Who among the following is the culprit? OR SMTH LIKE THAT</p>
+                <div id="button27" style="display:none">
+                    <p>Ron added, “The researcher was found dead in the Thames a few days later.”
 
-                    <button onclick="l1c1check(this, false)">culprit1</button>
-                    <button onclick="l1c1check(this, true)">culprit2</button>
-                    <button onclick="l1c1check(this, false)">culprit3</button>
-                    <p id="result"></p>
+                    <br/><br/>“Hey, I had nothing to do with his death!” Tiger responded.
+
+                    <br/><br/>“Sasaoka said he dropped the researcher and pregnant woman off at a hospital, you were at the hospital, weren’t you?”
+
+                    <br/><br/>“I met that man 17 years ago too, he treated me to the same dinner, and offered me a job in exchange for an emerald. After examining the woman, I gave the man an anesthesia shot by telling him it was a nutrient supplement, laid him down in the flower bed behind the hospital, and that was the end of my job.”
+                    </p>
+
+                    <button onclick="l3c1()"> “So the three were all connected!”</button>
                 </div>
+
+                <div id="button28" style="display:none">
+                    <p>Ron corrected, “Not just those three. Gardner yelled ‘If only I hadn’t driven my truck that day!’, and Lily showed us her lock picking skills. Those hands probably came in handy.”
+
+                    <br/><br/>Tiger interrupted, “Wait, I lost my wallet last night! You took it, didn’t you?!” 
+
+                    <br/><br/>“Fine, here!” She handed it to him before continuing, “17 years ago in London, like everyone else, I took a job from that man! I was instructed to lock the door of a warehouse. Thinking back, a researcher who was unconscious was brought there from the hospital.
+
+                    <br/><br/>The full picture started to show. 
+                    <br/><br/>“The targeted researcher was at a conference, Tiger Dan got close to him, brought him outside, then they ran into the pregnant woman who was in bad shape and the researcher tried to help her. Then they headed to a hospital in a taxi driven by Sasaoka. Dr. Clark gave the researcher anesthesia, and laid him in a flowerbed, Gardner loaded him into a truck to bring him to the warehouse, the one Lily used her lock picking skills on. Finally, the man with the crescent birthmark appeared and murdered the researcher before dumping his body in the Thames.” Ron deduced.
+
+                    </p>
+
+                    <button onclick="l3c1()">“We don’t know that for sure yet, and… Sakai and Mia aren’t connected.”</button>
+                </div>
+
+                <div id="button29" style="display:none">
+                    <p>“Sakai does seem like he was just chosen to be the chef for this, but Mia was there.”</p>
+
+                    <button onclick="l3c1()">“Huh?”</button>
+                </div>
+
+                <div id="button30" style="display:none">
+                    <p>“She was the baby carried by the pregnant woman.”
+
+                    <br/><br/>Mia remarked, “It is true that I’m 17 years old, and I have an emerald keepsake, and my mom said she made a mistake when she was pregnant with me… I can’t believe she got involved in a crime though…”
+
+                    <br/><br/>Clark responded, “She was probably just as clueless as the rest of us. Nobody could’ve known that Dr. Jim Gore would be killed-”
+
+                    <br/><br/>Ron exclaimed, “This case was the Jim Gore murder case?!” 
+                    </p>
+
+                    <button onclick="l3c1()">You know about it?”</button>
+                </div>
+
+                <div id="button31" style="display:none">
+                    <p>“At BLUE, this case is one of the few I know of that’s regarded as the work of the M family.”</p>
+
+                    <button onclick="l3c1()">The man with the crescent birthmark is connected to the M family?! But if the man is Ron’s father, then… Ron!</button>
+                </div>
+
+                <div id="button32" style="display:none">
+                    <p>
+                    <br/><br/>- 	-	-	-	-	-	-	-	-	-	-	-
+
+                    <br/><br/>Back in England, Milo grinned to himself.
+
+                    <br/><br/>“To think, this day has finally come after 17 years… dinner is just getting started, Ron Kamonohashi.”
+                    <br/><br/>“If all of us are connected to Dr. Gore’s murder… What's Ron’s connection?” Dr. Clark asked.
+
+                    <br/><br/>Lily repeated, “I’ve been thinking this the whole time but you look just like that man!”
+
+                    <br/><br/>“Now that you mention it, that man poured maple syrup on his food like Kamonohashi does with brown sugar.”
+
+                    <br/><br/>“What are you to that vile murderer?!” Lily exclaimed, and the others followed in pointing fingers at Ron.
+
+                    <br/><br/>“Are you doing the same thing as that man?! Are you the one behind the murders?!”
+                    </p>
+
+                    <button onclick="l3c1()">“Of course not! Ron was with me during the times of the crimes! While all the people invited are connected to that murder, and it’s true that Ron’s father had a crescent birth mark as well, he was dead by the time Ron was born! Besides, he was just a child 17 years ago!” </button>
+                </div>
+
+                <div id="button33" style="display:none">
+                    <p>“How are we supposed to believe that?!”
+
+                    <br/><br/>“It could be all made up?!”
+
+                    <br/><br/>Tiger interrupted, “In Kamonohashi’s defense, I’d like to remind you that everyone’s story would be just as suspect.”
+                    </p>
+
+                    <button onclick="l3c1()">“Our top priority is preventing the next murder.”</button>
+                </div>
+
+                <div id="button34" style="display:none">
+                    <p>Mia asked, “Are we sure we’re the only ones in this auberge?”
+
+                    <br/><br/>Lily commented, “The murderer could be hiding somewhere!”
+                    </p>
+                    <button onclick="l3c1()">“Are there any rooms not being used?”</button>
+                </div>
+
+                <div id="button35" style="display:none">
+                    <p>Sakai replied, “Yes, but the doors are all locked.”
+
+                    <br/><br/>“I’ll pick the locks. Let’s look.” Lily said.
+
+                    <br/><br/>But then the other guests commented, saying that they were getting exhausted, so only Lily, Ron, Toto, and Mia went.
+
+                    <br/><br/>They checked all of the rooms, but nothing was off. Mia and Lily decided to go back to their own rooms, and Ron and Toto were left alone. 
+
+                    <br/><br/>“Thanks for your help earlier, Toto.”
+                    </p>
+                    <button onclick="l3c1()">“Don’t sweat it, Ron.”</button>
+                </div>
+
+                <div id="button36" style="display:none">
+                    <p>“How can I not? The man has too many common traits with my father, and I’m starting to get the feeling that my father was still alive 17 years ago. I told you I was missing memories from my childhood, but earlier, I got a clear glimpse of a memory of him. My father was a cunning criminal who got others wrapped up in a murder, I’m a cunning hypocrite who had inconvenient memories erased, and on top of that, the M family is connected to Dr. Gore’s murder- wait. There’s another door here.”</p>
+                    <button onclick="l3c1()">“You’re right! But Lily has already left…” </button>
+                </div>
+
+                <div id="button37" style="display:none">
+                    <p>“I’m good at picking locks too, remember? But this door isn’t even locked… hmm, it’s a storage room.”
+
+                    <br/><br/>The room looked like a storage room for party and holiday decoration – but a familiar emerald stood out, on top of a picture frame…
+
+                    <br/><br/>As Ron lifted it, the face of the father he’d seen in his memories was on the image – the man with the crescent birth mark.
+
+                    <br/><br/><br/><br/>“Father…?”
+                    </p>
+                    <button onclick="l3c1()">“Is that him?! He definitely looks like you-”</button>
+                </div>
+
+                <div id="button38" style="display:none">
+                    <p><i>“I don’t wanna pick locks anymore, daddy!”</i></p>
+                    <button onclick="l3c1()">“That child in the audio recording is you?!”</button>
+                </div>
+
+                <div id="button39" style="display:none">
+                    <p>“That’s my boy! The son of Eliot Moriarty!” I didn’t expect you to unlock 100 different locks this fast! Great job, buddy!”
+
+                    <br/><br/>“Father… just called himself Eliot Moriarty…’
+                    </p>
+                </div>
+
             </div>
         <h4 class="copyright">
         &copy; <span id="year"></span> Geanne Aga. Maggie Velasco. All rights reserved.
