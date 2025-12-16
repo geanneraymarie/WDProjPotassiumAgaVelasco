@@ -245,6 +245,15 @@ function l2c1(){
         document.getElementById("lastHEH").style.display="block";
     }
 
+}
+
+//level 2 case 2
+function l2c2(){
+    //introduces first button for start of story
+    document.getElementById("firstOne").onclick=function(){
+        document.getElementById("button14").style.display="block";
+        this.style.display = "none";
+    }
     document.getElementById("button14").onclick=function(){
         document.getElementById("lastOne").style.display="block";
     }
@@ -252,20 +261,6 @@ function l2c1(){
     document.getElementById("case1Answer").onclick=function(){
         document.getElementById("l2case1").style.display="block";
         this.style.display = "none";
-    }
-
-    
-    document.getElementById("button15").onclick=function(){
-        document.getElementById("button16").style.display="block";
-    }
-    document.getElementById("button16").onclick=function(){
-        document.getElementById("button17").style.display="block";
-    }
-    document.getElementById("button17").onclick=function(){
-        document.getElementById("button18").style.display="block";
-    }
-    document.getElementById("button18").onclick=function(){
-        document.getElementById("lastOne").style.display="block";
     }
 
     //this part is for the button that shows the answer portion of the case
@@ -276,11 +271,29 @@ function l2c1(){
 
 }
 
-//after the case analysis of level 2 case 1
+//after the case analysis of level 2 case 2
 function afterl2c1(){
-    document.getElementById("continue").onclick=function(){
-        document.getElementById("button19").style.display="block";
+     document.getElementById("continue").onclick=function(){
+        document.getElementById("button15").style.display="block";
         this.style.display = "none";
+    }
+    document.getElementById("button15").onclick=function(){
+        document.getElementById("button16").style.display="block";
+    }
+    document.getElementById("button16").onclick=function(){
+        document.getElementById("button17").style.display="block";
+    }
+    document.getElementById("button17").onclick=function(){
+        document.getElementById("button18").style.display="block";
+    }
+    document.getElementById("button18").onclick=function(){
+        document.getElementById("lastOneTRUST").style.display="block";
+    }
+    document.getElementById("lastOneTRUST").onclick=function(){
+        document.getElementById("nextOne").style.display="block";
+    }
+    document.getElementById("nextOne").onclick=function(){
+        document.getElementById("button19").style.display="block";
     }
     document.getElementById("button19").onclick=function(){
         document.getElementById("button20").style.display="block";
@@ -308,60 +321,9 @@ function afterl2c1(){
     }
 }
 
-//level 2 case 2
-function l2c2(){
-    //introduces first button for start of story
-    document.getElementById("firstOne").onclick=function(){
-        document.getElementById("button1").style.display="block";
-        this.style.display = "none";
-    }
-    //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
-    document.getElementById("button1").onclick=function(){
-        document.getElementById("button2").style.display="block";
-    }
-    document.getElementById("button2").onclick=function(){
-        document.getElementById("button3").style.display="block";
-    }
-    document.getElementById("button3").onclick=function(){
-        document.getElementById("lastOne").style.display="block";
-    }
-
-    //this part is for the button that shows the answer portion of the case
-    document.getElementById("case2Answer").onclick=function(){
-        document.getElementById("l2case2").style.display="block";
-        this.style.display = "none";
-    }
-
-}
-
-//after the case analysis of level 2 case 2
-function afterl2c2(){
-     //introduces first button for start of story
-    document.getElementById("firstOne").onclick=function(){
-        document.getElementById("button1").style.display="block";
-        this.style.display = "none";
-    }
-    //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
-    document.getElementById("button1").onclick=function(){
-        document.getElementById("button2").style.display="block";
-    }
-    document.getElementById("button2").onclick=function(){
-        document.getElementById("button3").style.display="block";
-    }
-    document.getElementById("button3").onclick=function(){
-        document.getElementById("lastOne").style.display="block";
-    }
-
-    //this part is for the button that shows the answer portion of the case
-    document.getElementById("case2Answer").onclick=function(){
-        document.getElementById("l2case2").style.display="block";
-        this.style.display = "none";
-    }
-
-}
 
 //level 3 yayyy
-function l3(){
+function l3c1(){
      //introduces first button for start of story
     document.getElementById("firstOne").onclick=function(){
         document.getElementById("button1").style.display="block";
@@ -375,40 +337,93 @@ function l3(){
         document.getElementById("button3").style.display="block";
     }
     document.getElementById("button3").onclick=function(){
-        document.getElementById("lastOne").style.display="block";
+        document.getElementById("button4").style.display="block";
+    }
+    document.getElementById("button4").onclick=function(){
+        document.getElementById("button5").style.display="block";
+    }
+    document.getElementById("button5").onclick=function(){
+        document.getElementById("button6").style.display="block";
+    }
+    document.getElementById("button6").onclick=function(){
+        document.getElementById("button7").style.display="block";
+    }
+    document.getElementById("button7").onclick=function(){
+        document.getElementById("button8").style.display="block";
+    }
+    document.getElementById("button8").onclick=function(){
+        document.getElementById("button9").style.display="block";
+    }
+    document.getElementById("button9").onclick=function(){
+        document.getElementById("button10").style.display="block";
+    }
+    document.getElementById("button10").onclick=function(){
+        document.getElementById("button11").style.display="block";
+    }
+    document.getElementById("button11").onclick=function(){
+        document.getElementById("button12").style.display="block";
+    }
+    document.getElementById("button12").onclick=function(){
+        document.getElementById("button13").style.display="block";
+    }
+    document.getElementById("button13").onclick=function(){
+        document.getElementById("button14").style.display="block";
+    }
+    document.getElementById("button14").onclick=function(){
+        document.getElementById("button15").style.display="block";
+    }
+    document.getElementById("button15").onclick=function(){
+        document.getElementById("button16").style.display="block";
+    }
+    document.getElementById("button16").onclick=function(){
+        document.getElementById("button17").style.display="block";
+    }
+    document.getElementById("button17").onclick=function(){
+        document.getElementById("button18").style.display="block";
+    }
+    document.getElementById("button18").onclick=function(){
+        document.getElementById("button19").style.display="block";
+    }
+    document.getElementById("button19").onclick=function(){
+        document.getElementById("button20").style.display="block";
+    }
+    document.getElementById("button20").onclick=function(){
+        document.getElementById("button21").style.display="block";
+    }
+    document.getElementById("button21").onclick=function(){
+        document.getElementById("button22").style.display="block";
+    }
+    document.getElementById("button22").onclick=function(){
+        document.getElementById("button23").style.display="block";
+    }
+    document.getElementById("button23").onclick=function(){
+        document.getElementById("button24").style.display="block";
+    }
+    document.getElementById("button24").onclick=function(){
+        document.getElementById("button25").style.display="block";
+    }
+    document.getElementById("button25").onclick=function(){
+        document.getElementById("button26").style.display="block";
+    }
+    document.getElementById("button26").onclick=function(){
+        document.getElementById("button27").style.display="block";
+    }
+    document.getElementById("button27").onclick=function(){
+        document.getElementById("button28").style.display="block";
+    }
+    document.getElementById("button28").onclick=function(){
+        document.getElementById("button29").style.display="block";
+    }
+    document.getElementById("button29").onclick=function(){
+        document.getElementById("button30").style.display="block";
+    }
+    document.getElementById("button30").onclick=function(){
+        document.getElementById("button31").style.display="block";
+    }
+    document.getElementById("button31").onclick=function(){
+        document.getElementById("button32").style.display="block";
     }
 
-    //this part is for the button that shows the answer portion of the case
-    document.getElementById("case1Answer").onclick=function(){
-        document.getElementById("l3case1").style.display="block";
-        this.style.display = "none";
-    }
-
-}
-
-//after the case analysis of level 3
-function afterl3(){
-     //introduces first button for start of story
-    document.getElementById("firstOne").onclick=function(){
-        document.getElementById("button1").style.display="block";
-        this.style.display = "none";
-    }
-    //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
-    document.getElementById("button1").onclick=function(){
-        document.getElementById("button2").style.display="block";
-    }
-    document.getElementById("button2").onclick=function(){
-        document.getElementById("button3").style.display="block";
-    }
-    document.getElementById("button3").onclick=function(){
-        document.getElementById("lastOne").style.display="block";
-    }
-
-    //this part is for the button that shows the answer portion of the case
-    document.getElementById("case2Answer").onclick=function(){
-        document.getElementById("l2case2").style.display="block";
-        this.style.display = "none";
-    }
 }
 
 
