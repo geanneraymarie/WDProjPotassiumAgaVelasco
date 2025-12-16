@@ -121,8 +121,19 @@ function l1c3(){
         document.getElementById("button3").style.display="block";
     }
     document.getElementById("button3").onclick=function(){
+        document.getElementById("button4").style.display="block";
+    }
+    document.getElementById("button4").onclick=function(){
+        document.getElementById("button5").style.display="block";
+    }
+    document.getElementById("button5").onclick=function(){
+        document.getElementById("button6").style.display="block";
+    }
+    document.getElementById("button6").onclick=function(){
         document.getElementById("lastOne").style.display="block";
     }
+
+
 
     //this part is for the button that shows the answer portion of the case
     document.getElementById("case3Answer").onclick=function(){
