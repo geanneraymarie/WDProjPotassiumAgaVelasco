@@ -242,11 +242,19 @@ function l2c1(){
         document.getElementById("button13").style.display="block";
     }
     document.getElementById("button13").onclick=function(){
-        document.getElementById("button14").style.display="block";
+        document.getElementById("lastHEH").style.display="block";
     }
+
     document.getElementById("button14").onclick=function(){
-        document.getElementById("button15").style.display="block";
+        document.getElementById("lastOne").style.display="block";
     }
+    //this part is for the button that shows the answer portion of the case
+    document.getElementById("case1Answer").onclick=function(){
+        document.getElementById("l2case1").style.display="block";
+        this.style.display = "none";
+    }
+
+    
     document.getElementById("button15").onclick=function(){
         document.getElementById("button16").style.display="block";
     }
