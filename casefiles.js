@@ -48,8 +48,40 @@ function l1c1(){
         document.getElementById("l1case1").style.display="block";
         this.style.display = "none";
     }
-//level 1 case 2
 }
+//after the case analysis of level 1 case 1
+function afterl1c1(){
+    document.getElementById("continue").onclick=function(){
+        document.getElementById("button13").style.display="block";
+        this.style.display = "none";
+    }
+    document.getElementById("button13").onclick=function(){
+        document.getElementById("button14").style.display="block";
+        this.style.display = "none";
+    }
+    document.getElementById("button14").onclick=function(){
+        document.getElementById("button15").style.display="block";
+    }
+    document.getElementById("button15").onclick=function(){
+        document.getElementById("button16").style.display="block";
+    }
+    document.getElementById("button16").onclick=function(){
+        document.getElementById("button17").style.display="block";
+    }
+    document.getElementById("button17").onclick=function(){
+        document.getElementById("button18").style.display="block";
+    }
+    document.getElementById("button18").onclick=function(){
+        document.getElementById("button19").style.display="block";
+    }
+    document.getElementById("button19").onclick=function(){
+        document.getElementById("button20").style.display="block";
+    }
+    document.getElementById("button20").onclick=function(){
+        document.getElementById("button21").style.display="block";
+    }
+}
+//level 1 case 2
 function l1c2(){
     //introduces first button for start of story
     document.getElementById("firstOne").onclick=function(){
@@ -214,6 +246,18 @@ function l3(){
         this.style.display = "none";
     }
 
+}
+
+function lccheck(btn, rOW){
+    const output=document.getElementById("result");
+    if(rOW){
+        output.innerText="Correct";
+        output.style.color="green";
+    }
+    else {
+        output.innerText="Wrong";
+        output.style.color="red";
+    }
 }
 
 //reloading the page to clear the website
