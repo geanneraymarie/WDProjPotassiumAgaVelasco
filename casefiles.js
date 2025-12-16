@@ -229,6 +229,36 @@ function l2c1(){
     document.getElementById("button8").onclick=function(){
         document.getElementById("button9").style.display="block";
     }
+    document.getElementById("button9").onclick=function(){
+        document.getElementById("button10").style.display="block";
+    }
+    document.getElementById("button10").onclick=function(){
+        document.getElementById("button11").style.display="block";
+    }
+    document.getElementById("button11").onclick=function(){
+        document.getElementById("button12").style.display="block";
+    }
+    document.getElementById("button12").onclick=function(){
+        document.getElementById("button13").style.display="block";
+    }
+    document.getElementById("button13").onclick=function(){
+        document.getElementById("button14").style.display="block";
+    }
+    document.getElementById("button14").onclick=function(){
+        document.getElementById("button15").style.display="block";
+    }
+    document.getElementById("button15").onclick=function(){
+        document.getElementById("button16").style.display="block";
+    }
+    document.getElementById("button16").onclick=function(){
+        document.getElementById("button17").style.display="block";
+    }
+    document.getElementById("button17").onclick=function(){
+        document.getElementById("button18").style.display="block";
+    }
+    document.getElementById("button18").onclick=function(){
+        document.getElementById("lastOne").style.display="block";
+    }
 
     //this part is for the button that shows the answer portion of the case
     document.getElementById("case1Answer").onclick=function(){
@@ -241,11 +271,32 @@ function l2c1(){
 //after the case analysis of level 2 case 1
 function afterl2c1(){
     document.getElementById("continue").onclick=function(){
-        document.getElementById("button7").style.display="block";
+        document.getElementById("button19").style.display="block";
         this.style.display = "none";
     }
-    document.getElementById("button7").onclick=function(){
-        document.getElementById("button8").style.display="block";
+    document.getElementById("button19").onclick=function(){
+        document.getElementById("button20").style.display="block";
+    }
+    document.getElementById("button20").onclick=function(){
+        document.getElementById("button21").style.display="block";
+    }
+    document.getElementById("button21").onclick=function(){
+        document.getElementById("button22").style.display="block";
+    }
+    document.getElementById("button22").onclick=function(){
+        document.getElementById("button23").style.display="block";
+    }
+    document.getElementById("button23").onclick=function(){
+        document.getElementById("button24").style.display="block";
+    }
+    document.getElementById("button24").onclick=function(){
+        document.getElementById("button25").style.display="block";
+    }
+    document.getElementById("button25").onclick=function(){
+        document.getElementById("button26").style.display="block";
+    }
+    document.getElementById("button26").onclick=function(){
+        document.getElementById("button27").style.display="block";
     }
 }
 
