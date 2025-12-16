@@ -49,6 +49,7 @@ function l1c1(){
         this.style.display = "none";
     }
 }
+
 //after the case analysis of level 1 case 1
 function afterl1c1(){
     document.getElementById("continue").onclick=function(){
@@ -80,6 +81,7 @@ function afterl1c1(){
         document.getElementById("button21").style.display="block";
     }
 }
+
 //level 1 case 2
 function l1c2(){
     //introduces first button for start of story
@@ -138,6 +140,7 @@ function l1c2(){
     }
 }
 
+//after the case analysis of level 1 case 2
 function afterl1c2(){
     document.getElementById("continue").onclick=function(){
         document.getElementById("button15").style.display="block";
@@ -175,8 +178,6 @@ function l1c3(){
         document.getElementById("lastOne").style.display="block";
     }
 
-
-
     //this part is for the button that shows the answer portion of the case
     document.getElementById("case3Answer").onclick=function(){
         document.getElementById("l1case3").style.display="block";
@@ -185,6 +186,7 @@ function l1c3(){
 
 }
 
+//after the case analysis of level 1 case 3
 function afterl1c3(){
     document.getElementById("continue").onclick=function(){
         document.getElementById("button7").style.display="block";
@@ -210,7 +212,22 @@ function l2c1(){
         document.getElementById("button3").style.display="block";
     }
     document.getElementById("button3").onclick=function(){
-        document.getElementById("lastOne").style.display="block";
+        document.getElementById("button4").style.display="block";
+    }
+    document.getElementById("button4").onclick=function(){
+        document.getElementById("button5").style.display="block";
+    }
+    document.getElementById("button5").onclick=function(){
+        document.getElementById("button6").style.display="block";
+    }
+    document.getElementById("button6").onclick=function(){
+        document.getElementById("button7").style.display="block";
+    }
+    document.getElementById("button7").onclick=function(){
+        document.getElementById("button8").style.display="block";
+    }
+    document.getElementById("button8").onclick=function(){
+        document.getElementById("button9").style.display="block";
     }
 
     //this part is for the button that shows the answer portion of the case
@@ -220,7 +237,46 @@ function l2c1(){
     }
 
 }
+
+//after the case analysis of level 2 case 1
+function afterl2c1(){
+    document.getElementById("continue").onclick=function(){
+        document.getElementById("button7").style.display="block";
+        this.style.display = "none";
+    }
+    document.getElementById("button7").onclick=function(){
+        document.getElementById("button8").style.display="block";
+    }
+}
+
+//level 2 case 2
 function l2c2(){
+    //introduces first button for start of story
+    document.getElementById("firstOne").onclick=function(){
+        document.getElementById("button1").style.display="block";
+        this.style.display = "none";
+    }
+    //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
+    document.getElementById("button1").onclick=function(){
+        document.getElementById("button2").style.display="block";
+    }
+    document.getElementById("button2").onclick=function(){
+        document.getElementById("button3").style.display="block";
+    }
+    document.getElementById("button3").onclick=function(){
+        document.getElementById("lastOne").style.display="block";
+    }
+
+    //this part is for the button that shows the answer portion of the case
+    document.getElementById("case2Answer").onclick=function(){
+        document.getElementById("l2case2").style.display="block";
+        this.style.display = "none";
+    }
+
+}
+
+//after the case analysis of level 2 case 2
+function afterl2c2(){
      //introduces first button for start of story
     document.getElementById("firstOne").onclick=function(){
         document.getElementById("button1").style.display="block";
@@ -244,6 +300,8 @@ function l2c2(){
     }
 
 }
+
+//level 3 yayyy
 function l3(){
      //introduces first button for start of story
     document.getElementById("firstOne").onclick=function(){
@@ -269,6 +327,33 @@ function l3(){
 
 }
 
+//after the case analysis of level 3
+function afterl3(){
+     //introduces first button for start of story
+    document.getElementById("firstOne").onclick=function(){
+        document.getElementById("button1").style.display="block";
+        this.style.display = "none";
+    }
+    //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
+    document.getElementById("button1").onclick=function(){
+        document.getElementById("button2").style.display="block";
+    }
+    document.getElementById("button2").onclick=function(){
+        document.getElementById("button3").style.display="block";
+    }
+    document.getElementById("button3").onclick=function(){
+        document.getElementById("lastOne").style.display="block";
+    }
+
+    //this part is for the button that shows the answer portion of the case
+    document.getElementById("case2Answer").onclick=function(){
+        document.getElementById("l2case2").style.display="block";
+        this.style.display = "none";
+    }
+}
+
+
+//this outputs if the user clicked the right button in answering who is the culprit
 function lccheck(btn, rOW){
     const output=document.getElementById("result");
     if(rOW){
