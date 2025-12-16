@@ -57,7 +57,6 @@ function afterl1c1(){
     }
     document.getElementById("button13").onclick=function(){
         document.getElementById("button14").style.display="block";
-        this.style.display = "none";
     }
     document.getElementById("button14").onclick=function(){
         document.getElementById("button15").style.display="block";
@@ -137,8 +136,19 @@ function l1c2(){
         document.getElementById("l1case2").style.display="block";
         this.style.display = "none";
     }
-//level 1 case 3
 }
+
+function afterl1c2(){
+    document.getElementById("continue").onclick=function(){
+        document.getElementById("button15").style.display="block";
+        this.style.display = "none";
+    }
+    document.getElementById("button15").onclick=function(){
+        document.getElementById("button16").style.display="block";
+    }
+}
+
+//level 1 case 3
 function l1c3(){
     //introduces first button for start of story
     document.getElementById("firstOne").onclick=function(){
