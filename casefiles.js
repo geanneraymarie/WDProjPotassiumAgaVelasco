@@ -183,8 +183,19 @@ function l1c3(){
         this.style.display = "none";
     }
 
-//level 2 case 1
 }
+
+function afterl1c3(){
+    document.getElementById("continue").onclick=function(){
+        document.getElementById("button7").style.display="block";
+        this.style.display = "none";
+    }
+    document.getElementById("button7").onclick=function(){
+        document.getElementById("button8").style.display="block";
+    }
+}
+
+//level 2 case 1
 function l2c1(){
      //introduces first button for start of story
     document.getElementById("firstOne").onclick=function(){
