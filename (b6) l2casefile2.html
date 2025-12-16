@@ -30,7 +30,8 @@
             <script src="casefiles.js"></script>
             <div class="level2">
                 <a href=""></a>
-                <button id="firstOne" onclick="l2c2()">Click on this button to view the story!</button>
+                <button onclick="refreshPage()"> refresh </button>
+                <button id="firstOne" onclick="l2c2()"> start </button>
                 <div id="button1" style="display:none">
                     <p>NON-DIALOGUE</p>
 
@@ -46,7 +47,8 @@
 
                     <button onclick="l2c2()">DIALOGUE</button>
                 </div>
-                <!--COPY PASTE THESE NALANG AND EDIT THE BUTTON NAMES LIKE BUTTON4, BUTTON5, ETC.-->
+
+
                
                  <div id="lastOne" style="display:none">
                     <p>PUT LAST NON-DIALOGUE HERE AHWHHAHAH</p>
@@ -60,6 +62,15 @@
                     <button onclick="l1c1check(this, true)">culprit2</button>
                     <button onclick="l1c1check(this, false)">culprit3</button>
                     <p id="result"></p>
+                    
+                    <button id="continue" onclick="afterl2c2()"> continuation </button>
+                    <div id="button7" style="display:none">
+                        <p></p>
+
+                        <button class="interaction" onclick="afterl2c2()"></button>
+                    </div>
+
+
                 </div>
 
 
