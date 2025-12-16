@@ -438,6 +438,12 @@ function l3c1(){
     document.getElementById("button36").onclick=function(){
         document.getElementById("button37").style.display="block";
     }
+    document.getElementById("button37").onclick=function(){
+        document.getElementById("button38").style.display="block";
+    }
+    document.getElementById("button38").onclick=function(){
+        document.getElementById("button39").style.display="block";
+    }
 
 }
 
