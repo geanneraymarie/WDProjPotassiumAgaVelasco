@@ -1,3 +1,4 @@
+//level 1 case 1
 function l1c1(){
     //introduces first button for start of story
     document.getElementById("firstOne").onclick=function(){
@@ -47,7 +48,7 @@ function l1c1(){
         document.getElementById("l1case1").style.display="block";
         this.style.display = "none";
     }
-
+//level 1 case 2
 }
 function l1c2(){
     //introduces first button for start of story
@@ -69,6 +70,33 @@ function l1c2(){
         document.getElementById("button5").style.display="block";
     }
     document.getElementById("button5").onclick=function(){
+        document.getElementById("button6").style.display="block";
+    }
+    document.getElementById("button6").onclick=function(){
+        document.getElementById("button7").style.display="block";
+    }
+    document.getElementById("button7").onclick=function(){
+        document.getElementById("button8").style.display="block";
+    }
+    document.getElementById("button8").onclick=function(){
+        document.getElementById("button9").style.display="block";
+    }
+    document.getElementById("button9").onclick=function(){
+        document.getElementById("button10").style.display="block";
+    }
+    document.getElementById("button10").onclick=function(){
+        document.getElementById("button11").style.display="block";
+    }
+    document.getElementById("button11").onclick=function(){
+        document.getElementById("button12").style.display="block";
+    }
+    document.getElementById("button12").onclick=function(){
+        document.getElementById("button13").style.display="block";
+    }
+    document.getElementById("button13").onclick=function(){
+        document.getElementById("button14").style.display="block";
+    }
+    document.getElementById("button14").onclick=function(){
         document.getElementById("lastOne").style.display="block";
     }
 
@@ -77,7 +105,7 @@ function l1c2(){
         document.getElementById("l1case2").style.display="block";
         this.style.display = "none";
     }
-
+//level 1 case 3
 }
 function l1c3(){
     //introduces first button for start of story
@@ -102,6 +130,7 @@ function l1c3(){
         this.style.display = "none";
     }
 
+//level 2 case 1
 }
 function l2c1(){
      //introduces first button for start of story
