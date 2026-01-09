@@ -32,17 +32,17 @@ Context: This contains the introduction, what our webpage is about, and the inst
 - Casefiles (1)  
 The cases are listed in increasing difficulty: theft, kidnapping, and murder. The user starts playing the game with the least difficult case, up until the last one.
 The player goes through the 3 different cases in the game:
-   0.  <i>Level 0</i> (1)
-a) The Case of the Bloody Field Trip
-   1. <i>Level 1</i> (3)
-a) The Case of the Metropolitan Serial Drownings
-b) The Case of the Benizome Hot Springs Murder
-c) The Case of the Poisoned Latte
-   2. <i>Level 2</i> (2)
-a) The Case of the Shibuya Revelation Serial Murders Part 1
-b) The Case of the Shibuya Revelation Serial Murders Part 2
-   3. <i>Level 3</i> (1)
-a) The Case of the Plateau Auberge Serial Murders
+0)<i>Level 0</i> (1)  
+a) The Case of the Bloody Field Trip    
+1)<i>Level 1</i> (3)  
+a) The Case of the Metropolitan Serial Drownings  
+b) The Case of the Benizome Hot Springs Murder  
+c) The Case of the Poisoned Latte    
+2)<i>Level 2</i> (2)  
+a) The Case of the Shibuya Revelation Serial Murders Part 1  
+b) The Case of the Shibuya Revelation Serial Murders Part 2    
+3)<i>Level 3</i> (1)  
+a) The Case of the Plateau Auberge Serial Murders  
 
 [Raw casefiles](https://docs.google.com/document/d/12_t6viejlVsd7gabA-7XUHp0ZUhxmh_ZVEUkD-i3Q0M/edit?usp=sharing)
 
