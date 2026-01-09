@@ -48,7 +48,7 @@ b) The Case of the Shibuya Revelation Serial Murders Part 2
 <i>Level 3</i> (1)  
 a) The Case of the Plateau Auberge Serial Murders  
 
-[Raw casefiles](https://docs.google.com/document/d/12_t6viejlVsd7gabA-7XUHp0ZUhxmh_ZVEUkD-i3Q0M/edit?usp=sharing)
+[Raw Casefiles](https://docs.google.com/document/d/12_t6viejlVsd7gabA-7XUHp0ZUhxmh_ZVEUkD-i3Q0M/edit?usp=sharing)
 
 - Minigames (1)  
 includes : math minigames which is where we'd incorporate Javascript, in a separate container on this page, we’ll put some fun facts to hook the player into the original series
