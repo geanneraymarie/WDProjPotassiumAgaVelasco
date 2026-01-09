@@ -73,7 +73,7 @@ This will use the information provided in Sign Up so that the user may be able t
 
 Profile Page (Webpage 3)  
 To keep their account secure, this is where the user will be able to apply their password to keep their account safe and only for their use. They may also review the information they inputted in Sign Up here.  
-
+(Note: designs are in the canva link below)
 
 3) For the third quarter, we plan to add some more features to our website, as well as debug some mistakes in the previous quarter.  
 First, we will use @container or @media in html and css in adjusting the screen to various screen types and sizes. As for the Javascript, we’ll update different statuses for different cases. For example, if the user hasn’t tried a case, their progress is on “not started”. Otherwise, it's updated as “done”.  
