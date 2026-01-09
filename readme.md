@@ -20,13 +20,13 @@ Context: This contains the introduction, what our webpage is about, and the inst
 1. About the Series
 2. About the Author
 3. Characters  
-Ron Kamonohashi 
-Totomaru Isshiki (his POV will be the one used by the player)
-Milo Moriarty
-Winter Moriarty
-Eliot Moriarty
-Spitz Fire
-Amamiya
+Ron Kamonohashi  
+Totomaru Isshiki (his POV will be the one used by the player)  
+Milo Moriarty  
+Winter Moriarty  
+Eliot Moriarty  
+Spitz Fire  
+Amamiya  
  
 
 - Casefiles (1)  
@@ -64,19 +64,19 @@ includes : references and copyrights
 1) The user will be able to make a “detective account” on the website to be able to play the mystery game. These will soon be used later on the profile page and other webpages of our website.
 The form will include a textbox input for their name/username and another for a password input, as well as a submit button for saving. The details entered by the user will be saved in the local storage/local variables in JavaScript, which will help the computer remember the information again and again in different webpages.
 
-2) Sign Up (Webpage 1)
-The user will be able to make a player account on the website to save their progress throughout the games. The information inputted in signing up can be seen in the profile page, and will be used accordingly to address the user. The form will include a textbox input for their name/username. The details entered by the user will be saved in the local storage/local variables in JavaScript, which will help the computer retain the information.
+2) 3 Webpages:  
+Sign Up (Webpage 1)  
+The user will be able to make a player account on the website to save their progress throughout the games. The information inputted in signing up can be seen in the profile page, and will be used accordingly to address the user. The form will include a textbox input for their name/username. The details entered by the user will be saved in the local storage/local variables in JavaScript, which will help the computer retain the information.    
 
-Log In (Webpage 2)
-This will use the information provided in Sign Up so that the user may be able to play at different times while still being able to note their progress.
+Log In (Webpage 2)  
+This will use the information provided in Sign Up so that the user may be able to play at different times while still being able to note their progress.    
 
-Profile Page (Webpage 3)
-To keep their account secure, this is where the user will be able to apply their password to keep their account safe and only for their use. They may also review the information they inputted in Sign Up here.
+Profile Page (Webpage 3)  
+To keep their account secure, this is where the user will be able to apply their password to keep their account safe and only for their use. They may also review the information they inputted in Sign Up here.  
 
 
-
-3) For the third quarter, we plan to add some more features to our website, as well as debug some mistakes in the previous quarter. 
-First, we will use @container or @media in html and css in adjusting the screen to various screen types and sizes. As for the Javascript, we’ll update different statuses for different cases. For example, if the user hasn’t tried a case, their progress is on “not started”. Otherwise, it's updated as “done”.
+3) For the third quarter, we plan to add some more features to our website, as well as debug some mistakes in the previous quarter.  
+First, we will use @container or @media in html and css in adjusting the screen to various screen types and sizes. As for the Javascript, we’ll update different statuses for different cases. For example, if the user hasn’t tried a case, their progress is on “not started”. Otherwise, it's updated as “done”.  
 And lastly, we will be using <iframe> for the audio, which will either be an mp3 or a YouTube video. There will also be a mute/unmute button, depending on the user.
 
 
