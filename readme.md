@@ -20,13 +20,13 @@ Context: This contains the introduction, what our webpage is about, and the inst
 1. About the Series
 2. About the Author
 3. Characters  
-Ron Kamonohashi  
-Totomaru Isshiki (his POV will be the one used by the player)  
-Milo Moriarty  
-Winter Moriarty  
-Eliot Moriarty  
-Spitz Fire  
-Amamiya  
+-Ron Kamonohashi  
+-Totomaru Isshiki (his POV will be the one used by the player)  
+-Milo Moriarty  
+-Winter Moriarty  
+-Eliot Moriarty  
+-Spitz Fire  
+-Amamiya  
  
 
 - Casefiles (1)  
