@@ -65,7 +65,7 @@ includes : references and copyrights
 The form will include a textbox input for their name/username and another for a password input, as well as a submit button for saving. The details entered by the user will be saved in the local storage/local variables in JavaScript, which will help the computer remember the information again and again in different webpages.
 
 2) Additional Webpages (3)
-<i>check the Canva link attached below for the designs</i>
+<u><i>check the Canva link attached below for the designs</i></u>
 - Sign Up (Webpage 1)  
 The user will be able to make a player account on the website to save their progress throughout the games. The information inputted in signing up can be seen in the profile page, and will be used accordingly to address the user. The form will include a textbox input for their name/username. The details entered by the user will be saved in the local storage/local variables in JavaScript, which will help the computer retain the information.    
 - Log In (Webpage 2)  
