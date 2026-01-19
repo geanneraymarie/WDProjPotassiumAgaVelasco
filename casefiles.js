@@ -1,9 +1,13 @@
 //level 1 case 1
 function l1c1(){
     //introduces first button for start of story
+    document.getElementById("status")
     document.getElementById("firstOne").onclick=function(){
         document.getElementById("button1").style.display="block";
         this.style.display = "none";
+
+        //this one updates the status
+        localStorage.setItem("l1case1Status", "In Progress");
     }
     //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
     document.getElementById("button1").onclick=function(){
@@ -41,6 +45,9 @@ function l1c1(){
     }
     document.getElementById("button12").onclick=function(){
         document.getElementById("lastOne").style.display="block";
+
+        //this one also updates the status
+        localStorage.setItem("l1case1Status", "Completed");
     }
     
     //this part is for the button that shows the answer portion of the case
@@ -88,6 +95,9 @@ function l1c2(){
     document.getElementById("firstOne").onclick=function(){
         document.getElementById("button1").style.display="block";
         this.style.display = "none";
+        
+        //updates status
+        localStorage.setItem("l1case2Status", "In Progress");
     }
     //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
     document.getElementById("button1").onclick=function(){
@@ -131,6 +141,9 @@ function l1c2(){
     }
     document.getElementById("button14").onclick=function(){
         document.getElementById("lastOne").style.display="block";
+
+        //this one also updates the status
+        localStorage.setItem("l1case2Status", "Completed");
     }
 
     //this part is for the button that shows the answer portion of the case
@@ -157,6 +170,9 @@ function l1c3(){
     document.getElementById("firstOne").onclick=function(){
         document.getElementById("button1").style.display="block";
         this.style.display = "none";
+
+        //updates status
+        localStorage.setItem("l1case3Status", "In Progress");
     }
     //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
     document.getElementById("button1").onclick=function(){
@@ -176,6 +192,9 @@ function l1c3(){
     }
     document.getElementById("button6").onclick=function(){
         document.getElementById("lastOne").style.display="block";
+
+        //this one also updates the status
+        localStorage.setItem("l1case3Status", "Completed");
     }
 
     //this part is for the button that shows the answer portion of the case
@@ -203,6 +222,9 @@ function l2c1(){
     document.getElementById("firstOne").onclick=function(){
         document.getElementById("button1").style.display="block";
         this.style.display = "none";
+
+        //updates status
+        localStorage.setItem("l2case1Status", "In Progress");
     }
     //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
     document.getElementById("button1").onclick=function(){
@@ -243,6 +265,9 @@ function l2c1(){
     }
     document.getElementById("button13").onclick=function(){
         document.getElementById("lastHEH").style.display="block";
+
+        //this one also updates the status
+        localStorage.setItem("l2case1Status", "Completed");
     }
 
 }
@@ -253,6 +278,9 @@ function l2c2(){
     document.getElementById("firstOne").onclick=function(){
         document.getElementById("button14").style.display="block";
         this.style.display = "none";
+
+        //updates status
+        localStorage.setItem("l2case2Status", "In Progress");
     }
     document.getElementById("button14").onclick=function(){
         document.getElementById("lastOne").style.display="block";
@@ -267,6 +295,9 @@ function l2c2(){
     document.getElementById("case1Answer").onclick=function(){
         document.getElementById("l2case1").style.display="block";
         this.style.display = "none";
+
+        //this one also updates the status
+        localStorage.setItem("l2case2Status", "Completed");
     }
 
 }
@@ -328,6 +359,9 @@ function l3c1(){
     document.getElementById("firstOne").onclick=function(){
         document.getElementById("button1").style.display="block";
         this.style.display = "none";
+
+        //updates status
+        localStorage.setItem("l3case1Status", "In Progress");
     }
     //for buttons 1, 2, etc.. (when one button is clicked, another pops up for the dialogue)
     document.getElementById("button1").onclick=function(){
@@ -443,6 +477,9 @@ function l3c1(){
     }
     document.getElementById("button38").onclick=function(){
         document.getElementById("button39").style.display="block";
+
+        //this one also updates the status
+        localStorage.setItem("l3case1Status", "Completed");
     }
 
 }
