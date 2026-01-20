@@ -16,6 +16,9 @@ ul
   width: max-content;
   max-width: 90vw;
   z-index: 9999;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
 }
 
 li a 
@@ -38,6 +41,14 @@ li a:hover
 {
   background-color: rgb(26, 48, 78);
   color: rgb(255, 255, 255);
+}
+
+@media (max-width: 480px) {
+  .platypus {
+    width: 8rem;  /* smaller on mobile */
+    top: 0.5rem;
+    right: 0.5rem;
+  }
 }
 
 .platypus
@@ -63,6 +74,15 @@ li a:hover
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
+}
+
+@media (max-width: 480px) {
+  ul {
+    flex-direction: row;  /* Stack nav items vertically on small screens */
+    width: 90%;
+    margin: 0.75rem auto;
+    gap: 0.5rem;
+  }
 }
 
 /*background adjustments*/
@@ -95,13 +115,34 @@ body::before
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
     font-size: clamp(0.95rem, 2vw, 1.125rem);
-    margin: clamp(1.5rem, 4vw, 3rem);
+    margin: clamp(1.5rem, 4vw, 3rem) auto;
     margin-top: clamp(4rem, 8.5vw, 9rem);
     background-color: rgba(26, 48, 78, .75);
+    display:flex;
+    flex-direction:column;
     position: relative;
     z-index: 1;
     padding: clamp(1rem, 3vw, 1.25rem);
     border-radius: 1rem;
+    min-height: 60vh;      
+    flex-grow: 1;            
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1; 
 }
 
 .content h1 {
