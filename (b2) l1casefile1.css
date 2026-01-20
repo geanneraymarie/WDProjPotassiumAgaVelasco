@@ -107,13 +107,11 @@ body::before
     color:rgb(255, 255, 255);
     width: 90%;
     max-width: 80rem;
+    box-sizing: border-box;
     max-height: fit-content;
-    display: flex;
     justify-content: center;
     align-items: center;
     border: 0.125rem dashed #ffffff;
-    box-sizing: border-box;
-    font-size: 1.5rem;
 }
 
 .content h1 {
@@ -167,18 +165,20 @@ button:hover
 
 .interaction
 {
-  color:rgb(0, 0, 0);
+  color:rgb(58, 67, 80);
   background-color:rgb(255, 255, 255);
   border-radius: 1rem;
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(58, 67, 80);
   margin: 1rem;
   border: 5px solid;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  width: 90%;
-  max-width: 60rem;
+  width: auto;
+  display: inline-block;
+  max-width: 100%;
+  padding: 1rem;
+  text-align: center;
   height: auto;
-  min-height: 7.5rem;
   box-sizing: border-box;
   border: 3px solid;
 }
@@ -186,7 +186,7 @@ button:hover
 .interaction:hover
 {
   color:rgb(255, 255, 255);
-  background-color:#000000;
+  background-color:rgb(58, 67, 80);
   border-color: rgb(255, 255, 255);
   border: 3px solid;
 }

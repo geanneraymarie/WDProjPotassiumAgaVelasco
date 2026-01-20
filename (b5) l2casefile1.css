@@ -98,7 +98,7 @@ body::before
     border-radius: .94rem;
 }
 
-.level1
+.level2
 {
     margin: auto;
     padding: 3rem;
@@ -135,7 +135,7 @@ p
 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(255, 255, 255);
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
