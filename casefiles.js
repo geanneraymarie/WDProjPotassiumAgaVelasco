@@ -498,7 +498,15 @@ function lccheck(btn, rOW){
     }
 }
 
-//reloading the page to clear the website
-function refreshPage(){
-    location.reload();
+//for sign-ups
+function signup(){
+
+}
+//for logging in
+function login(){
+
+}
+//for logging out
+function logout(){
+
 }
