@@ -1,45 +1,72 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale=1">
-        <title> platypus adventures .☘︎ ݁˖ </title>
-        
-        <meta name = "description" content="CS3 Website Project">
-        <meta name = "author" content = "Aga, Velasco">
-        <link rel="stylesheet" href="(a) platypusadventures_k01k28.css">
-        <link rel="icon" href="/favicon.io" sizes="any">
-        <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/79/eb/02/79eb02b0a4f5b75ff7966f255c428df1.jpg">
-        
-    </head>
-    <body>
-    <script src="extras.js"></script>
-    <img src="https://drive.google.com/thumbnail?id=1Dmqg-EJBHPm1fhI8YHtUOUZD6uWrKnu5" class="platypus">
-    <div class="navbar">
-        <ul>
-            <li><a href="(a) platypusadventures_k01k28.html"> home </a></li>
-            <li><a href="(g3) account-page.html"> profile-page</a></li>
-            <li><a href="(b) casefiles.html"> case files </a></li>
-            <li><a href="(c) abouttheseries.html"> about the series </a></li>
-            <li><a href="(d) minigames.html"> minigames </a></li>
-            <li><a href="(e) aboutus.html"> about us </a></li>
-            <li><a href="(f) reference.html"> references </a></li>
-        </ul>
-        </div>
-            <div class="content">
-            <div class="text">
-              <h2 class="text1"> Welcome to Platypus Adventures ── .✦ <br><br> Dive into the world of Ron Kamonohashi: Deranged Detective!</h2> 
-               <h2 class="text2">          
-                In this fanmade project, you will step into Ron's shoes, going through different <br> levels of the cases he faced in the series. You will be seeing the story from Ron's <br> perspective, offering deeper immersion into the story in the form of a mystery <br> solving game, brought to you by 2 devoted developers! <br><br><br>
-            <i>Do well to solve the mystery and catch the culprit before it's too late . . . </i></h2>
-        </h2>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>platypus adventures .☘︎ ݁˖</title>
+    <meta name="description" content="CS3 Website Project">
+    <meta name="author" content="Aga, Velasco">
+    <link rel="stylesheet" href="(a) platypusadventures_k01k28.css">
+    <link rel="icon" href="/favicon.io" sizes="any">
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/79/eb/02/79eb02b0a4f5b75ff7966f255c428df1.jpg">
+</head>
+<body>
+<script src="extras.js"></script>
+<img src="https://drive.google.com/thumbnail?id=1Dmqg-EJBHPm1fhI8YHtUOUZD6uWrKnu5" class="platypus">
+<iframe id="autoplay-video" width="0" height="0"
+    src="https://www.youtube.com/embed/EANksvavteY?autoplay=1&mute=1&loop=1&playlist=EANksvavteY"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
+
+<button id="mute-button" onclick="toggleMute()"
+    style="font-size: 40px; cursor: pointer; background: none; border: none;
+           position: absolute; left: 20px; top: 10px;">
+    🔇
+</button>
+<script>
+let muted = true;
+function toggleMute() {
+    let iframe = document.getElementById("autoplay-video");
+    let src = iframe.src;
+    if (muted) {
+        iframe.src = src.replace("mute=1", "mute=0");
+        muted = false;
+        document.getElementById("mute-button").textContent = "🔊";
+    } else {
+        iframe.src = src.replace("mute=0", "mute=1");
+        muted = true;
+        document.getElementById("mute-button").textContent = "🔇";
+    }
+}
+</script>
+
+<div class="navbar">
+    <ul>
+        <li><a href="(a) platypusadventures_k01k28.html">home</a></li>
+        <li><a href="(g3) account-page.html">profile-page</a></li>
+        <li><a href="(b) casefiles.html">case files</a></li>
+        <li><a href="(c) abouttheseries.html">about the series</a></li>
+        <li><a href="(d) minigames.html">minigames</a></li>
+        <li><a href="(e) aboutus.html">about us</a></li>
+        <li><a href="(f) reference.html">references</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="text">
+        <h2 class="text1">Welcome to Platypus Adventures ── .✦ <br><br> Dive into the world of Ron Kamonohashi: Deranged Detective!</h2>
+        <h2 class="text2">In this fanmade project, you will step into Ron's shoes, going through different <br> levels of the cases he faced in the series. You will be seeing the story from Ron's <br> perspective, offering deeper immersion into the story in the form of a mystery <br> solving game, brought to you by 2 devoted developers! <br><br><br>
+        <i>Do well to solve the mystery and catch the culprit before it's too late . . . </i></h2>
     </div>
 </div>
-        <h4 class="copyright">
-        &copy; <span id="year"></span> Geanne Aga. Maggie Velasco. All rights reserved.
-        </h4>
-        <script>
-            document.getElementById("year").innerHTML = new Date().getFullYear();
-        </script>
-    </body>
+
+<h4 class="copyright">
+&copy; <span id="year"></span> Geanne Aga. Maggie Velasco. All rights reserved.
+</h4>
+<script>
+document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+</body>
 </html>

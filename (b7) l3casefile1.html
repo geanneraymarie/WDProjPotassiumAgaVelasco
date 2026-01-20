@@ -14,6 +14,34 @@
     </head>
     <body>
     <img src="https://drive.google.com/thumbnail?id=1Dmqg-EJBHPm1fhI8YHtUOUZD6uWrKnu5" class="platypus">
+    <iframe id="autoplay-video" width="0" height="0"
+    src="https://www.youtube.com/embed/7R1a5k78iZE?autoplay=1&mute=1&loop=1&playlist=7R1a5k78iZE"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    referrerpolicy="strict-origin-when-cross-origin">
+</iframe>
+
+<button id="mute-button" onclick="toggleMute()"
+    style="font-size: 40px; cursor: pointer; background: none; border: none;
+           position: absolute; left: 20px; top: 10px;">
+    🔇
+</button>
+<script>
+let muted = true;
+function toggleMute() {
+    let iframe = document.getElementById("autoplay-video");
+    let src = iframe.src;
+    if (muted) {
+        iframe.src = src.replace("mute=1", "mute=0");
+        muted = false;
+        document.getElementById("mute-button").textContent = "🔊";
+    } else {
+        iframe.src = src.replace("mute=0", "mute=1");
+        muted = true;
+        document.getElementById("mute-button").textContent = "🔇";
+    }
+}
+</script>
     <div class="navbar">
         <ul>
             <li><a href="(a) platypusadventures_k01k28.html"> home </a></li>
