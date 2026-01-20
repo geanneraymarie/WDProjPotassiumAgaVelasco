@@ -537,7 +537,9 @@ function login(){
 //function for account page
 function accountpage(){
     const name = localStorage.getItem("nameSU");
-    document.getElementById("greetings").innerText = "Greetings, " + name;
+    const pass = localStorage.getItem("passSU");
+    document.getElementById("greetings").innerText = name;
+    document.getElementById("setPass").innerText = pass;
 }
 
 //for logging out
