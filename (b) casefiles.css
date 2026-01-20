@@ -9,13 +9,13 @@ ul
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: clamp(1rem, 5vw, 4rem);
-  position: sticky;
+  position: fixed; /* always stays on top */
   top: clamp(0.75rem, 2vw, 1.25rem);
   left: clamp(0.75rem, 2vw, 1.25rem);
   border-radius: 3rem;
   width: max-content;
   max-width: 90vw;
-  z-index: 1000;
+  z-index: 9999;
 }
 
 li a 
@@ -29,13 +29,15 @@ li a
            clamp(0.6rem, 2vw, 0.9rem);
   border-radius: 2rem;
   transition: background-color .5s;
+
+  position: relative;
+  z-index: 10000;
 }
 
 li a:hover 
 {
   background-color: rgb(26, 48, 78);
-  border-radius: 2rem;
-  color:rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
 }
 
 .platypus
@@ -44,9 +46,10 @@ li a:hover
     top: clamp(0.75rem, 2vw, 1.25rem);
     right: clamp(0.75rem, 2vw, 1.25rem);
     width: clamp(6rem, 15vw, 12.5rem);
-    z-index: 9999;
+    z-index: 9999; 
     pointer-events: none;
 }
+
 
 /*animation*/
 .content > * 
@@ -111,8 +114,8 @@ summary
     font-family: "Copperplate", "Copperplate Gothic Light";
     color: rgb(255, 255, 255);
     font-size: 1.125rem;
-    margin: 2.81rem;
-    margin-top: 4rem;
+    margin: clamp(2rem, 2.81vw, 3.5rem);
+    margin-top: clamp(4rem, 8.5vw, 9rem);
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     z-index: 1;

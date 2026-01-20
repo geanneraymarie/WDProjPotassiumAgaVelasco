@@ -2,15 +2,15 @@
 ul
 {
   list-style-type: none;
-  margin: 1.5rem;
-  padding: 1rem 2rem;
+  margin: clamp(1rem, 2vw, 1.5rem);
+  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
   background-color: #ffffff;
   display: flex;
   justify-content: flex-start;
-  gap: 4rem;
+  gap: clamp(1rem, 5vw, 4rem);
   position: fixed;
-  top: 1.25rem;
-  left: 1.25rem;
+  top: clamp(1rem, 2vw, 1.5rem);
+  left: clamp(1rem, 2vw, 1.5rem);
   border-radius: 3rem;
   width: fit-content;
   z-index: 1000;
@@ -18,12 +18,12 @@ ul
 
 li a 
 {
-font-size: 1.6rem;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
   text-decoration: none;
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: .6rem .9rem;
+  padding: clamp(0.4rem, 1vw, 0.6rem) clamp(0.6rem, 2vw, 0.9rem);
   border-radius: 2rem;
   transition: background-color .5s;
 }
@@ -32,104 +32,114 @@ li a:hover
 {
   background-color: rgb(26, 48, 78);
   border-radius: 2rem;
-  color:rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
 }
 
 .platypus
 {
-    position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    max-width: 12.5%;
-    z-index: 999;
+  position: fixed;
+  top: clamp(1rem, 2vw, 1.5rem);
+  right: clamp(1rem, 2vw, 1.5rem);
+  width: clamp(6rem, 15vw, 12.5rem);
+  z-index: 999;
+  pointer-events: none;
 }
 
 /*animation*/
 @keyframes fadeIn 
 {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /*background adjustments*/
 html 
 {
-    background-image: url('https://i.pinimg.com/736x/7e/cd/27/7ecd27da10dae6c43b543778c22573d0.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    margin: 0;
-    padding: 0;
+  background-image: url('https://i.pinimg.com/736x/7e/cd/27/7ecd27da10dae6c43b543778c22573d0.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  margin: 0;
+  padding: 0;
 }
 
 /*content*/
-.container
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  gap: clamp(2rem, 5vw, 5rem);
+  width: 100%;
+  padding: clamp(1rem, 2vw, 2rem);
 }
+
 
 .maggie, .geanne {
-    overflow: auto;
-    gap: 1.25rem;
-    padding: 1.25rem;
-    background-color: rgb(78, 97, 129);
-    border-radius: .938rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 255, 255);
-    font-size: 1.25rem;
-    margin-top: 10rem;
-    margin-left: 1rem;
-    box-shadow: 0 0 1.25rem rgba(255, 255, 255, 0.9);
-    width: 30rem;
+  background-color: rgb(78, 97, 129);
+  border-radius: 0.938rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  padding: clamp(0.5rem, 1vw, 1.25rem);
+  box-shadow: 0 0 clamp(1rem, 2vw, 1.25rem) rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex: 1 1 30rem;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 20rem;
+  max-width: 60rem;
+  
+  margin-top: clamp(5rem, 10vw, 10rem);
+}
+.maggie:hover, .geanne:hover 
+{
+  background-color: #ffffff;
+  color: rgb(78, 97, 129);
+  box-shadow: 0 0 clamp(1rem, 2vw, 1.25rem) rgba(255, 255, 255, 0.9);
 }
 
-.maggie:hover, .geanne:hover {
-    background-color: #ffffff;
-    color:rgb(78, 97, 129);
-    box-shadow: 0 0 1.25rem rgba(255, 255, 255, 0.9);
+.name 
+{
+  display: inline-block;
+  vertical-align: top;
+  margin-left: clamp(1rem, 3vw, 1.875rem);
+  margin-right: clamp(0.3rem, 1vw, 0.625rem);
 }
 
-.name {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0;
-    margin-left: 1.875rem;
-    margin-right: .625rem;
-}
-
-.info {
-    clear: left;
-    margin-top: .625rem;
+.info 
+{
+  clear: left;
+  margin-top: clamp(0.3rem, 1vw, 0.625rem);
 }
 
 h4
 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(26, 48, 78);
-  font-size: 0.875rem;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
   text-align: center;
-  margin-top: 10rem;
+  margin-top: clamp(5rem, 10vw, 10rem);
 }
 
 .funfacts-img
 {
-    width: 12rem;
-    height: auto;
-    border-radius: .625rem;
-    margin-top: .625rem;
+  width: clamp(6rem, 25vw, 12rem);
+  height: auto;
+  border-radius: 0.625rem;
+  margin-top: clamp(0.3rem, 1vw, 0.625rem);
 }
 
 .container > * 
 {
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
 }
 
-.copyright {
-  margin-top: 2.5rem;
+.copyright 
+{
+  margin-top: clamp(1rem, 3vw, 2.5rem);
   text-align: center;
-  color:rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
 }
