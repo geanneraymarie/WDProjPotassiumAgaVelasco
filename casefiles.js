@@ -499,20 +499,20 @@ function lccheck(btn, rOW){
 }
 
 //for sign-ups
-function signup(){
-    const name = document.getELmentById("nameSU").value;
+function signup() {
+    const name = document.getElementById("nameSU").value;
     const pass = document.getElementById("passSU").value;
 
     if(name === "" || pass === ""){
-        alert("Pls fill out all of the info asked);
+        alert("Pls fill out all of the info asked");
         return;
     }
 
-    localStorage.setItem("nameSU",name);
-    localStorage.setItem("passSU",pass);
+    localStorage.setItem("nameSU", name);
+    localStorage.setItem("passSU", pass);
 
-    alert("Successfully pcreated account! :)));
-    //window.location.href = "account-page.html";
+    alert("Successfully created account!");
+    window.location.href = "login.html";
 }
 //for logging in
 function login(){
@@ -531,9 +531,9 @@ function login(){
     }
 }
 //function for account page
-function account-page(){
+//function account-page(){
     //idk yet
-}
+//}
 //for logging out
 function logout(){
     localStorage.setItem("logQ","false");
