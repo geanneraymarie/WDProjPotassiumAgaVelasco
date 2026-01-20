@@ -537,5 +537,5 @@ function login(){
 //for logging out
 function logout(){
     localStorage.setItem("logQ","false");
-    //window.location.href="login.html";
+    window.location.href="(g2) login.html";
 }
