@@ -2,28 +2,31 @@
 ul
 {
   list-style-type: none;
-  margin: 1.5rem;
-  padding: 1rem 2rem;
+  margin: clamp(0.75rem, 2vw, 1.5rem);
+  padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 4rem;
-  position: fixed;
-  top: 1.25rem;
-  left: 1.25rem;
+  gap: clamp(1rem, 5vw, 4rem);
+  position: sticky;
+  top: clamp(0.75rem, 2vw, 1.25rem);
+  left: clamp(0.75rem, 2vw, 1.25rem);
   border-radius: 3rem;
-  width: fit-content;
+  width: max-content;
+  max-width: 90vw;
   z-index: 1000;
 }
 
 li a 
 {
-font-size: 1.6rem;
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
   text-decoration: none;
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: .6rem .9rem;
+  padding: clamp(0.4rem, 1vw, 0.6rem)
+           clamp(0.6rem, 2vw, 0.9rem);
   border-radius: 2rem;
   transition: background-color .5s;
 }
@@ -32,15 +35,15 @@ li a:hover
 {
   background-color: rgb(26, 48, 78);
   border-radius: 2rem;
-  color:rgb(255, 255, 255);
+  color:rgb(255, 255, 255)
 }
 
 .platypus
 {
     position: fixed;
-    top: 1.25rem;
-    right: 1.25rem;
-    width: 12.5rem;
+    top: clamp(0.75rem, 2vw, 1.25rem);
+    right: clamp(0.75rem, 2vw, 1.25rem);
+    width: clamp(6rem, 15vw, 12.5rem);
     z-index: 9999;
     pointer-events: none;
 }
@@ -109,7 +112,7 @@ summary
     color: rgb(255, 255, 255);
     font-size: 1.125rem;
     margin: 2.81rem;
-    margin-top: 9rem;
+    margin-top: 4rem;
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     z-index: 1;

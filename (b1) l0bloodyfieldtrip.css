@@ -88,6 +88,8 @@ body::before
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     margin: 2rem;
+    width: 95%;
+    max-width: 100%;
     margin-top: 2rem;
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
@@ -103,12 +105,14 @@ body::before
     background-color: rgb(57, 84, 120);
     border-radius: .63rem;
     color:rgb(255, 255, 255);
-    width: 80rem;
+    width: 90%;
+    max-width: 80rem;
     max-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0.125rem dashed #ffffff;
+    box-sizing: border-box;
 }
 
 .content h1 {
