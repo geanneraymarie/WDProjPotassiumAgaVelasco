@@ -13,7 +13,7 @@ body{
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size:cover;
-    background-position-y:-10rem;
+    background-position-y:-15rem;
 }
 body::before {
     content: "";
