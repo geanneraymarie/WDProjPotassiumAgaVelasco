@@ -8,7 +8,18 @@
     margin: 5rem auto;
 }
 body{
-    background-color:rgb(25, 22, 58);
+    background-image:url('https://i.pinimg.com/736x/7d/d0/d2/7dd0d2f73c02e477dfb22a25edd06bdf.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position-y: -1rem;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    pointer-events: none;
 }
 h2{
     color:rgb(26, 136, 210);
