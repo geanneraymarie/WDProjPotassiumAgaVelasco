@@ -500,13 +500,42 @@ function lccheck(btn, rOW){
 
 //for sign-ups
 function signup(){
+    const name = document.getELmentById("nameSU").value;
+    const pass = document.getElementById("passSU").value;
 
+    if(name === "" || pass === ""){
+        alert("Pls fill out all of the info asked);
+        return;
+    }
+
+    localStorage.setItem("nameSU",name);
+    localStorage.setItem("passSU",pass);
+
+    alert("Successfully pcreated account! :)));
+    //window.location.href = "account-page.html";
 }
 //for logging in
 function login(){
+    const name = document.getELmentById("nameLI").value;
+    const pass = document.getElementById("passLI").value;
 
+    const nameS = localStorage.getItem("name");
+    const passS = localStorage.getItem("pass");
+
+    if(name===nameS && pass===passS){
+        localStorage.setItem("logQ", "true");
+        //window.location.href = "account-page.html"
+    }
+    else {
+        document.getElementById("ivnalid").textContent = "Username/Password is invalid, try again";
+    }
+}
+//function for account page
+function account-page(){
+    //idk yet
 }
 //for logging out
 function logout(){
-
+    localStorage.setItem("logQ","false");
+    //window.location.href="login.html";
 }
