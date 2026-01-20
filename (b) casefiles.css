@@ -270,3 +270,8 @@ h4
 .copyright {
   text-align: center;
 }
+
+#status{
+  background-color:rgb(151, 186, 225);
+  border-radius:1rem;
+}
