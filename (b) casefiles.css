@@ -6,10 +6,10 @@ ul
   padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   gap: clamp(0.6rem, 3vw, 2rem);
-  position: fixed; /* always stays on top */
+  position: fixed;
   top: clamp(0.75rem, 2vw, 1.25rem);
   left: clamp(0.75rem, 2vw, 1.25rem);
   border-radius: 3rem;
@@ -88,10 +88,12 @@ body::before
 /*content*/
 .casefiles {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 details
@@ -99,7 +101,6 @@ details
   font-family: "Copperplate", "Copperplate Gothic Light";
   font-size: 1rem;
   margin-bottom: 3rem;
-
 }
 
 summary
@@ -123,144 +124,89 @@ summary
     border-radius: .94rem;
 }
 
-.casefiles
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.25rem;
-  margin: 1rem;
-}
-
 .content h1
 {
   font-size: 2.75rem;
+  font-family: "Copperplate", "Copperplate Gothic Light";
+  color: #ffffff;                         
 }
 
-.level1
-{
-    margin: 1.25rem;
-    padding: .94rem;
+/*mobile responsiveness*/
+.level1, .level2, .level3 {
+    flex: 1 1 250px;
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+    margin: 0.75rem;
+    padding: 0.75rem;
     background-color: rgb(57, 84, 120);
-    border-radius: .63rem;
-    color:#ffffff;
-    width: 17.5rem;
-    height: 20rem;
-    overflow-x: auto;
-    display: flex;
-    flex-direction: row;
-    border: 0.125rem dashed #ffffff;
-    flex: 1
-}
-
-.level2
-{
-    margin: 1.25rem;
-    padding: .94rem;
-    background-color: rgb(57, 84, 120);
-    border-radius: .63rem;
-    color:#ffffff;
-    width: 17.5rem;
-    height: 20rem;
-    overflow-x: auto;
-    display: flex;
-    flex-direction: row;
-    border: 0.125rem dashed #ffffff;
-    flex: 1;
-}
-
-.level3
-{
-    margin: 1.25rem;
-    padding: .94rem;
-    background-color: rgb(57, 84, 120);
-    border-radius: .63rem;
-    color: #ffffff;
-    width: 17.5rem;
-    height: 20rem;
-    overflow-x: auto;
-    display: flex;
-    flex-direction: row;
-    border: 0.125rem dashed #ffffff;
-    flex: 1;
-}
-
-.l0bloodyfieldtrip
-{
-  margin: 1.25rem auto;
-    padding: .94rem;
-    background-color: rgb(57, 84, 120);
-    border-radius: .63rem;
+    border-radius: 0.63rem;
     color:#ffffff;
     display: flex;
-    justify-content: center;
     flex-direction: row;
-    align-items: center;
     border: 0.125rem dashed #ffffff;
-    max-width: none;
-    width: 30rem;
+    overflow: scroll;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+.l1cf1, .l1cf2, .l1cf3, .l2cf1, .l2cf2, .l3cf1 {
+    flex: 0 0 200px;
+    min-width: 120px;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    background-color: #ffffff;
+    color: #1a304e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.l0bloodyfieldtrip {
+    flex: 1 1 90%;
+    max-width: 90%;
+    margin: 1rem auto;
     padding: 1rem;
-    gap: .75rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
 }
 
-.level0
-{
+.level0 {
+    width: 90%;
+    max-width: 40rem;
+    height: auto;
     margin: auto;
-    padding: .94rem;
+    padding: 1rem;
     background-color: rgb(57, 84, 120);
-    border-radius: .63rem;
+    border-radius: 0.63rem;
     color:#ffffff;
-    width: 40rem;
-    height: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0.125rem dashed #ffffff;
+    box-sizing: border-box;
 }
 
-.l3cf1, .l1cf1, .l1cf2, .l1cf3, .l2cf1, .l2cf2
-{
-  background-color: #ffffff;
-  border-radius: 10px;
-  margin: 10px;
-  color: #1a304e;
-  padding: 1rem;
-  max-height: 17.5rem;
-}
-
-.l0bloodyfieldtrip
-{
-  background-color: #ffffff;
-  border-radius: 10px;
-  margin: 10px;
-  color: #1a304e;
-  padding: 1rem;
-  max-height: 7.5rem;
-  max-width: 70rem;
-}
-
-.content h1 {
-    font-family: "Copperplate", "Copperplate Gothic Light";
-    color: #ffffff;                         
-}
-
-.casefile-image
-{
+.casefile-image {
   width: 8rem;
   border-radius: .5rem;
   margin-top: .25rem;
 }
 
-.casefile0-image
-{
+.casefile0-image {
   width: 7.5rem;
   border-radius: .5rem;
   margin: .75rem;
 }
 
-h4
-{
+h4 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(255, 255, 255);
   font-size: 0.875rem;
@@ -274,4 +220,37 @@ h4
 #status{
   background-color:rgb(151, 186, 225);
   border-radius:1rem;
+}
+
+@media (max-width: 768px) {
+  .level1, .level2, .level3 {
+    flex: 1 1 45%;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    min-width: 150px;
+  }
+
+  .l1cf1, .l1cf2, .l1cf3, .l2cf1, .l2cf2, .l3cf1 {
+    flex: 0 0 auto;
+    min-width: 120px;
+  }
+
+  .l0bloodyfieldtrip, .level0 {
+    width: 95%;
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .level1, .level2, .level3 {
+    flex: 1 1 100%;
+  }
+
+  .l1cf1, .l1cf2, .l1cf3, .l2cf1, .l2cf2, .l3cf1 {
+    flex: 1 1 100%;
+  }
+
+  .l0bloodyfieldtrip, .level0 {
+    width: 95%;
+  }
 }
