@@ -512,7 +512,7 @@ function signup() {
     localStorage.setItem("passSU", pass);
 
     alert("Successfully created account!");
-    window.location.href = "login.html";
+    window.location.href = "(g2) login.html";
 }
 //for logging in
 function login(){
