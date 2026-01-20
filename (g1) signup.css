@@ -8,9 +8,7 @@
     margin: 5rem auto;
 }
 body{
-<<<<<<< HEAD
     background-color:#0d3e80;
-=======
     background-image:url('https://i.pinimg.com/736x/7d/d0/d2/7dd0d2f73c02e477dfb22a25edd06bdf.jpg');
     background-repeat:no-repeat;
     background-attachment:fixed;
@@ -24,7 +22,6 @@ body::before {
     background: rgba(0, 0, 0, 0.35);
     pointer-events: none;
     z-index:-1;
->>>>>>> af0b7452a5f365b9fe74c50c5899583a915bd1b2
 }
 h2{
     color:#5894e5;
