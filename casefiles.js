@@ -520,8 +520,8 @@ function login(){
     const name = document.getElementById("nameLI").value;
     const pass = document.getElementById("passLI").value;
 
-    const nameS = localStorage.getItem("name");
-    const passS = localStorage.getItem("pass");
+    const nameS = localStorage.getItem("nameSU");
+    const passS = localStorage.getItem("passSU");
 
     if(name===nameS && pass===passS){
         localStorage.setItem("logQ", "true");
@@ -529,8 +529,7 @@ function login(){
         window.location.href = "(a) platypusadventures_k01k28.html";
     }
     else {
-        //alert("Username/Password is invalid, try again");
-        window.location.href = "(a) platypusadventures_k01k28.html";
+        alert("Username/Password is invalid, try again");
     }
 }
 //function for account page
