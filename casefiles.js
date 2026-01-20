@@ -498,7 +498,44 @@ function lccheck(btn, rOW){
     }
 }
 
-//reloading the page to clear the website
-function refreshPage(){
-    location.reload();
+//for sign-ups
+function signup() {
+    const name = document.getElementById("nameSU").value;
+    const pass = document.getElementById("passSU").value;
+
+    if(name === "" || pass === ""){
+        alert("Pls fill out all of the info asked");
+        return;
+    }
+
+    localStorage.setItem("nameSU", name);
+    localStorage.setItem("passSU", pass);
+
+    alert("Successfully created account!");
+    window.location.href = "login.html";
+}
+//for logging in
+function login(){
+    const name = document.getELmentById("nameLI").value;
+    const pass = document.getElementById("passLI").value;
+
+    const nameS = localStorage.getItem("name");
+    const passS = localStorage.getItem("pass");
+
+    if(name===nameS && pass===passS){
+        localStorage.setItem("logQ", "true");
+        //window.location.href = "account-page.html"
+    }
+    else {
+        document.getElementById("ivnalid").textContent = "Username/Password is invalid, try again";
+    }
+}
+//function for account page
+//function account-page(){
+    //idk yet
+//}
+//for logging out
+function logout(){
+    localStorage.setItem("logQ","false");
+    //window.location.href="login.html";
 }
