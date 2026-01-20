@@ -515,6 +515,7 @@ function signup() {
 
     window.location.href = "(g2) login.html";
 }
+
 //for logging in
 function login(){
     const name = document.getElementById("nameLI").value;
@@ -532,13 +533,16 @@ function login(){
         alert("Username/Password is invalid, try again");
     }
 }
+
 //function for account page
 function accountpage(){
-    document.getElementById("greetings").innerText = "Greetings, " + localStorage.getItem(name);
-  }
+    const name = localStorage.getItem("nameSU");
+    document.getElementById("greetings").innerText = "Greetings, " + name;
+}
 
 //for logging out
 function logout(){
     localStorage.setItem("logQ","false");
+    alert("Logged out!");
     window.location.href="(g1) signup.html";
 }
