@@ -113,6 +113,7 @@ body::before
     align-items: center;
     border: 0.125rem dashed #ffffff;
     box-sizing: border-box;
+    font-size: .5rem;
 }
 
 .content h1 {
