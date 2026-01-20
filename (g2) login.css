@@ -9,7 +9,19 @@
     color:rgb(26, 136, 210);
 }
 body{
-    background-color:rgb(25, 22, 58);
+    background-image:url('https://i.pinimg.com/1200x/97/43/47/974347c3d3ad5585163088f0afff4203.jpg');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position-y:-10rem;
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+    z-index:-1;
 }
 h2{
     color:rgb(228, 250, 150);
