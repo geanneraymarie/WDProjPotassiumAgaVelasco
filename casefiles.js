@@ -512,11 +512,12 @@ function signup() {
     localStorage.setItem("passSU", pass);
 
     alert("Successfully created account!");
+
     window.location.href = "(g2) login.html";
 }
 //for logging in
 function login(){
-    const name = document.getELmentById("nameLI").value;
+    const name = document.getElementById("nameLI").value;
     const pass = document.getElementById("passLI").value;
 
     const nameS = localStorage.getItem("name");
@@ -524,18 +525,21 @@ function login(){
 
     if(name===nameS && pass===passS){
         localStorage.setItem("logQ", "true");
-        //window.location.href = "account-page.html"
+        alert("Successfully logged-in!");
+        window.location.href = "(a) platypusadventures_k01k28.html";
     }
     else {
-        document.getElementById("ivnalid").textContent = "Username/Password is invalid, try again";
+        //alert("Username/Password is invalid, try again");
+        window.location.href = "(a) platypusadventures_k01k28.html";
     }
 }
 //function for account page
-//function account-page(){
-    //idk yet
-//}
+function accountpage(){
+    document.getElementById("greetings").innerText = "Greetings, " + localStorage.getItem(name);
+  }
+
 //for logging out
 function logout(){
     localStorage.setItem("logQ","false");
-    window.location.href="(g2) login.html";
+    window.location.href="(g1) signup.html";
 }
