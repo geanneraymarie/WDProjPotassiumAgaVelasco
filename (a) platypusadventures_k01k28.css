@@ -12,6 +12,7 @@ ul
   position: fixed; /* always stays on top */
   top: clamp(0.75rem, 2vw, 1.25rem);
   left: clamp(0.75rem, 2vw, 1.25rem);
+  margin-right:2.5rem;
   border-radius: 3rem;
   width: max-content;
   max-width: 90vw;
@@ -19,11 +20,12 @@ ul
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
+  z-index:10;
 }
 
 li a 
 {
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   text-decoration: none;
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
@@ -61,31 +63,6 @@ li a:hover
     pointer-events: none;
 }
 
-/*animation*/
-.text {
-  max-width: 100%;
-  width: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: 
-    typing 5s steps(79, end) forwards;
-}
-
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-@media (max-width: 480px) {
-  ul {
-    flex-direction: row;  /* Stack nav items vertically on small screens */
-    width: 90%;
-    margin: 0.75rem auto;
-    gap: 0.5rem;
-  }
-}
-
-/*background adjustments*/
 html 
 {
     background-image: url('https://i.pinimg.com/736x/1d/69/a1/1d69a1f0935db53a3c10dd9f0491aa94.jpg');
@@ -97,65 +74,40 @@ html
     padding: 0;
 }
 
-body::before 
-{
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
-    pointer-events: none;
-    z-index: -1;
-}
-
-/*content*/
 .content {
-    width: 90%;
-    max-width: 85.75rem;
-    text-align: left;
+    color: rgb(255, 255, 255);
+    background-color: rgba(26, 48, 78, .75);
+    width:90%;
+    max-width:85.75rem;
+    text-align:left;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
-    font-size: clamp(0.95rem, 2vw, 1.125rem);
-    margin: clamp(1.5rem, 4vw, 3rem) auto;
-    margin-top: clamp(4rem, 8.5vw, 9rem);
-    background-color: rgba(26, 48, 78, .75);
+    font-size:1.125 rem;
+    margin: 5rem auto 0 auto;
+    position:relative;
+    top:1.25rem;
+    border-radius:1rem;
+    padding:2rem;
+    margin-top: calc(1.5rem + 3rem);
     display:flex;
     flex-direction:column;
-    position: relative;
-    z-index: 1;
-    padding: clamp(1rem, 3vw, 1.25rem);
-    border-radius: 1rem;
-    min-height: 60vh;      
-    flex-grow: 1;            
-    margin-left: auto;
-    margin-right: auto;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.content {
-    flex-grow: 1; 
+    z-index:1;
+    min-height:60vh;
+    flex-grow:1;
+    gap:2rem;
 }
 
 .content h1 {
     font-family: 'Courier New', Courier, monospace;
     color: #ffffff;
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: 2.5rem;
 }
 
 h4
 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: rgb(255, 255, 255);
-  font-size: clamp(0.75rem, 2vw, 0.875rem);
+  color: rgb(49, 49, 49);
+  font-size: 0.875rem;
   text-align: center;
 }
 
