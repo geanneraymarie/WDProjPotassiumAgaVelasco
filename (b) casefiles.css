@@ -6,21 +6,26 @@ ul
   padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: clamp(0.6rem, 3vw, 2rem);
-  position: fixed;
+  position: fixed; /* always stays on top */
   top: clamp(0.75rem, 2vw, 1.25rem);
   left: clamp(0.75rem, 2vw, 1.25rem);
+  margin-right:2.5rem;
   border-radius: 3rem;
   width: max-content;
   max-width: 90vw;
   z-index: 9999;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  z-index:10;
 }
 
 li a 
 {
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   text-decoration: none;
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
@@ -40,6 +45,14 @@ li a:hover
   color: rgb(255, 255, 255);
 }
 
+@media (max-width: 480px) {
+  .platypus {
+    width: 8rem;  /* smaller on mobile */
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+}
+
 .platypus
 {
     position: fixed;
@@ -50,50 +63,53 @@ li a:hover
     pointer-events: none;
 }
 
-
-/*animation*/
-.content > * 
-{
-    opacity: 0;
-    animation: fadeIn 1s ease forwards;
-}
-
-@keyframes fadeIn 
-{
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
 /*background adjustments*/
-html 
+html, body
 {
     background-image: url('https://i.pinimg.com/1200x/8d/96/6d/8d966d8a3f5054b1421449e93859225c.jpg');
     background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position-y: -280px;
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+    background-position:center;
     margin: 0;
     padding: 0;
 }
 
-body::before 
-{
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.25);
-    pointer-events: none;
-    z-index: -1;
+/*content*/
+.content {
+  background-color: rgba(0, 0, 0, 0.75);
+  max-width:96%;
+  width:90%;
+  margin: 1rem auto;
+  margin-top: 9rem;
+  border-radius: 0.94rem;
+  padding: 1.25rem;
+  position:relative;
 }
 
-/*content*/
+
+.content h1
+{
+  font-size: 2.75rem;
+  font-family: "Copperplate", "Copperplate Gothic Light";
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.content h1 {
+    font-family: "Copperplate", "Copperplate Gothic Light";
+    color: #ffffff;                         
+}
+
 .casefiles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    width: 100%;
-    padding: 0 1rem;
-    box-sizing: border-box;
+  display:flex;
+  width:100%;
+  justify-content:center;
+}
+
+
+.guidelines{
+  color: rgb(255, 255, 255);
 }
 
 details
@@ -110,103 +126,89 @@ summary
   font-weight: bold;
 }
 
-.content {
-    text-align: center;
-    font-family: "Copperplate", "Copperplate Gothic Light";
-    color: rgb(255, 255, 255);
-    font-size: 1.125rem;
-    margin: clamp(2rem, 2.81vw, 3.5rem);
-    margin-top: clamp(4rem, 8.5vw, 9rem);
-    background-color: rgba(0, 0, 0, 0.75);
-    position: relative;
-    z-index: 1;
-    padding: 1.25rem;
-    border-radius: .94rem;
-}
-
-.content h1
+/*casefiless*/
+.casefiles
 {
-  font-size: 2.75rem;
-  font-family: "Copperplate", "Copperplate Gothic Light";
-  color: #ffffff;                         
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin: 1rem;
 }
 
-/*mobile responsiveness*/
-.level1, .level2, .level3 {
-    flex: 1 1 250px;
-    max-width: 100%;
-    min-width: 200px;
-    height: auto;
-    margin: 0.75rem;
-    padding: 0.75rem;
-    background-color: rgb(57, 84, 120);
-    border-radius: 0.63rem;
-    color:#ffffff;
-    display: flex;
-    flex-direction: row;
-    border: 0.125rem dashed #ffffff;
-    overflow: scroll;
-    box-sizing: border-box;
-    flex-wrap: nowrap;
-    overflow-y: hidden;
-    overflow-x: auto;
+.l0bloodyfieldtrip
+{
+  align-items:center;
+  background-color:#ffffff;
+  display: flex;
+  min-height:9rem;
+  gap:0.75rem;
+  border-radius:0.63rem;
+  padding:1rem;
+  gap:0.75rem;
+  color: #1a304e;
 }
 
-.l1cf1, .l1cf2, .l1cf3, .l2cf1, .l2cf2, .l3cf1 {
-    flex: 0 0 200px;
-    min-width: 120px;
-    margin: 0.5rem;
-    padding: 0.75rem;
-    background-color: #ffffff;
-    color: #1a304e;
-    border-radius: 10px;
-    overflow: hidden;
-    box-sizing: border-box;
+.level0
+{
+  margin:auto;
+  background-color: rgb(57, 84, 120);
+  padding:0.94rem;
+  border-radius:0.63rem;
+  width:80%;
+  max-width:89%;
+  justify-content:center;
+  border: 0.125rem dashed #ffffff;
 }
 
-
-.l0bloodyfieldtrip {
-    flex: 1 1 90%;
-    max-width: 90%;
-    margin: 1rem auto;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
+.level0 h2{
+  color:#ffffff;
 }
 
-.level0 {
-    width: 90%;
-    max-width: 40rem;
-    height: auto;
-    margin: auto;
-    padding: 1rem;
-    background-color: rgb(57, 84, 120);
-    border-radius: 0.63rem;
-    color:#ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.125rem dashed #ffffff;
-    box-sizing: border-box;
+.level1, .level2, .level3
+{
+  background-color: rgb(57, 84, 120);
+  color:#ffffff;
+  border-radius: 0.63rem;
+  padding: 0.94rem;
+  display: flex;
+  align-items:center;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:89%;
+  width:87%;
+  overflow-x:auto;
+  margin:1.25rem;
 }
 
-.casefile-image {
+.l3cf1, .l1cf1, .l1cf2, .l1cf3, .l2cf1, .l2cf2
+{
+  background-color: #ffffff;
+  border-radius: 0.63rem;
+  color: #1a304e;
+  padding:1rem;
+  margin:auto;
+  max-height:17.5rem;
+  height:17rem;
+}
+
+.casefile-image
+{
   width: 8rem;
   border-radius: .5rem;
   margin-top: .25rem;
 }
 
-.casefile0-image {
+.casefile0-image
+{
   width: 7.5rem;
   border-radius: .5rem;
   margin: .75rem;
 }
 
-h4 {
+h4
+{
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(255, 255, 255);
   font-size: 0.875rem;
@@ -220,37 +222,5 @@ h4 {
 #status{
   background-color:rgb(151, 186, 225);
   border-radius:1rem;
-}
-
-@media (max-width: 768px) {
-  .level1, .level2, .level3 {
-    flex: 1 1 45%;
-    flex-wrap: wrap;
-    overflow-x: visible;
-    min-width: 150px;
-  }
-
-  .l1cf1, .l1cf2, .l1cf3, .l2cf1, .l2cf2, .l3cf1 {
-    flex: 0 0 auto;
-    min-width: 120px;
-  }
-
-  .l0bloodyfieldtrip, .level0 {
-    width: 95%;
-    max-width: 95%;
-  }
-}
-
-@media (max-width: 480px) {
-  .level1, .level2, .level3 {
-    flex: 1 1 100%;
-  }
-
-  .l1cf1, .l1cf2, .l1cf3, .l2cf1, .l2cf2, .l3cf1 {
-    flex: 1 1 100%;
-  }
-
-  .l0bloodyfieldtrip, .level0 {
-    width: 95%;
-  }
+  text-align:center;
 }
