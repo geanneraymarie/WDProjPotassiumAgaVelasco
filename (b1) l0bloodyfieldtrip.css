@@ -2,49 +2,49 @@
 ul
 {
   list-style-type: none;
-  margin: 1rem;
-  flex-direction: column;
-  padding: .3rem;
-  padding-right: .1rem;
-  padding-left: .1rem;
+  margin: 1.5rem;
+  margin-left:2%;
+  margin-right:10%;
+  padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  gap: .5rem;
-  position: fixed;
-  top: 1.25rem;
-  left: 1.25rem;
-  border-radius: .5rem;
-  z-index: 1000;
-  width: 8rem;
+  gap: clamp(0.6rem, 3vw, 2rem);
+  position: fixed; /* always stays on top */
+  top: clamp(0.75rem, 2vw, 1.25rem);
+  left: clamp(0.75rem, 2vw, 1.25rem);
+  margin-right:2.5rem;
+  border-radius: 3rem;
+  width: max-content;
+  max-width: 90vw;
+  z-index: 9999;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  z-index:10;
 }
 
 li a 
 {
-font-size: 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   text-decoration: none;
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: .6rem;
-  border-radius: .5rem;
+  padding: clamp(0.4rem, 1vw, 0.6rem)
+           clamp(0.6rem, 2vw, 0.9rem);
+  border-radius: 2rem;
   transition: background-color .5s;
+
+  position: relative;
+  z-index: 10000;
 }
 
 li a:hover 
 {
   background-color: rgb(26, 48, 78);
-  color:rgb(255, 255, 255);
-}
-
-.platypus
-{
-    position: fixed;
-    top: 1.25rem;
-    right: 1.25rem;
-    width: 12.5rem;
-    z-index: 9999;
-    pointer-events: none;
+  color: rgb(255, 255, 255);
 }
 
 /*animation*/
@@ -90,7 +90,7 @@ body::before
     margin: 2rem;
     width: 95%;
     max-width: 100%;
-    margin-top: 2rem;
+    margin-top: 4rem;
     background-color: rgba(0, 0, 0, 0.75);
     position: relative;
     z-index: 1;
@@ -105,15 +105,14 @@ body::before
     background-color: rgb(57, 84, 120);
     border-radius: .63rem;
     color:rgb(255, 255, 255);
-    width: 90%;
-    max-width: 80rem;
+    width: 95%;
+    max-width: 98%;
     max-height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 0.125rem dashed #ffffff;
     box-sizing: border-box;
-    font-size: .5rem;
 }
 
 .content h1 {
