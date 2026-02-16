@@ -221,7 +221,7 @@ button:hover
   position: fixed;
   bottom: clamp(0.75rem, 2vw, 1.25rem);
   left: clamp(0.75rem, 2vw, 1.25rem);
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgb(255, 255, 255);
   border: none;
   margin: clamp(2rem, 1vw, 1rem);
   border-radius: 50%;
