@@ -2,25 +2,28 @@
 ul
 {
   list-style-type: none;
-  margin: clamp(0.75rem, 2vw, 1.5rem);
+  margin: 1.5rem auto;
   padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: clamp(0.6rem, 3vw, 2rem);
-  position: fixed;
-  top: clamp(0.75rem, 2vw, 1.25rem);
-  left: clamp(0.75rem, 2vw, 1.25rem);
+  position: fixed; /* always stays on top */
+  top: clamp(0.75rem, 2vw, 1rem);
   border-radius: 3rem;
   width: max-content;
   max-width: 90vw;
   z-index: 9999;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  z-index:1000;
 }
 
 li a 
 {
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   text-decoration: none;
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
@@ -40,35 +43,49 @@ li a:hover
   color: rgb(255, 255, 255);
 }
 
-.platypus
-{
-    position: fixed;
-    top: clamp(0.75rem, 2vw, 1.25rem);
-    right: clamp(0.75rem, 2vw, 1.25rem);
-    width: clamp(6rem, 15vw, 12.5rem);
-    z-index: 9999; 
-    pointer-events: none;
+@media (min-width: 768px) {
+    ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        left: clamp(0.75rem, 2vw, 1.25rem);
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .platypus {
+        width: 8rem;
+        top: 0.5rem;
+        right: 0.5rem;
+    }
 }
 
 /*animation*/
+.content > * 
+{
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
 @keyframes fadeIn 
 {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
+
 /*background adjustments*/
 html 
 {
     background-image: url(https://i.pinimg.com/1200x/57/e6/5d/57e65df012fcc791ef1dfb5a2214b77b.jpg);
-    background-size: 100% auto; 
-    background-repeat: no-repeat; 
-    background-position-y: -26.875rem;
-    background-attachment: fixed;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position-y: -280px;
     margin: 0;
+    padding: 0;
 }
 
-html::before 
+body::before 
 {
     content: "";
     position: fixed;
@@ -80,28 +97,41 @@ html::before
 
 /*content*/
 .content {
-    margin: 2.5rem;
-    margin-top: 6.75rem;
+    margin: 1.5rem auto;
+    top:2rem;  
     position: relative;
-    z-index: 1;
-    padding: 1.25rem;
-    border-radius: .938rem;
-    display: flex;
-    flex-direction: row;
-    display: flex;
-    gap: 1.25rem;
-    max-height: 100rem;
+    border-radius:0.938rem;
+    display:flex;
+    gap:1rem;
+    max-width:99%;
+    width:98%;
+    height:auto;
+    flex-direction:row;
+}
+
+@media (max-width: 768px) { 
+    .content { 
+        margin-top:4rem;
+        flex-direction: column; /*vertical*/
+    } 
 }
 
 .abouttheseries, .abouttheauthor, .characters
 {
-    font-size: .781rem;
+    font-size: 0.781rem;
+    color:#ffffff;
+    margin:1rem;
+    border-radius:0.625rem;
+    padding:0.625rem;
+}
+/*
+font-size: .781rem;
     margin-bottom: 0;
     color:#ffffff;
     padding: .625rem;
     border-radius: .625rem;
     width: 50rem;
-}
+*/
 
 .abouttheseries
 {
@@ -140,13 +170,33 @@ h2 {
     font-family: 'Courier New', Courier, monospace;
     background-color: #000000;
     position: sticky;
-    top: 0;
+    top:0;
     z-index: 10;
     padding: 1rem 0;
+    border-radius:1.5rem;
 }
 
 .charfr {
-    display: grid;
+    display:grid;
+    gap:1rem;
+    background-color: rgba(47, 58, 99, 0.75);
+    border-radius: .938rem;
+    overflow-x: auto;
+    margin:auto;
+    width:98%;
+    max-width:99%;
+    box-sizing:border-box;
+    grid-template-columns: repeat(2, 38rem);
+}
+
+@media (max-width: 768px) { 
+    .charfr { 
+        grid-template-columns:1fr; /*vertical*/
+    } 
+}
+
+/*
+display: grid;
     grid-template-columns: repeat(2, 38rem);
     gap: 1rem;
     padding: 1.25rem;
@@ -160,8 +210,7 @@ h2 {
     width: calc(100% - 8rem);
     height: 27.5rem;
     box-sizing: border-box;
-
-}
+*/
 
 .charfr details {
     flex: 0 0 auto;
