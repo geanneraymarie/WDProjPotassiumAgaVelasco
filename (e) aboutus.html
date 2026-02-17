@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang = "en">
     <head>
@@ -7,16 +8,16 @@
         
         <meta name = "description" content="CS3 Website Project">
         <meta name = "author" content = "Aga, Velasco">
-        <link rel="stylesheet" href="(e) aboutus.css">
+        <link rel="stylesheet" href="(d) minigames.css">
         <link rel="ïcon" href="/favicon.io" sizes="any">
         <link rel="icon" type="image/png" href="https://i.pinimg.com/736x/79/eb/02/79eb02b0a4f5b75ff7966f255c428df1.jpg">
         
     </head>
     <body>
+    <img src="https://drive.google.com/thumbnail?id=1Dmqg-EJBHPm1fhI8YHtUOUZD6uWrKnu5" class="platypus">
     <script src="extras.js"></script>
-        <img src="https://drive.google.com/thumbnail?id=1Dmqg-EJBHPm1fhI8YHtUOUZD6uWrKnu5" class="platypus">
-        <iframe id="autoplay-video" width="0" height="0"
-    src="https://www.youtube.com/embed/EANksvavteY?autoplay=1&mute=1&loop=1&playlist=EANksvavteY"
+    <iframe id="autoplay-video" width="0" height="0"
+    src="https://www.youtube.com/embed/ew6h6W5H4sE?autoplay=1&mute=1&loop=1&playlist=ew6h6W5H4sE"
     frameborder="0"
     allow="autoplay; encrypted-media"
     referrerpolicy="strict-origin-when-cross-origin">
@@ -53,37 +54,41 @@ function toggleMute() {
         </ul>
     </div>
             <div class="container">            
-            <div class="geanne">
-                <img src="https://i.pinimg.com/736x/9d/a2/13/9da213bebcc44f0d057a28298f0085cf.jpg" class="funfacts-img">
-                <div class="name">
-                <h2> Geanne Aga </h2>
-                </div>
-                <div class="info">
-                <h3> birthday : 5.12.11<br> interests : reading, writing, mystery, anime, manga, webtoon <br> socials : tt: mariebiscuits2150 , discord: mxrie_2150 , ig: grmhaga.12, fb: Grm Aga </h3>
-                </div>
+            <div class="minigames">
+                <h2> ˚˖𓍢ִ໋❀ math minigames ! </h2>
+                <h3><i> enhance your deduction skills further by applying them in math! <br><br> a random question will appear upon clicking a level. if you exit the question, another question will be randomized when you click again. if you click enough times, you'll eventually be brought back to the question you lost.</i></h3>
+                <script src="(d) minigamesp1.js"></script>
+                <button id="button1" onclick="problem1()"> ᯓ level 1 ★ </button>
+                <p id="output1"></p>
+
+                <script src="(d) minigamesp2.js"></script>
+                <button id="button2" onclick="problem2()"> ᯓ level 2 ★★ </button>
+                <p id="output2"></p>
+
+                <script src="(d) minigamesp3.js"></script>
+                <button id="button3" onclick="problem3()"> ᯓ level 3 ★★★ </button>
+                <p id="output3"></p>
         </div>
         <div>
-            <div class="maggie">
-                <img src="https://i.pinimg.com/736x/ce/45/73/ce45735106b1e2efaba8d4dbcc07c4ce.jpg" class="funfacts-img">
-                <div class="name">
-                <h2> Maggie Velasco </h2>
-                </div>
-                <div class="info">
-                <h3> birthday : 3.24.11<br> interests : drawing anime, reading, playing the piano<br>socials :  discord: mgcian_twt, fb: Maggie Velasco</h3>
-                </div>
+            <div class="funfacts">
+                <h2> fun facts about ron ᝰ.ᐟ </h2>
+                
+                <b><p><br><br> ron is addicted to brown sugar syrup and it's part of what fuels him, he got the trait from his father who was instead addicted to maple syrup </p></b>
+                <b><p> ron's last name "kamonohashi" translates to platypus in a different kanji </p></b>
+                <b><p> ron is good at lock picking </p></b>
+                <b><p> ron is horrible with firearms </p></b>
+                <b><p> ron dislikes having free time and prefers to keep himself busy </p></b>
+                <b><p> ron has a cat at home who's always sleeping </p></b>
+                <b><p> ron enjoys creating various aliases for himself especially when he helps toto out in cases to avoid being caught helping toto </p></b>
             </div>
         </div>
         </div>
+        <img src="https://drive.google.com/thumbnail?id=1AoldPN90Sovu__GYQQJolT0JfS5JIpur" class="rontoto">
         <h4 class="copyright">
         &copy; <span id="year"></span> Geanne Aga. Maggie Velasco. All rights reserved.
         </h4>
         <script>
             document.getElementById("year").innerHTML = new Date().getFullYear();
         </script>
-        
     </body>
-
-
-
-
 </html>
