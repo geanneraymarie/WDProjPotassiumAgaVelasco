@@ -3,9 +3,8 @@ ul
 {
   list-style-type: none;
   margin: 1.5rem;
-  margin-left:auto;
-  margin-right:auto;
-  margin-top:1.5rem;
+  margin-left:5%;
+  margin-right:5%;
   padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
@@ -13,9 +12,8 @@ ul
   justify-content: flex-start;
   gap: clamp(0.6rem, 3vw, 2rem);
   position: fixed; /* always stays on top */
-  top: clamp(0.75rem, 2vw, 1.25rem);
+  top: clamp(0.75rem, 2vw, 1rem);
   left: clamp(0.75rem, 2vw, 1.25rem);
-  margin-right:2.5rem;
   border-radius: 3rem;
   width: max-content;
   max-width: 90vw;
