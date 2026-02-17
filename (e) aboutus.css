@@ -2,23 +2,28 @@
 ul
 {
   list-style-type: none;
-  margin: clamp(1rem, 2vw, 1.5rem);
-  padding: clamp(0.5rem, 1vw, 1rem) clamp(1rem, 2vw, 2rem);
+  margin: 1.5rem auto;
+  padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: clamp(0.6rem, 3vw, 2rem);
   position: fixed;
-  top: clamp(1rem, 2vw, 1.5rem);
-  left: clamp(1rem, 2vw, 1.5rem);
+  top: clamp(0.75rem, 2vw, 1rem);
   border-radius: 3rem;
-  width: fit-content;
-  z-index: 1000;
+  width: max-content;
+  max-width: 90vw;
+  z-index: 9999;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  z-index:1000;
 }
 
 li a 
 {
-  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   text-decoration: none;
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
@@ -26,6 +31,7 @@ li a
   padding: clamp(0.4rem, 1vw, 0.6rem) clamp(0.6rem, 2vw, 0.9rem);
   border-radius: 2rem;
   transition: background-color .5s;
+  position:relative;
 }
 
 li a:hover 
@@ -35,14 +41,21 @@ li a:hover
   color: rgb(255, 255, 255);
 }
 
-.platypus
-{
-  position: fixed;
-  top: clamp(1rem, 2vw, 1.5rem);
-  right: clamp(1rem, 2vw, 1.5rem);
-  width: clamp(6rem, 15vw, 12.5rem);
-  z-index: 999;
-  pointer-events: none;
+@media (min-width: 768px) {
+    ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        left: clamp(0.75rem, 2vw, 1.25rem);
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .platypus {
+        top: 0.5rem;
+        width: 8rem;
+        right: 0.5rem;
+    }
 }
 
 /*animation*/
@@ -58,6 +71,8 @@ html
   background-image: url('https://i.pinimg.com/736x/7e/cd/27/7ecd27da10dae6c43b543778c22573d0.jpg');
   background-size: cover; 
   background-repeat: no-repeat; 
+  background-attachment:fixed;
+  background-position:center;
   margin: 0;
   padding: 0;
 }
@@ -65,34 +80,72 @@ html
 /*content*/
 .container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: stretch;
   justify-content: center;
   align-content: center;
-  gap: clamp(2rem, 5vw, 5rem);
+  gap: clamp(2rem, 5vw, 1.25rem);
   width: 100%;
+  height:auto;
   padding: clamp(1rem, 2vw, 2rem);
+  flex-direction:row;
 }
 
+/*
+.container
+{
+  display:flex;
+  flex-direction:row;
+  gap:1.25rem;
+  align-items:flex-start;
+  margin-left:1.25rem;
+  margin-right:auto;
+}
 
-.maggie, .geanne {
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}*/
+
+
+.geanne, .maggie {
   background-color: rgb(78, 97, 129);
-  border-radius: 0.938rem;
   font-family: 'Courier New', Courier, monospace;
-  color: white;
-  font-size: clamp(1rem, 2vw, 1.25rem);
-  padding: clamp(0.5rem, 1vw, 1.25rem);
+  color:#ffffff;
   box-shadow: 0 0 clamp(1rem, 2vw, 1.25rem) rgba(255, 255, 255, 0.9);
-  display: flex;
-  flex: 1 1 30rem;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 20rem;
-  max-width: 60rem;
-  
-  margin-top: clamp(5rem, 10vw, 10rem);
+  font-size:1.25rem;
+  padding:1.5rem;
+  border-radius:0.94rem;
+  gap:1.25rem;
+  display:flex;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:3rem;
+  max-width:70%;
+  flex-direction:column;
+  flex:1;
+  justify-content:center;
 }
+
+.geanne li, .maggie li{
+  margin:1.5rem;
+}
+
+@media (max-width: 480px) {
+    .geanne, .maggie {
+        top: 10rem;
+        right: 0.5rem;
+        max-width:70%;
+        gap:1.25rem;
+        margin-left:auto;
+        margin-right:auto;
+        font-size:90%;
+    }
+}
+
+
 .maggie:hover, .geanne:hover 
 {
   background-color: #ffffff;
@@ -106,12 +159,20 @@ html
   vertical-align: top;
   margin-left: clamp(1rem, 3vw, 1.875rem);
   margin-right: clamp(0.3rem, 1vw, 0.625rem);
+  font-size:90%;
 }
 
 .info 
 {
   clear: left;
   margin-top: clamp(0.3rem, 1vw, 0.625rem);
+}
+
+@media (max-width: 480px) {
+    .info {
+        padding:1rem;
+        margin:1rem;
+    }
 }
 
 h4
@@ -156,6 +217,6 @@ h4
   height: clamp(2.5rem, 5vw, 3.5rem);
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   cursor: pointer;
-  z-index: 9999;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  z-index: 1000;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
