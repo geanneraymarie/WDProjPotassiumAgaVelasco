@@ -20,28 +20,6 @@ ul
   flex-wrap:wrap;
 }
 
-/*
-list-style-type: none;
-  margin: 1.5rem auto;
-  padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
-  background-color: #ffffff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: clamp(0.6rem, 3vw, 2rem);
-  position: fixed; /* always stays on top */
-  /*top: clamp(0.75rem, 2vw, 1rem);
-  border-radius: 3rem;
-  width: max-content;
-  max-width: 90vw;
-  z-index: 9999;
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
-  z-index:1000;
-*/
-
-
 li a 
 {
   font-size: clamp(1rem, 2.5vw, 1.4rem);
@@ -280,5 +258,5 @@ h4
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   cursor: pointer;
   z-index: 1000;
-  font-family:Georgia, 'Times New Roman', Times, serif
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
