@@ -75,12 +75,13 @@ li a:hover
 
 
 /*background adjustments*/
-html 
+html, body
 {
     background-image: url(https://i.pinimg.com/1200x/57/e6/5d/57e65df012fcc791ef1dfb5a2214b77b.jpg);
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position-y: -280px;
+    background-attachment:fixed; 
+    background-position:center;
     margin: 0;
     padding: 0;
 }
