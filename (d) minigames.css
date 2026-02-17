@@ -2,56 +2,97 @@
 ul
 {
   list-style-type: none;
-  margin: 1.5rem;
-  padding: 1rem 2rem;
+  margin: 1.5rem auto;
+  padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: rgb(27, 30, 26);
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   gap: clamp(0.6rem, 3vw, 2rem);
-  position: fixed;
-  top: 1.25rem;
-  left: 1.25rem;
+  position: fixed; /* always stays on top */
+  top: clamp(0.75rem, 2vw, 1rem);
   border-radius: 3rem;
-  width: fit-content;
+  width: max-content;
+  max-width: 90vw;
   z-index: 1000;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
 }
+
+/*
+list-style-type: none;
+  margin: 1.5rem auto;
+  padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: clamp(0.6rem, 3vw, 2rem);
+  position: fixed; /* always stays on top */
+  /*top: clamp(0.75rem, 2vw, 1rem);
+  border-radius: 3rem;
+  width: max-content;
+  max-width: 90vw;
+  z-index: 9999;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  z-index:1000;
+*/
+
 
 li a 
 {
-font-size: 1.6rem;
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
   text-decoration: none;
   color: rgb(99, 208, 71);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: .6rem .9rem;
+  padding: clamp(0.4rem, 1vw, 0.6rem)
+           clamp(0.6rem, 2vw, 0.9rem);
   border-radius: 2rem;
   transition: background-color .5s;
+  position: relative;
 }
+
 
 li a:hover 
 {
   background-color: rgb(99, 208, 71);
-  border-radius: 2rem;
-  color:rgb(243, 255, 139)
+  color:rgb(243, 255, 139);
+  border-radius:2rem;
+}
+
+@media (min-width: 768px) {
+    ul {
+        flex-direction: row;
+        justify-content: flex-start;
+        left: clamp(0.75rem, 2vw, 1.25rem);
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .platypus {
+        top: 0.5rem;
+        width: 8rem;
+        right: 0.5rem;
+    }
 }
 
 .rontoto 
 {
-    position: absolute;
-    top: 11.5rem;
-    right: 7rem;
-    width: 9.25rem;
-    z-index: 999;
+    position: relative;
+    bottom: 2rem;
+    left: 2rem;
+    width:10rem;
 }
-
-.platypus
-{
-    position: fixed;
-    top: 1.25rem;
-    right: 1.25rem;
-    width: 12.5rem;
-    z-index: 9999;
-    pointer-events: none;
+@media (max-width: 480px) {
+    .rontoto {
+        width: 30%;
+        left:1rem;
+    }
 }
 
 /*animation*/
@@ -68,14 +109,16 @@ li a:hover
 }
 
 /*background adjustments*/
-html 
+html
 {
     background-image: url('https://i.pinimg.com/736x/37/31/be/3731be3de012495d280134f624be4aa7.jpg');
     background-size: cover; 
-    background-repeat: no-repeat; 
-    background-position-y: -23.44rem;
+    background-repeat: no-repeat;
+    background-attachment:fixed; 
+    background-position:center;
     margin: 0;
     padding: 0;
+    top:0;
 }
 
 body::before 
@@ -86,31 +129,52 @@ body::before
     background: rgba(0, 0, 0, 0.5);
     pointer-events: none;
     z-index: -1;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-repeat:no-repeat;
 }
 
 /*content*/
 .container
 {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap:2rem;
+  display:flex;
+  flex-direction:row;
+  gap:1.25rem;
+  align-items:flex-start;
+  margin-left:1.25rem;
+  margin-right:auto;
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }
 
 .minigames
 {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    color: rgb(27, 30, 26);
-    font-size: 1.25rem;
-    margin-top: 8.65rem;
-    margin-left: 3.75rem;
-    padding: 1.25rem;
-    border-radius: .94rem;
-    font-weight: bold;
-    background-color: rgba(243, 255, 139, .75);
-    width: 35rem;
-    text-shadow: .5rem .5rem 1rem rgb(99, 208, 71);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(27, 30, 26);
+  background-color: rgba(243, 255, 139, 0.75);
+  margin-top: 6.65rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 1.25rem;
+  border-radius: .94rem;
+  font-weight: bold;
+  width:35rem;
+  text-shadow: .5rem .5rem 1rem rgb(99, 208, 71);
+  font-size:1.25rem;
+}
+
+@media (max-width: 480px) {
+    .minigames {
+        width:80%;
+        max-width:90%;
+    }
 }
 
 .funfacts h2
@@ -125,12 +189,14 @@ body::before
     font-family: 'Courier New', Courier, monospace;
     color: rgb(255, 255, 255);
     font-size: 1.25rem;
-    margin-top: 8.6rem;
-    margin-right: 3.75rem;
-    padding: 1.5rem;
+    margin-top: 6.65rem;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 1.25rem;
     border-radius: .94rem;
     background-color: rgba(99, 208, 71, .75);
-    width: 45rem;
+    width: 80%;
+    max-width:90%;
     text-shadow: .5rem .5rem 1rem rgb(243, 255, 139);
 }
 
@@ -139,7 +205,7 @@ body::before
   border-radius:5rem;
   border-color: rgb(255, 255, 255);
   border-width: .25rem;
-  width: 20rem;
+  width: 90%;
   height: 3.125rem;
   font-family:'Courier New', Courier, monospace;
   font-size: 1rem;
@@ -182,6 +248,11 @@ h3
 {
   font-size: 1.25rem;
 }
+@media (max-width: 480px) {
+    h3 {
+        font-size:60%;
+    }
+}
 
 h4
 {
@@ -208,6 +279,6 @@ h4
   height: clamp(2.5rem, 5vw, 3.5rem);
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   cursor: pointer;
-  z-index: 9999;
+  z-index: 1000;
   font-family:Georgia, 'Times New Roman', Times, serif
 }
