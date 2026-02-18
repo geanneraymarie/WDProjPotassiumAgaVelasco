@@ -41,6 +41,20 @@ function toggleMute() {
         document.getElementById("mute-button").textContent = "🔇";
     }
 }
+        function openPopup() {
+            document.getElementById("popupGuidelines").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("popupGuidelines").style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            const overlay = document.getElementById("popupGuidelines");
+            if (event.target === overlay) {
+                closePopup();
+            }
+        }
 </script>
     <div class="navbar">
         <ul>
@@ -55,10 +69,14 @@ function toggleMute() {
     </div>
             <div class="content">
             <h1> casefiles </h1>
-            <details class="guidelines">
-                <summary><u> GUIDELINES </u></summary>
-            <h3> you will be playing as toto in the interactive portion, but in the case solving, you will step into ron's shoes, and solve the mystery. <br><br> the levels are ranked from easy to hard. it is in chronological order, meaning that each level goes deeper into the story as well. <br><br><i>level 0 is crucial to understand the context of the story. you are only intended to view it as it is simply a prologue to the following cases.</i> <br><br> for the best experience, solve from level 0 to level 3. You may choose to go straight to the case solving, but it is strongly advised for you to play the interactive portion for better context and enjoyment. Happy playing! <br><br><br> fun fact : the cover images of level 1 to level 3 are the manga covers that correspond to the volume the original case chapters are found in. </h3>
-            </details>
+            <button class="openguidelines" onclick="openPopup()">GUIDELINES</button>
+
+            <div class="popupguidelines" id="popupGuidelines">
+            <div class="guidelines">
+            <h2>GUIDELINES</h2>
+            <p>you will be playing as toto in the interactive portion, but in the case solving, you will step into ron's shoes, and solve the mystery. <br><br> the levels are ranked from easy to hard. it is in chronological order, meaning that each level goes deeper into the story as well. <br><br><i>level 0 is crucial to understand the context of the story. you are only intended to view it as it is simply a prologue to the following cases.</i> <br><br> for the best experience, solve from level 0 to level 3. You may choose to go straight to the case solving, but it is strongly advised for you to play the interactive portion for better context and enjoyment. Happy playing! <br><br><br> fun fact : the cover images of level 1 to level 3 are the manga covers that correspond to the volume the original case chapters are found in. <br><br><br><br><b><i>click anywhere outside to exit</i></b></p>
+        </div>
+    </div>
 
             <div class="level0">
                 <h2>Level 0</h2>
