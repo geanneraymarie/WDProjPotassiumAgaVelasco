@@ -2,15 +2,17 @@
 ul
 {
   list-style-type: none;
-  margin: 1.5rem auto;
+  margin: clamp(0.75rem, 2vw, 1.5rem);
   padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: clamp(0.6rem, 3vw, 2rem);
-  position: fixed;
-  top: clamp(0.75rem, 2vw, 1rem);
+  gap: clamp(0.6rem, 3vw, 0.7rem);
+  position: fixed; /* always stays on top */
+  top: clamp(0.75rem, 2vw, 1.25rem);
+  left: clamp(0.75rem, 2vw, 1.25rem);
+  margin-right:2.5rem;
   border-radius: 3rem;
   width: max-content;
   max-width: 90vw;
@@ -18,7 +20,7 @@ ul
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
-  z-index:1000;
+  z-index:10;
 }
 
 li a 
@@ -28,16 +30,18 @@ li a
   color: rgb(26, 48, 78);
   font-family: garamond, serif;
   font-weight: bold;
-  padding: clamp(0.4rem, 1vw, 0.6rem) clamp(0.6rem, 2vw, 0.9rem);
+  padding: clamp(0.4rem, 1vw, 0.6rem)
+           clamp(0.6rem, 2vw, 0.9rem);
   border-radius: 2rem;
   transition: background-color .5s;
-  position:relative;
+
+  position: relative;
+  z-index: 10000;
 }
 
 li a:hover 
 {
   background-color: rgb(26, 48, 78);
-  border-radius: 2rem;
   color: rgb(255, 255, 255);
 }
 
@@ -50,14 +54,22 @@ li a:hover
     }
 }
 
-@media (max-width: 480px) {
-    .platypus {
-        top: 0.5rem;
-        width: 8rem;
-        right: 0.5rem;
-    }
+.platypus
+{
+    position: fixed;
+    top: clamp(0.75rem, 2vw, 1.25rem);
+    right: clamp(0.75rem, 2vw, 1.25rem);
+    width: clamp(6rem, 15vw, 12.5rem);
+    z-index: 9999; 
+    pointer-events: none;
 }
 
+@media(max-width:480px){
+  .platypus{
+    width:20%;
+    top:0.5rem;
+  }
+}
 /*animation*/
 @keyframes fadeIn 
 {
@@ -89,25 +101,15 @@ html
   padding: clamp(1rem, 2vw, 2rem);
   flex-direction:row;
 }
-
 /*
-.container
-{
-  display:flex;
-  flex-direction:row;
-  gap:1.25rem;
-  align-items:flex-start;
-  margin-left:1.25rem;
-  margin-right:auto;
-}
-
-@media (max-width: 480px) {
-    .container {
-        flex-direction: column;
-        margin-left:auto;
-        margin-right:auto;
-    }
-}*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  gap: clamp(2rem, 5vw, 1.25rem);
+  padding: clamp(1rem, 2vw, 2rem);
+  flex-direction:column;
+*/
 
 
 .geanne, .maggie {
@@ -128,6 +130,26 @@ html
   flex:1;
   justify-content:center;
 }
+
+/*
+  background-color: rgb(78, 97, 129);
+  color:#ffffff;
+  box-shadow: 0 0 clamp(1rem, 2vw, 1.25rem) rgba(255, 255, 255, 0.9);
+  font-size:1.25rem;
+  padding:1.5rem;
+  border-radius:0.94rem;
+  display:flex;
+  justify-content:center;
+  flex-direction:row
+  width:70%;
+  margin-top:3rem;
+*/
+/* 
+  width:auto;
+  flex-direction:column;
+  flex:0 0 45%;
+  align-self:stretch;
+*/
 
 .geanne li, .maggie li{
   margin:1.5rem;
