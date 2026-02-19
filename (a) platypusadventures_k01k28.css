@@ -63,6 +63,13 @@ li a:hover
     pointer-events: none;
 }
 
+@media(max-width:480px){
+  .platypus{
+    width:20%;
+    top:0.5rem;
+  }
+}
+
 html 
 {
     background-image: url('https://i.pinimg.com/736x/1d/69/a1/1d69a1f0935db53a3c10dd9f0491aa94.jpg');
