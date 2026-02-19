@@ -2,18 +2,17 @@
 ul
 {
   list-style-type: none;
-  margin: 1.5rem;
-  margin-left:5%;
-  margin-right:5%;
+  margin: clamp(0.75rem, 2vw, 1.5rem);
   padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: clamp(0.6rem, 3vw, 2rem);
+  gap: clamp(0.6rem, 3vw, 0.7rem);
   position: fixed; /* always stays on top */
-  top: clamp(0.75rem, 2vw, 1rem);
+  top: clamp(0.75rem, 2vw, 1.25rem);
   left: clamp(0.75rem, 2vw, 1.25rem);
+  margin-right:2.5rem;
   border-radius: 3rem;
   width: max-content;
   max-width: 90vw;
@@ -44,6 +43,23 @@ li a:hover
 {
   background-color: rgb(26, 48, 78);
   color: rgb(255, 255, 255);
+}
+
+.platypus
+{
+    position: fixed;
+    top: clamp(0.75rem, 2vw, 1.25rem);
+    right: clamp(0.75rem, 2vw, 1.25rem);
+    width: clamp(6rem, 15vw, 12.5rem);
+    z-index: 9999; 
+    pointer-events: none;
+}
+
+@media(max-width:480px){
+  .platypus{
+    width:20%;
+    top:0.5rem;
+  }
 }
 
 /*animation*/
