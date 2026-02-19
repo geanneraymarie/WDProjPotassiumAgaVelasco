@@ -2,15 +2,17 @@
 ul
 {
   list-style-type: none;
-  margin: 1.5rem auto;
+  margin: clamp(0.75rem, 2vw, 1.5rem);
   padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: rgb(26, 48, 78);
   display: flex;
   flex-wrap:wrap;
   justify-content: flex-start;
-  gap: clamp(0.6rem, 3vw, 2rem);
+  gap: clamp(0.6rem, 3vw, 0.7rem);
   position: fixed;
-  top: clamp(0.75rem, 2vw, 1rem);
+  top: clamp(0.75rem, 2vw, 1.25rem);
+  left: clamp(0.75rem, 2vw, 1.25rem);
+  margin-right:2.5rem;
   max-width:90vw;
   left: 1.25rem;
   border-radius: 3rem;
@@ -37,6 +39,23 @@ li a:hover
   background-color: rgb(255, 255, 255);
   border-radius: 2rem;
   color:rgb(26, 48, 78)
+}
+
+.platypus
+{
+    position: fixed;
+    top: clamp(0.75rem, 2vw, 1.25rem);
+    right: clamp(0.75rem, 2vw, 1.25rem);
+    width: clamp(6rem, 15vw, 12.5rem);
+    z-index: 9999; 
+    pointer-events: none;
+}
+
+@media(max-width:480px){
+  .platypus{
+    width:20%;
+    top:0.5rem;
+  }
 }
 
 /*background adjustments*/
@@ -68,7 +87,7 @@ body::before
     color: rgb(255, 255, 255);
     font-size: 1.125rem;
     margin: 2.813rem;
-    margin-top: 1.25rem;
+    margin-top: 9.25rem;
     margin-left:auto;
     margin-right:auto;
     background-color: rgba(0, 0, 0, 0.75);
