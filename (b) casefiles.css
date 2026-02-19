@@ -2,18 +2,17 @@
 ul
 {
   list-style-type: none;
-  margin: 1.5rem;
-  margin-left:5%;
-  margin-right:5%;
+  margin: clamp(0.75rem, 2vw, 1.5rem);
   padding: clamp(0.6rem, 2vw, 1rem) clamp(1rem, 4vw, 2rem);
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: clamp(0.6rem, 3vw, 2rem);
+  gap: clamp(0.6rem, 3vw, 0.7rem);
   position: fixed; /* always stays on top */
-  top: clamp(0.75rem, 2vw, 1rem);
+  top: clamp(0.75rem, 2vw, 1.25rem);
   left: clamp(0.75rem, 2vw, 1.25rem);
+  margin-right:2.5rem;
   border-radius: 3rem;
   width: max-content;
   max-width: 90vw;
@@ -46,13 +45,6 @@ li a:hover
   color: rgb(255, 255, 255);
 }
 
-@media (max-width: 480px) {
-  .platypus {
-    width: 8rem;  /* smaller on mobile */
-    top: 0.5rem;
-    right: 0.5rem;
-  }
-}
 
 .platypus
 {
@@ -63,6 +55,14 @@ li a:hover
     z-index: 9999; 
     pointer-events: none;
 }
+
+@media(max-width:480px){
+  .platypus{
+    width:20%;
+    top:0.5rem;
+  }
+}
+
 
 /*background adjustments*/
 html, body
@@ -86,7 +86,6 @@ html, body
   border-radius: 0.94rem;
   padding: 1.25rem;
   position:relative;
-  text-align: center;
 }
 
 
@@ -181,7 +180,7 @@ summary
   max-width:89%;
   width:87%;
   overflow-x:auto;
-  margin:1.25rem;
+  margin:1.25;
 }
 
 .l3cf1, .l1cf1, .l1cf2, .l1cf3, .l2cf1, .l2cf2
@@ -241,44 +240,4 @@ h4
   cursor: pointer;
   z-index: 9999;
   font-family:Georgia, 'Times New Roman', Times, serif
-}
-
-body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.popupguidelines {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 1000;
-}
-        
-.guidelines {
-  font-family: 'Courier New', Courier, monospace;
-  text-align: center;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background:#000000;
-  padding: 2.5vmax;
-  width: 50%;
-  max-height: 80vh;
-  overflow-y: auto;
-  border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.9);
-  color: #ffffff;
-  z-index: 1001;
-}
-
-.openguidelines {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin: 2.5%;
-  background-color: #ffffff;
-  color:rgb(26, 48, 78);
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
 }
