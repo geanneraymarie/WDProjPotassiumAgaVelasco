@@ -63,6 +63,7 @@ includes : references and copyrights
 1) It works on various screen types.
 2) It can indicate your progress in the case files, showing the ones you have accomplished, which you haven’t finished, and ones you haven’t started.
 3) There will be audio (music) playing in the website with a mute/unmute button.
+4) The user can write down their notes and thoughts in the journal area, as well as mark their favorite case.
 
 <u>Details</u>
 1) The user will be able to make a “detective account” on the website to be able to play the mystery game. These will soon be used later on the profile page and other webpages of our website.
@@ -81,6 +82,11 @@ To keep their account secure, this is where the user will be able to apply their
 3) For the third quarter, we plan to add some more features to our website, as well as debug some mistakes in the previous quarter.  
 First, we will use @container or @media in html and css in adjusting the screen to various screen types and sizes. As for the Javascript, we’ll update different statuses for different cases. For example, if the user hasn’t tried a case, their progress is on “not started”. Otherwise, it's updated as “done”.  
 And lastly, we will be using <iframe> for the audio, which will either be an mp3 or a YouTube video. There will also be a mute/unmute button, depending on the user.
+
+4) In the fourth quarter, for the final edits to be made in our project, since we already have account creation, we have decided to add a delete account option to fulfill the CRUD process, but on top of that... we are adding a new webpage! 
+
+This webpage will be a free space, a journal if you will, for the player, where they can write down their thoughts, comments, AND bookmark their favorite cases! The notes and marked cases would then be displayed after saving. These, of course, would be saved inside the localStorage, and could be changed and deleted by the user. 
+We also plan to fix the remaining faulty CSS, and to make the html even more attractive to the eye to ensure peak entertainment for our players. Our account creation steps will also be smoothened such that you can choose to log in on the sign up page.
 
 
 
