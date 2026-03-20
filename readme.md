@@ -85,7 +85,7 @@ First, we will use @container or @media in html and css in adjusting the screen 
 And lastly, we will be using <iframe> for the audio, which will either be an mp3 or a YouTube video. There will also be a mute/unmute button, depending on the user.
 
 4) In the fourth quarter, for the final edits to be made in our project, since we already have account creation, we have decided to add a delete account option to fulfill the CRUD process, but on top of that... we are adding a new webpage!  
-This webpage will be a free space, a journal if you will, for the player, where they can write down their thoughts, comments, AND bookmark their favorite cases! The notes and marked cases would then be displayed after saving. These, of course, would be saved inside the localStorage, and could be changed and deleted by the user. 
+This webpage will be a free space, a journal if you will, for the player, where they can write down their thoughts, comments, AND bookmark their favorite cases! The notes and marked cases are flexible and would then be displayed after saving. The user can easily change, add, or delete their inputs anytime. If the thought turns out to be useless/wrong, they can just remove it. And if they encountered useful information, they can easily insert/add it in the comments section. Applying CRUD here is very useful since it requires the data to be stored inside the localStorage. This way, the details are easily accessed.  
 We also plan to fix the remaining faulty CSS, and to make the html even more attractive to the eye to ensure peak entertainment for our players. Our account creation steps will also be smoothened such that you can choose to log in on the sign up page.
 
 
