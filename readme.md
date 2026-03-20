@@ -1,4 +1,5 @@
-# CS3 Q2 Project Proposal   
+# FINAL MODIFICATION PROPOSAL  
+### CS3 Q2 Project Proposal   
 
 > K01 | AGA, Geanne Ray Marie  
 > K28 | VELASCO, Jasmine Margarette   
