@@ -29,8 +29,8 @@
         </ul>
     </div>
     <div class="notes">
-        <button id="addBtn">Add Item</button>
-
+        <button id="addBtn" onclick="popUp()">Add Item</button>
+        <div id="open"></div>
         <div id="formContainer">
             <h3 id="formTitle">Add Item</h3>
             <form id="itemForm" method = "post">
@@ -42,7 +42,7 @@
                 </label><br><br>
                 <span class="error" id="errorMsg"></span><br>
                 <button type="submit" id = "addBtn" onclick="add()">Save</button>
-                <button type="button" id="cancelBtn">Cancel</button>
+                <button type="button" id="cancelBtn" onclick="close()">Cancel</button>
             </form>
         </div>
     </div>
