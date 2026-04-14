@@ -120,6 +120,10 @@ details
   margin-bottom: 3rem;
 }
 
+#bookmark{
+  font-size:2rem;
+}
+
 summary
 {
   font-family: "Copperplate", "Copperplate Gothic Light";
