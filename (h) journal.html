@@ -28,28 +28,32 @@
             <li><a href="(f) reference.html"> references </a></li>
         </ul>
     </div>
-    <p id="noteHERE"></p>
-    <div class="notes">
-        <button id="addBtn" onclick="popUp()">&#10133; Add Item</button>
-        <div id="open"></div>
-        <div id="formContainer">
-            <h3 id="formTitle">Add Item</h3>
-            <form id="itemForm" method = "post">
-                <label>
-                    Name: <input type="text" id="title" required>
-                </label><br><br>
-                <label>
-                    Description: <input type="text" id="comment" required>
-                </label><br><br>
-                <span class="error" id="errorMsg"></span><br>
-                <button type="submit" id = "addBtn" onclick="add()">Save</button>
-                <button type="button" id="cancelBtn" onclick="closeBox()">Cancel</button>
-            </form>
-        </div>
-    </div>
 
-    <div id="bookMark">Bookmarks!!
-        <div id="pin"></div>
+    <div id="idkwhattoname">
+        <div class="notes">
+            <p id="noteHERE"></p>
+            <button id="addBtn" onclick="popUp()">&#10133; Add Item</button>
+            <div id="open"></div>
+            <div id="formContainer">
+                <h3 id="formTitle">Add Item</h3>
+                <form id="itemForm" method = "post">
+                    <label>
+                        Name: <input type="text" id="title" required>
+                    </label><br><br>
+                    <label>
+                        Description: <input type="text" id="comment" required>
+                    </label><br><br>
+                    <span class="error" id="errorMsg"></span><br>
+                    <button type="submit" id = "addBtn" onclick="add()">Save</button>
+                    <button type="button" id="cancelBtn" onclick="closeBox()">Cancel</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="bookMark">BOOKMARKED CASES
+            <div id="pin"></div>
+        </div>
+
     </div>
 
     <script src="casefiles.js"></script>
