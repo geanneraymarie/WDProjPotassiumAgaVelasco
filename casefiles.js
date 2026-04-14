@@ -552,20 +552,12 @@ function logout(){
 //JOURNAL
 //pop-up box to add comments
 function popUp() {
-    document.getElementById(
-        "open"
-    ).style.display = "block";
-    document.getElementById(
-        "formContainer"
-    ).style.display = "block";
+    document.getElementById("open").style.display = "block";
+    document.getElementById("formContainer").style.display = "block";
 }
 function close() {
-    document.getElementById(
-        "open"
-    ).style.display = "none";
-    document.getElementById(
-        "formContainer"
-    ).style.display = "none";
+    document.getElementById("open").style.display = "none";
+    document.getElementById("formContainer").style.display = "none";
 }
 
 
