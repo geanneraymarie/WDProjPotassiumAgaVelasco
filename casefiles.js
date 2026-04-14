@@ -658,5 +658,5 @@ function unmark(j){
     alert("Title unmarked!!!");
   }
 }
-
+document.addEventListener("DOMContentLoaded", output);
 document.addEventListener("DOMContentLoaded", outputfavs);
