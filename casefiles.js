@@ -616,93 +616,47 @@ function trash(i){
   }
 }
 
+//wait theres more T T
+//bookmarksss
+let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+function addFavs(namee, sourcee){
+    //const namee = document.getElementById("namee").value;
 
-
-/* TEMPORARY CODE FOR JOURNAL
- let notes = JSON.parse(localStorage.getItem("notes")) || [];
-
-        function add(){
-            let comment = document.getElementById("comment").value;
-            let title = document.getElementById("title").value;
-                alert("No filled information. Try again");
-
-            localStorage.setItem("comment", JSON.stringify())
-        }
-        const addBtn = document.getElementById('addBtn');
-        const formContainer = document.getElementById('formContainer');
-        const itemForm = document.getElementById('itemForm');
-        const cancelBtn = document.getElementById('cancelBtn');
-        const errorMsg = document.getElementById('errorMsg');
-        const formTitle = document.getElementById('formTitle');
-        const nameInput = document.getElementById('name');
-        const descInput = document.getElementById('description');
-        const tableBody = document.querySelector('#itemTable tbody');
-
-        let items = [];
-        let editIndex = null;
-
-        addBtn.addEventListener('click', () => {
-            formTitle.textContent = 'Add Item';
-            formContainer.style.display = 'block';
-            nameInput.value = '';
-            descInput.value = '';
-            errorMsg.textContent = '';
-            editIndex = null;
-        });
-
-        cancelBtn.addEventListener('click', () => {
-            formContainer.style.display = 'none';
-        });
-
-        itemForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = nameInput.value.trim();
-            const description = descInput.value.trim();
-
-            if (!name || !description) {
-                errorMsg.textContent = 'Both fields are required.';
-                return;
-            }
-
-            if (editIndex === null) {
-                items.push({ name, description });
-            } else {
-                items[editIndex] = { name, description };
-            }
-
-            renderTable();
-            formContainer.style.display = 'none';
-        });
-
-        function renderTable() {
-            tableBody.innerHTML = '';
-            items.forEach((item, index) => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>${item.name}</td>
-                    <td>${item.description}</td>
-                    <td>
-                        <button onclick="editItem(${index})">Edit</button>
-                        <button onclick="deleteItem(${index})">Delete</button>
-                    </td>
-                `;
-                tableBody.appendChild(row);
-            });
-        }
-
-        window.editItem = function(index) {
-            editIndex = index;
-            formTitle.textContent = 'Edit Item';
-            nameInput.value = items[index].name;
-            descInput.value = items[index].description;
-            errorMsg.textContent = '';
-            formContainer.style.display = 'block';
+    const exists = bookmarks.some(item => item.namee === namee);
+    if (!exists) {
+        let idkk = {
+            namee:namee,
+            sourcee:sourcee
         };
+        bookmarks.push(idkk);
+        localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+        alert("Case has been bookmarked!!!😁");
+    } else {
+        alert("Sorry, its bookmarked already 🥲") ;
+    }
 
-        window.deleteItem = function(index) {
-            if (confirm('Are you sure you want to delete this item?')) {
-                items.splice(index, 1);
-                renderTable();
-            }
-        };
-*/
+    outputfavs();
+}
+
+function outputfavs(){
+    let bookmarks = JSON.parse(localStorage.getItem("bookmarks")) || [];
+    let appearr = "";
+    for(let j = 0; j < bookmarks.length; j++){
+        appearr += `<p><a href = "${bookmarks[j].sourcee}">${bookmarks[j].namee}</a></p><button id="removemark" onclick="unmark(${j})">❌</button><br/>`;
+    }
+
+    document.getElementById("pin").innerHTML = appearr;
+}
+
+function unmark(j){
+    const removemark = document.getElementById("removemark");
+    const whatName = confirm("Are you sure you want to unmark?");
+    if(whatName){
+    bookmarks.splice(j,1);
+    localStorage.setItem("bookmarks", JSON.stringify(bookmarks));
+    outputfavs();
+    alert("Title unmarked!!!");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", outputfavs);
