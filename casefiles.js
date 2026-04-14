@@ -549,16 +549,73 @@ function logout(){
     window.location.href="(g1) signup.html";
 }
 
+//function for account page
+function accountpage(){
+    const name = localStorage.getItem("nameSU");
+    const pass = localStorage.getItem("passSU");
+    document.getElementById("greetings").innerText = name;
+    document.getElementById("setPass").innerText = pass;
+}
+
+//for logging out
+function logout(){
+    localStorage.setItem("logQ","false");
+    alert("Logged out!");
+    window.location.href="(g1) signup.html";
+}
+
 //JOURNAL
 //pop-up box to add comments
 function popUp() {
     document.getElementById("open").style.display = "block";
     document.getElementById("formContainer").style.display = "block";
 }
-function close() {
+function closeBox() {
     document.getElementById("open").style.display = "none";
     document.getElementById("formContainer").style.display = "none";
 }
+
+//design is last TT this more important
+let notess = JSON.parse(localStorage.getItem("notess")) || [];
+//saves comment
+function add(){
+    let title=document.getElementById("title").value;
+    let comment=document.getElementById("comment").value;
+
+    let comm = {
+        title:title,
+        comment:comment
+    };
+    notess.push(comm);
+    localStorage.setItem("notess", JSON.stringify(notess));
+    output();
+    document.getElementById("itemForm").reset();
+}
+
+//display
+function output(){
+    let notess = JSON.parse(localStorage.getItem("notess")) || [];
+    let tada="";
+
+    for(let i = 0; i < notess.length; i++){
+        tada += `${notess[i].title} <br/> ${notess[i].comment} <button id="deletebtn" onclick="trash(${i})">Delete</button><br/><br/>`;
+    }
+
+    document.getElementById("noteHERE").innerHTML = tada;
+}
+
+//deletes comment
+function trash(i){
+  const deleteBtn = document.getElementById("deletbtn");
+  const huh = confirm("Are you sure you want to delete this movie?");
+  if(huh){
+    notess.splice(i,1);
+    localStorage.setItem("notess", JSON.stringify(notess));
+    output();
+    alert("Note deleted!!");
+  }
+}
+
 
 
 /* TEMPORARY CODE FOR JOURNAL
