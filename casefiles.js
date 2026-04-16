@@ -576,7 +576,7 @@ function closeBox() {
 }
 
 //design is last TT this more important
-let notess = JSON.parse(localStorage.getItem("notess")) || [];
+//let notess = JSON.parse(localStorage.getItem("notess")) || [];
 //saves comment
 function add(){
     let title=document.getElementById("title").value;
