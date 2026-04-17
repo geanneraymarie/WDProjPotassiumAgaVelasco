@@ -245,3 +245,18 @@ h4
   z-index: 9999;
   font-family:Georgia, 'Times New Roman', Times, serif
 }
+
+#bookmark {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  background-color: rgb(151, 186, 225);
+  border-color: rgb(255, 255, 255);
+  border-width: 0.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 1em;
+  color: rgb(255, 255, 255);
+  margin-top: 0.5rem;
+  flex-direction: column;
+}
