@@ -576,9 +576,10 @@ function closeBox() {
 }
 
 //design is last TT this more important
-let notess = JSON.parse(localStorage.getItem("notess")) || [];
+//let notess = JSON.parse(localStorage.getItem("notess")) || [];
 //saves comment
 function add(){
+    let notess = JSON.parse(localStorage.getItem("notess")) || [];
     let title=document.getElementById("title").value;
     let comment=document.getElementById("comment").value;
 
@@ -601,7 +602,7 @@ function output(){
         tada += `${notess[i].title} <br/> ${notess[i].comment} <button id="deletebtn" onclick="trash(${i})">Delete</button><br/><br/>`;
     }
 
-    document.getElementById("noteHERE").innerHTML = tada;
+    document.getElementById("noteHERE").value = tada;
 }
 
 //deletes comment
