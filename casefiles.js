@@ -602,7 +602,7 @@ function output(){
         tada += `${notess[i].title} <br/> ${notess[i].comment} <button id="deletebtn" onclick="trash(${i})">Delete</button><br/><br/>`;
     }
 
-    document.getElementById("noteHERE").value = tada;
+    document.getElementById("noteHERE").innerHTML = tada;
 }
 
 //deletes comment
