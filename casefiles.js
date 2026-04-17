@@ -549,6 +549,21 @@ function logout(){
     window.location.href="(g1) signup.html";
 }
 
+//function for account page
+function accountpage(){
+    const name = localStorage.getItem("nameSU");
+    const pass = localStorage.getItem("passSU");
+    document.getElementById("greetings").innerText = name;
+    document.getElementById("setPass").innerText = pass;
+}
+
+//for logging out
+function logout(){
+    localStorage.setItem("logQ","false");
+    alert("Logged out!");
+    window.location.href="(g1) signup.html";
+}
+
 //JOURNAL
 //pop-up box to add comments
 function popUp() {
@@ -560,9 +575,9 @@ function closeBox() {
     document.getElementById("formContainer").style.display = "none";
 }
 
+
 //design is last TT this more important
 let notess = JSON.parse(localStorage.getItem("notess")) || [];
-//saves comment
 function add(){
     let title=document.getElementById("title").value;
     let comment=document.getElementById("comment").value;
