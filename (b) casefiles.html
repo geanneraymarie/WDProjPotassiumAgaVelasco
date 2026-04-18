@@ -72,6 +72,126 @@ function toggleMute() {
     </div>
             <div class="content">
             <h1> casefiles </h1>
+            <h2>GUIDELINES</h2>
+            <p>you will be playing as toto in the interactive portion, but in the case solving, you will step into ron's shoes, and solve the mystery. <br><br> the levels are ranked from easy to hard. it is in chronological order, meaning that each level goes deeper into the story as well. <br><br><i>level 0 is crucial to understand the context of the story. you are only intended to view it as it is simply a prologue to the following cases.</i> <br><br> for the best experience, solve from level 0 to level 3. You may choose to go straight to the case solving, but it is strongly advised for you to play the interactive portion for better context and enjoyment. Happy playing! <br><br><br> fun fact : the cover images of level 1 to level 3 are the manga covers that correspond to the volume the original case chapters are found in!</b></p>
+        </div>
+    </div>
+
+            <div class="level0">
+                <h2>Level 0</h2>
+                <div class="l0bloodyfieldtrip">
+    <a href="(b1) l0bloodyfieldtrip.html">
+        <img src="https://i.pinimg.com/1200x/ae/83/20/ae83202c77ec59de5a3cdb5c08bcb764.jpg" class="casefile0-image">
+        <p><b><i>" the case of the bloody school field trip "</i></b></p>
+    </a>
+
+    <button id="bookmark" onclick="addFavs('the case of the bloody school field trip','(b1) l0bloodyfieldtrip.html')">
+        Bookmark 📑
+    </button>
+</div>
+
+            </div>
+
+        <div class="casefiles">
+            <div class="level1">
+            <h2>Level 1</h2>
+
+            <a href="(b2) l1casefile1.html" class="l1cf1">
+            <img src="https://i.pinimg.com/1200x/a3/42/f8/a342f8e6524ef42915282ba74dba6502.jpg" class="casefile-image">
+            <p><b><i>" the case of the metropolitan serial drownings "</i></b></p>
+            <div id="status"><p>Status: <span id="status-l1case1">Not Started</span></p></div>
+            <button id="bookmark" onclick="addFavs('the case of the metropolitan serial drownings','(b2) l1casefile1.html')"> Bookmark 📑 </button>
+            </a>
+            
+
+            <a href="(b3) l1casefile2.html" class="l1cf2">
+            <img src="https://i.pinimg.com/1200x/a3/42/f8/a342f8e6524ef42915282ba74dba6502.jpg" class="casefile-image">
+                <p><b><i>" the case of the benizome hot springs murder "</i></b></p>
+            <div id="status"><p>Status: <span id="status-l1case2">Not Started</span></p></div>
+            
+            <button id="bookmark" onclick="addFavs('the case of the benizome hot springs murder','(b3) l1casefile2.html')"> Bookmark 📑 </button> 
+            </a>
+
+            <a href="(b4) l1casefile3.html" class="l1cf3">
+            <img src="https://i.pinimg.com/1200x/8d/05/56/8d0556274d5e18a510c0b194517cceb6.jpg" class="casefile-image">
+                <p><b><i>" the case of the poisoned latte "</i></b></p>
+            <div id="status"><p>Status: <span id="status-l1case3">Not Started</span></p></div>
+            
+            <button id="bookmark" onclick="addFavs('the case of the poisoned latte','(b4) l1casefile3.html')"> Bookmark 📑 </button>
+            </a>
+        </div>
+
+
+        <div class="level2">
+            <h2>Level 2</h2>
+
+            <a href="(b5) l2casefile1.html" class="l2cf1">
+            <img src="https://i.pinimg.com/736x/df/6a/e7/df6ae7a47fd89ab6483b15a8b004b00f.jpg" class="casefile-image">
+                <p><b><i>" the case of the shibuya revelation serial murders "</i></b></p>
+            <div id="status"><p>Status: <span id="status-l2case1">Not Started</span></p></div>
+            
+            <button id="bookmark" onclick="addFavs('the case of the shibuya revelation serial murders','(b5) l2casefile1.html')"> Bookmark 📑 </button>
+            </a>
+
+            <a href="(b6) l2casefile2.html" class="l2cf1">
+            <img src="https://i.pinimg.com/1200x/46/6c/f3/466cf31a0b427cf0741deba88d240746.jpg" class="casefile-image">
+                <p><b><i>" the case of the plateau auberge serial murders "</i></b></p>
+            <div id="status"><p>Status: <span id="status-l2case2">Not Started</span></p></div>
+            
+            <button id="bookmark" onclick="addFavs('the case of the plateau auberge serial murders','(b6) l2casefile2.html')"> Bookmark 📑 </button>
+            </a>
+            </div>
+
+            <div class="level3">
+                <h2>Level 3</h2>
+                    <a href="(b7) l3casefile1.html" class="l3cf1">
+                    <img src="https://i.pinimg.com/736x/9b/fe/70/9bfe70285259fc478702908b7df65486.jpg" class="casefile-image">
+            <p><b><i>" the case of the tragic cruise serial murders "</i></b></p>
+            <div id="status"><p>Status: <span id="status-l3case1">Not Started</span></p></div>
+            
+                <button id="bookmark" onclick="addFavs('the case of the tragic cruise serial murders','(b7) l3casefile1.html')"> Bookmark 📑 </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h4 class="copyright">
+        &copy; <span id="year"></span> Geanne Aga. Maggie Velasco. All rights reserved.
+        </h4>
+
+
+    <script>
+        //updates statuses in casefiles page
+        function updateHEH(casetype, output) {
+            const status = localStorage.getItem(casetype) || "Not Started";
+            document.getElementById(output).textContent = status;
+        }
+
+        window.onload = function() {
+            updateHEH("l1case1Status", "status-l1case1");
+            updateHEH("l1case2Status", "status-l1case2");
+            updateHEH("l1case3Status", "status-l1case3");
+            updateHEH("l2case1Status", "status-l2case1");
+            updateHEH("l2case2Status", "status-l2case2");
+            updateHEH("l3case1Status", "status-l3case1");
+        };
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    </body>
+</html>
+    <div class="navbar">
+        <ul>
+            <li><a href="(a) platypusadventures_k01k28.html"> home </a></li>
+            <li><a href="(g3) account-page.html"> profile-page</a></li>
+            <li><a href="(b) casefiles.html"> case files </a></li>
+            <li><a href="(c) abouttheseries.html"> about the series </a></li>
+            <li><a href="(d) minigames.html"> minigames </a></li>
+            <li><a href="(h) journal.html"> journal </a></li>
+            <li><a href="(e) aboutus.html"> about us </a></li>
+            <li><a href="(f) reference.html"> references </a></li>
+        </ul>
+    </div>
+            <div class="content">
+            <h1> casefiles </h1>
 
             <div class="popupguidelines" id="popupGuidelines">
             <div class="guidelines">
