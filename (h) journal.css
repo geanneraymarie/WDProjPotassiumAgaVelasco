@@ -1,4 +1,4 @@
- /*navigation bar*/
+/*navigation bar*/
 ul
 {
   list-style-type: none;
@@ -103,22 +103,20 @@ body::before
   font-weight: bold;
 }
 
-#idkwhattoname
-{
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+#idkwhattoname {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* notes wide, bookmark narrow */
+  gap: 2rem;
 
   margin-top: 6rem;
   margin-left: 4rem;
+  margin-right: 4rem;
+  align-items: start;
 }
 
 .notes
 {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-
+  display: block;
   margin: 0;
 }
 
@@ -132,8 +130,7 @@ body::before
 
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
 
-  width: clamp(180px, 20vw, 250px);
-
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -143,28 +140,35 @@ body::before
 {
   background-color: rgb(255, 255, 255);
   border-radius: 0.6rem;
-  margin: 2rem 2rem;
+  margin: ;
+  margin-top: 3rem;
+  flex: 1;
   padding: 1rem;
+  min-width: 250px;
+  max-width: 400px;
 }
 
-#addBtn
-{
-  background-color: rgb(255, 255, 255);
+#addBtn {
+  position: fixed;
+  bottom: 5rem;
+  left: 6rem;
 
-  padding: 0.6rem 0.6rem;
-  margin-top: 2rem;
-  border-radius: 0.6rem;
+  background-color: rgb(26, 48, 78);
+  color: rgb(255, 255, 255);
 
-  width: fit-content;
-  height: auto;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
 
   font-size: clamp(0.9rem, 2vw, 1.2rem);
 
   cursor: pointer;
 
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1500;
 }
 
 #formContainer
@@ -193,7 +197,6 @@ body::before
   z-index: 1999;
 }
 
-
 h3
 {
   font-size: 1.25rem;
@@ -216,4 +219,42 @@ h4
 .copyright {
   margin-top: 2.5rem;
   text-align: center;
+}
+
+#itemForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.notescontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#noteHERE {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 2rem;
+  max-height: 70vh;
+  overflow-y: auto;
+  flex: 3;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.note {
+  width: 80%;
+  min-height: 8rem;
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
