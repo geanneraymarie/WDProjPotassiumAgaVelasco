@@ -27,7 +27,7 @@ li a
   font-weight: bold;
   padding: clamp(0.4rem, 1vw, 0.6rem) clamp(0.6rem, 2vw, 0.9rem);
   border-radius: 2rem;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
   position: relative;
 }
 
