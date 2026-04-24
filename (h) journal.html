@@ -68,35 +68,3 @@
     </body>
 </html>
 
-                <h3 id="formTitle">Add Item</h3>
-                <form id="itemForm" method = "post">
-                    <label>
-                        Name: <input type="text" id="title" required>
-                    </label><br><br>
-                    <label>
-                        Description: <input type="text" id="comment" required>
-                    </label><br><br>
-                    <span class="error" id="errorMsg"></span><br>
-                    <button type="submit" id = "addBtn" onclick="add()">Save</button>
-                    <button type="button" id="cancelBtn" onclick="closeBox()">Cancel</button>
-                </form>
-            </div>
-            <p id="noteHERE"></p>
-        </div>
-
-        <div id="bookMark">BOOKMARKED CASES
-            <div id="pin"></div>
-        </div>
-
-    </div>
-
-    <script src="casefiles.js"></script>
-        <h4 class="copyright">
-        &copy; <span id="year"></span> Geanne Aga. Maggie Velasco. All rights reserved.
-        </h4>
-        <script>
-            document.getElementById("year").innerHTML = new Date().getFullYear();
-        </script>
-    </body>
-</html>
-
